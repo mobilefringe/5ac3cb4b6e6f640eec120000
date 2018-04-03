@@ -19,7 +19,7 @@
 
 <script>
     define(["Vue"], function (Vue) {
-        return Vue.component("loader", {
+        return Vue.component("chatbot", {
             template: template, // the variable template will be injected,
             data: function () {
                 return {
