@@ -45,7 +45,7 @@
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
 					<router-view class="content" :locale="locale" ></router-view>
 				</transition>
-				
+				<chatbot></chatbot>
 				<footer-component :footer_menu_items="footer_menu_items" :social_media="social_media" v-if="dataLoaded"></footer-component>
 			</div>
 		</div>
