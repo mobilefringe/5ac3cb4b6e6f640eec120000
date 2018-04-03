@@ -50,6 +50,22 @@
 				<footer-component :footer_menu_items="footer_menu_items" :social_media="social_media" v-if="dataLoaded"></footer-component>
 			</div>
 		</div>
+		<!-- CHATBOT -->
+        <div class="container">
+            <!--Trigger the modal with a button -->
+            <div id="chaticon" class="animated swing infinite" data-toggle="modal" data-target="#chat_modal">
+                <input id="chatbot" type="image" src="//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/png/1501602564000/chat_icon.png" />
+            </div>
+            <!--Modal -->
+            <div class="modal" id="chat_modal" tabindex="-1" role="dialog" aria-labelledby="chat_modalLabel">
+                <div class="lab-modal-body modal-sm">
+                    <button type="button" class="close_chatbot" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <iframe id="chat_frame" src='https://emmachat.codecloudapp.com/chat' height="400px"></iframe>
+                </div>
+            </div>
+        </div>
 		<div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
 		<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
 		<script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
