@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", ], function (Vue, Vuex, ) {
+    define(["Vue"], function (Vue) {
         return Vue.component("loader", {
             template: template, // the variable template will be injected,
             data: function () {
@@ -30,11 +30,6 @@
                 // this.loadData().then(response => {
                     this.dataLoaded = true;
                 // });
-            },
-            computed: {
-                ...Vuex.mapGetters([
-                    'property'
-                ])
             }
         });
     });
