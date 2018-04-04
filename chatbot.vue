@@ -8,7 +8,7 @@
         <!--Modal -->
         <div v-if="showChat" id="chat_modal" class="modal" :class="{ show_chat: showChat }"> <!-- tabindex="-1" role="dialog" aria-labelledby="chat_modalLabel" -->
             <div class="lab-modal-body modal-sm">
-                <button type="button" class="close_chatbot" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close_chatbot"  @click="showChat = !showChat"> <!-- data-dismiss="modal" aria-label="Close" -->
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <iframe id="chat_frame" :src="chatURL" width="100%" height="400px" frameBorder="0" allowfullscreen></iframe>
