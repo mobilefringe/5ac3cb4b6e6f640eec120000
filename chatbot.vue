@@ -23,14 +23,14 @@
             template: template, // the variable template will be injected,
             data: function () {
                 return {
-                    dataLoaded: false,
+                    // dataLoaded: false,
                     showChat: false,
                     chatURL: 'http://preview-twinpines.codecloudapp.com/chat',
                 };
             },
             created (){
                 // this.loadData().then(response => {
-                    this.dataLoaded = true;
+                    // this.dataLoaded = true;
                 // });
             }
         });
