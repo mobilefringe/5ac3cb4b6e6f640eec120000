@@ -199,6 +199,9 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                 this.$i18n.locale = val;
                 moment.locale(val);
             },
+            showChat() {
+                console.log(showChat)
+            }
             // $route: function() {
             //     // hide dropdown when route changes
             //     _.forEach(this.menu_items, function(value, key) {
