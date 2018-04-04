@@ -191,6 +191,12 @@ strong, .bold {
     display: block;
     background: rgba(0,0,0,0.8);
 }
+#chat_modal.modal .lab-modal-body {
+    margin: 0px;
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+}
 
 /* *** SEARCH COMPONENT *** */
 ul.options-list li {
