@@ -34,7 +34,7 @@ body {
     opacity: 0.7;
 }
 // #chat_modal.modal.in .lab-modal-body
-#chat_modal.modal .lab-modal-body {
+.lab-modal-body {
     margin: 0px;
     position: absolute;
     // bottom: 90px;
