@@ -1,0 +1,188 @@
+<html>
+<head>
+    <title>EMMA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
+    <link href="chat.css" rel="stylesheet" />
+    <link href="animate.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript">
+        var accessToken = '6815bff4f00341e0a5f0b6e2459340c7';  //Replace access token here
+        var baseUrl = "https://mallmaverickstaging.com/api/chatbot_endpoint";
+        var propertyId = 49  //Set the property ID
+        
+        $(document).ready(function() {
+            // Send "welcome" message upon opening Chatbot so the custom welcome message will be displayed.
+            axios.post( baseUrl, {
+                message: "welcome",
+                property_id: propertyId
+            })
+            .then(function (response) {
+                setTimeout(function() {
+                    setResponse(JSON.stringify(response, undefined, 2));
+                }, 1500);
+                // setTimeout(function() {
+                //     prompt();
+                //     promptButtons();
+                // }, 2500);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+            $("#input").keypress(function(event) {
+                if (event.which == 13) {
+                    event.preventDefault();
+                    send();
+                }
+            });
+            
+            // $(".close_chatbot").click(function() {
+            //     $("#chat_modal").remove();    
+            // });
+        });
+        
+        function prompt(){
+            var d = document.getElementById('bot').innerHTML;
+            document.getElementById('bot').innerHTML = d.replace(' animated flipInX', '') + "<div class='calloutbig'><button id='stores' class='prompt'>STORE SEARCH</button><button id='hours' class='prompt'>TODAY'S HOURS</button><button id='location' class='prompt'>MALL LOCATION</button><button id='contact' class='prompt'>CONTACT US</button><div class='message-from message-from-bot'>" + moment().format('MMMM D, YYYY | h:mmA'); + "</div></div>";
+        }
+        
+        function promptButtons(){
+            $('#stores').click(function() {
+                $("<div class='calloutbig typing'><img src='//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/gif/1502381728000/typing.gif'></div>").appendTo(document.getElementById('bot'));
+                
+                var objDiv = document.getElementById("bot");
+                objDiv.scrollTop = objDiv.scrollHeight;
+                
+                axios.post( baseUrl, {
+                    message: "store name",
+                    property_id: propertyId
+                })
+                .then(function (response) {
+                    setTimeout(function() {
+                        setResponse(JSON.stringify(response, undefined, 2));
+                    }, 1500);
+                })
+            });
+            
+            $('#hours').click(function() {
+                $("<div class='calloutbig typing'><img src='//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/gif/1502381728000/typing.gif'></div>").appendTo(document.getElementById('bot'));
+                
+                var objDiv = document.getElementById("bot");
+                objDiv.scrollTop = objDiv.scrollHeight;
+                
+                axios.post( baseUrl, {
+                    message: "hours",
+                    property_id: propertyId
+                })
+                .then(function (response) {
+                    setTimeout(function() {
+                        setResponse(JSON.stringify(response, undefined, 2));
+                    }, 1500);
+                })
+            });
+            
+            $('#location').click(function() {
+                $("<div class='calloutbig typing'><img src='//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/gif/1502381728000/typing.gif'></div>").appendTo(document.getElementById('bot'));
+                
+                var objDiv = document.getElementById("bot");
+                objDiv.scrollTop = objDiv.scrollHeight;
+                
+                axios.post( baseUrl, {
+                    message: "address",
+                    property_id: propertyId
+                })
+                .then(function (response) {
+                    setTimeout(function() {
+                        setResponse(JSON.stringify(response, undefined, 2));
+                    }, 1500);
+                })
+            });
+            
+            $('#contact').click(function() {
+                $("<div class='calloutbig typing'><img src='//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/gif/1502381728000/typing.gif'></div>").appendTo(document.getElementById('bot'));
+                
+                var objDiv = document.getElementById("bot");
+                objDiv.scrollTop = objDiv.scrollHeight;
+                
+                axios.post( baseUrl, {
+                    message: "guest services",
+                    property_id: propertyId //Set the property ID
+                })
+                .then(function (response) {
+                    setTimeout(function() {
+                        setResponse(JSON.stringify(response, undefined, 2));
+                    }, 1500);
+                })
+            });
+        }
+        
+        function send() {
+            var text = $("#input").val();
+            var d = document.getElementById('bot').innerHTML;
+            document.getElementById('bot').innerHTML = d.replace(' animated flipInX', '') + "<div class='calloutbig'><div class='calloutleft'>" + text + "</div><div class='message-from message-from-me'>" + moment().format('MMMM D, YYYY | h:mmA'); + "</div></div>";
+            
+            axios.post( baseUrl, {
+                message: text,
+                property_id: propertyId
+            })
+            .then(function (response) {
+
+                $("<div class='calloutbig typing'><img src='//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/gif/1502381728000/typing.gif'></div>").appendTo(document.getElementById('bot'));
+                
+                var objDiv = document.getElementById("bot");
+                objDiv.scrollTop = objDiv.scrollHeight;
+            
+                setTimeout(function() {
+                    setResponse(JSON.stringify(response, undefined, 2));
+                }, 1500);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+            
+            $('#input').val("");
+            
+            var d = document.getElementById('bot').lastElementChild.innerHTML;
+            document.getElementById('bot').lastElementChild.innerHTML = [d.slice(0, 23), " animated flipInX", d.slice(23)].join('');
+            
+            var objDiv = document.getElementById("bot");
+            objDiv.scrollTop = objDiv.scrollHeight;
+        }
+
+        function setResponse(val) {
+            $(".typing").remove();
+             
+            $("#response").text(val);
+            speech = $.parseJSON(val);
+            var d = document.getElementById('bot').innerHTML;
+
+            document.getElementById('bot').innerHTML = d.replace(' animated flipInX', '') + "<div class='calloutbig'><img src='//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/png/1501600070000/Mall-Icon_Default2.png' width='45px' height='45px' class='circular--square' style='float: left;' /><div class='calloutright'>" + speech.data + "</div><div class='message-from message-from-bot'>" + moment().format('MMMM D, YYYY | h:mmA'); + "</div></div>";
+
+            var d = document.getElementById('bot').lastElementChild.innerHTML;
+            document.getElementById('bot').lastElementChild.innerHTML = [d.slice(0, 218), " animated flipInX", d.slice(218)].join('');
+            
+            var objDiv = document.getElementById("bot");
+            objDiv.scrollTop = objDiv.scrollHeight;
+            
+            promptButtons();
+        }
+    </script>
+</head>
+<body>
+    <div class="panel">
+        <div class="chat_header">
+            <div class="toolbar">
+                <span md-truncate flex>Mall Assistant</span>
+            </div>
+            <span flex></span>
+        </div>
+        <div id="bot" class="botclass"></div>
+        <div class='console'>
+            <input id="input" type="text" class="textin" autofocus>
+        </div>
+    </div>
+</body>
+</html>
