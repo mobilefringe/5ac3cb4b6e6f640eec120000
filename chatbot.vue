@@ -25,7 +25,7 @@
                 return {
                     // dataLoaded: false,
                     showChat: false,
-                    chatURL: 'http://preview-twinpines.codecloudapp.com/chat',
+                    chatURL: 'http://preview-twinpines.codecloudapp.com/chat.html',
                 };
             },
             created (){
