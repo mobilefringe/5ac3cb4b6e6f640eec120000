@@ -2825,6 +2825,9 @@ gallery:after{
 .fb_dialog.fb_dialog_advanced {
     left: 18pt;
 }
+.fb_customer_chat_bounce_in {
+    
+}
 @media (max-width: 1300px) {
 //     #primary_nav ul .menu_item {
 //         min-width: 130px;
