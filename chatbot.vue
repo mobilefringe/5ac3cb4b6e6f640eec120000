@@ -35,7 +35,7 @@
                 // });
             },
             watch: {
-                showMenu: function() {
+                showChat: function() {
                     if(this.showChat == true){
                         document.body.classList.add("no_scroll");
                     } else if (this.showChat == false) {
