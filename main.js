@@ -46,7 +46,7 @@ require.config({
     }
 });
 
-require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vue-i18n", "locales", "jquery", "moment", "moment-timezone", "vue-moment", "vue-meta", "vuex-router-sync", "vue-social-sharing", "vue-select", "vue!search-component", "vue-simple-spinner", "vue!loader.vue", "vue!header.vue", "vue!footer.vue"], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, $, moment, tz, VueMoment, Meta, VuexRouterSync, SocialSharing, VueSelect, Spinner, Loader, HeaderComponent, FooterComponent) {
+require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vue-i18n", "locales", "jquery", "moment", "moment-timezone", "vue-moment", "vue-meta", "vuex-router-sync", "vue-social-sharing", "vue-select", "vue!search-component", "vue-simple-spinner", "vue!loader.vue", "vue!header.vue", "vue!footer.vue", "vue!chatbot.vue"], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, $, moment, tz, VueMoment, Meta, VuexRouterSync, SocialSharing, VueSelect, Spinner, Loader, HeaderComponent, FooterComponent, ChatbotComponent]) {
     
     
         
