@@ -35,10 +35,14 @@
                 // });
             },
             watch: {
-                showChat: function() {
-                    console.log(this.showChat)
+                showMenu: function() {
+                    if(this.showChat == true){
+                        document.body.classList.add("no_scroll");
+                    } else if (this.showChat == false) {
+                        document.body.classList.remove("no_scroll");
+                    }
                 }
-            }
+            },
         });
     });
 </script>
