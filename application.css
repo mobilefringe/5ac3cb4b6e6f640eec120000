@@ -186,6 +186,12 @@ strong, .bold {
     z-index: 99;
 }
 
+/* *** CHATBOT *** */
+.show_chat {
+    display: block;
+    background: rgba(0,0,0,0.8);
+}
+
 /* *** SEARCH COMPONENT *** */
 ul.options-list li {
     padding: 5px 0 5px 10px;
