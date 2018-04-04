@@ -29,9 +29,15 @@
                 };
             },
             created (){
+                console.log(showChat)
                 // this.loadData().then(response => {
                     // this.dataLoaded = true;
                 // });
+            },
+            watch: {
+                showChat: function() {
+                    console.log(showChat)
+                }
             }
         });
     });
