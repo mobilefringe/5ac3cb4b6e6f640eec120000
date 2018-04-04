@@ -182,7 +182,7 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                 stickyMenu: false,
                 isSticky: 350,
                 showChat: false,
-                chatURL: 'http://twinpines.codecloudapp.com/chat',
+                chatURL: 'http://preview-twinpines.codecloudapp.com/chat',
             }
         },
         created() {
