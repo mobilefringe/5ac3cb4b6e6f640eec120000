@@ -29,14 +29,14 @@
                 };
             },
             created (){
-                console.log(showChat)
+                console.log(this.showChat)
                 // this.loadData().then(response => {
                     // this.dataLoaded = true;
                 // });
             },
             watch: {
                 showChat: function() {
-                    console.log(showChat)
+                    console.log(this.showChat)
                 }
             }
         });
