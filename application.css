@@ -195,7 +195,7 @@ strong, .bold {
     margin: 0px;
     position: absolute;
     bottom: 120px;
-    right: 10px;
+    left: 10px;
 }
 
 /* *** SEARCH COMPONENT *** */
