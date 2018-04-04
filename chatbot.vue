@@ -2,11 +2,11 @@
     <!-- CHATBOT -->
     <div class="container">
         <!--Trigger the modal with a button -->
-        <div id="chaticon" class="animated swing infinite" data-toggle="modal" data-target="#chat_modal">
+        <div id="chaticon" class="animated swing infinite" data-toggle="modal" data-target="#chat_modal" @click="showChat = !showChat">
             <input id="chatbot" type="image" src="//codecloud.cdn.speedyrails.net/sites/596e75bc6e6f6473f8be0000/image/png/1501602564000/chat_icon.png" />
         </div>
         <!--Modal -->
-        <div class="modal" id="chat_modal" tabindex="-1" role="dialog" aria-labelledby="chat_modalLabel">
+        <div v-if="showChat" class="modal" id="chat_modal" tabindex="-1" role="dialog" aria-labelledby="chat_modalLabel">
             <div class="lab-modal-body modal-sm">
                 <button type="button" class="close_chatbot" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
