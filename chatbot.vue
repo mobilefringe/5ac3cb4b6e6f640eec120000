@@ -36,7 +36,7 @@
             },
             watch: {
                 showChat: function() {
-                    console.log(showChat)
+                    console.log(this.showChat)
                     if(this.showChat == true){
                         document.body.classList.add("no_scroll");
                     } else if (this.showChat == false) {
