@@ -2822,7 +2822,7 @@ gallery:after{
 }
 
 /***********Facebook Live Char ****************/
-.fb_dialog .fb_dialog_advanced {
+.fb_dialog.fb_dialog_advanced {
     left: 18pt;
 }
 @media (max-width: 1300px) {
