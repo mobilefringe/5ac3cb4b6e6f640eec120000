@@ -1,5 +1,5 @@
 <template>
-    <footer v-if="footerBanner" v-bind:style="{ backgroundImage: 'url(' + footerBanner.image_url + ')' }">
+    <footer  v-bind:style="{ backgroundImage: 'url(' + footerBanner.image_url + ')' }"> <!-- v-if="footerBanner" -->
         <div class="newsletter_subscription hidden_phone">
             <div class="newsletter_content_container">
                 <h3 class="caps hidden_phone">{{$t("footer.newsletter")}}</h3>
@@ -89,10 +89,10 @@
                 this.loadData().then(response => {
                     this.dataLoaded = true;
                     
-                    var temp_repo = this.findRepoByName('Footer Banner');
-                    if(temp_repo) {
-                        this.footerBanner = temp_repo.images[0];
-                    }
+                    // var temp_repo = this.findRepoByName('Footer Banner');
+                    // if(temp_repo) {
+                    //     this.footerBanner = temp_repo.images[0];
+                    // }
                 });
             },
             computed: {
