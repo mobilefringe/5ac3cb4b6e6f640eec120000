@@ -73,5 +73,66 @@
 </template>
 
 <script>
-var _extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e};define(["Vue","vuex","moment","moment-timezone","vue-moment","vue!search-component"],function(e,t,n){return e.component("footer-component",{template:template,data:function(){return{footerBanner:null,suggestionAttribute:"name",search:"",newsletter_email:""}},props:["footer_menu_items","social_media"],created:function(){var e=this;this.loadData().then(function(){e.dataLoaded=!0;var t=e.findRepoByName("Footer Banner");t&&(e.footerBanner=t.images[0])})},computed:_extends({},t.mapGetters(["property","findRepoByName","processedStores"]),{locale:{get:function(){return this.$store.state.locale},set:function(e){this.$store.commit("SET_LOCALE",{lang:e})}},copyright_year:function(){return n().year()}}),methods:{loadData:function(){var e;return regeneratorRuntime.async(function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,regeneratorRuntime.awrap(Promise.all([this.$store.dispatch("getData","repos")]));case 3:e=t.sent,t.next=9;break;case 6:t.prev=6,t.t0=t["catch"](0),console.log("Error loading data: "+t.t0.message);case 9:case"end":return t.stop()}},null,this,[[0,6]])},changeLocale:function(e){this.locale=e},onOptionSelect:function(e){console.log("Selected option:",e),this.$nextTick(function(){this.search=""}),this.$router.push("/stores/"+e.slug)}}})});
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue!search-component"], function (Vue, Vuex, moment, tz, VueMoment, SearchComponent) {
+        return Vue.component("footer-component", {
+            template: template, // the variable template will be injected,
+            data: function data() {
+                return {
+                    footerBanner: null,
+                    suggestionAttribute: 'name',
+                    search: '',
+                    newsletter_email: "",
+                }
+            },
+            props:['footer_menu_items', 'social_media'],
+            created() {
+                this.loadData().then(response => {
+                    this.dataLoaded = true;
+                    
+                    var temp_repo = this.findRepoByName('Footer Banner');
+                    if(temp_repo) {
+                        this.footerBanner = temp_repo.images[0];
+                    }
+                });
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'findRepoByName',
+                    'processedStores'
+                ]),
+                locale: {
+                    get () {
+                        return this.$store.state.locale
+                    },
+                    set (value) {
+                        this.$store.commit('SET_LOCALE', { lang: value })
+                    }
+                },
+                copyright_year() {
+                    return moment().year();
+                }
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+                changeLocale: function(val) {
+                    // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+                    this.locale = val; 
+                },
+                onOptionSelect(option) {
+                    console.log('Selected option:', option);
+                    this.$nextTick(function() {
+                        this.search = ""
+                    });
+                    this.$router.push("/stores/" + option.slug);
+                }
+            }
+        });
+    });
 </script>
