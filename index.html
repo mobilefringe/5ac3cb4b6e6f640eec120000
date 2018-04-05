@@ -29,9 +29,11 @@
 					<router-view class="content" :locale="locale" ></router-view>
 				</transition>
 				
-				<chatbot></chatbot>
+				
 				
 				<footer-component :footer_menu_items="footer_menu_items" :social_media="social_media" v-if="dataLoaded"></footer-component>
+				
+				<chatbot></chatbot>
 			</div>
 		</div>
 		
