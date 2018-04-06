@@ -1,46 +1,59 @@
-.slider-wr {
-  width: 80%;
-  padding: 0 8px;
-  margin: 20px auto;
-  box-sizing: border-box;
+.banner_option_1 {
+    margin: 20px auto;
+    padding: 0 8px;
+    width: 80%;
+    box-sizing: border-box;
+    .slick-slide {
+        padding: 0 8px;
+        box-sizing: border-box;
+        .banner {
+            max-width: 100%;
+            position: relative;
+            transform: scale(0.9);
+            transition: all 1s ease-out;
+            opacity: 0.5;    
+        }
+    }
+    .slick-slide.slick-center .banner {
+        transform: scale(1.1);
+        transition: all 1s ease-out;
+        opacity: 1;    
+    }
 }
-.slide {
-  padding: 0 8px;
-  box-sizing: border-box;
-}
-.slide img {
-  max-width: 100%;
-  position: relative;
-  transform: scale(0.9);
-  transition: all 1s ease-out;
-  opacity: 0.5;
-}
-.slide.slick-center img {
-  transform: scale(1.1);
-  transition: all 1s ease-out;
-  opacity: 1;
-}
-.slick-prev, .slick-next {
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    margin: auto;
-    position: absolute;
-    z-index: 3000;
-    top: 0;
-    bottom: 0;
-    background: url(http://prague-camp.ru/theme/prague-camp/images/split.png) no-repeat,#aaa;
-    -webkit-box-shadow: 3px 1px 0 rgba(0,0,0,0.15), -1px 3px 0 rgba(0,0,0,0.15);
-    box-shadow: 3px 1px 0 rgba(0,0,0,0.15), -1px 3px 0 rgba(0,0,0,0.15);
-    cursor: pointer;
-    outline: none;
-}
-.slick-prev {
-    left: -30px;
-    background-position: -220px -20px;
-}
-.slick-next {
-    right: -30px;
-    background-position: -320px -20px;
-}
+
+// .slide img {
+//   max-width: 100%;
+//   position: relative;
+//   transform: scale(0.9);
+//   transition: all 1s ease-out;
+//   opacity: 0.5;
+// }
+// .slide.slick-center img {
+//   transform: scale(1.1);
+//   transition: all 1s ease-out;
+//   opacity: 1;
+// }
+// .slick-prev, .slick-next {
+//     width: 60px;
+//     height: 60px;
+//     border: none;
+//     border-radius: 50%;
+//     margin: auto;
+//     position: absolute;
+//     z-index: 3000;
+//     top: 0;
+//     bottom: 0;
+//     background: url(http://prague-camp.ru/theme/prague-camp/images/split.png) no-repeat,#aaa;
+//     -webkit-box-shadow: 3px 1px 0 rgba(0,0,0,0.15), -1px 3px 0 rgba(0,0,0,0.15);
+//     box-shadow: 3px 1px 0 rgba(0,0,0,0.15), -1px 3px 0 rgba(0,0,0,0.15);
+//     cursor: pointer;
+//     outline: none;
+// }
+// .slick-prev {
+//     left: -30px;
+//     background-position: -220px -20px;
+// }
+// .slick-next {
+//     right: -30px;
+//     background-position: -320px -20px;
+// }
