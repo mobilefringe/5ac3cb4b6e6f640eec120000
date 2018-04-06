@@ -8,7 +8,13 @@
                     <div>
         		        <h3 class="home_page_title caps">{{$t("home_page.twitter_feed")}}</h3>
         		    </div>
-        		    
+        		    <div>
+        		        <slick ref="slick" :options="slickOptions">
+        					<div class="" v-for="banner in banners" v-if="banners">
+        						<div class="home_banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
+        					</div>
+        				</slick>
+        		    </div>
                 </div>
             </div>
         </transition>
@@ -22,6 +28,9 @@
             data: function() {
                 return {
                     dataLoaded: false,
+                    banners: [{
+                        "image_url", "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg"
+                    }]
                     
                 }
             },
