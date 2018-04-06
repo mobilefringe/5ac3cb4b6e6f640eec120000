@@ -39,6 +39,12 @@
     }
 }
 
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
 .banner_option_1 {
     margin: 20px auto;
     padding: 0 8px;
