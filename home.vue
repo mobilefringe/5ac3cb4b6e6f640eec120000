@@ -30,8 +30,12 @@
                         	        <a class="tile" :href="feature.url">
                             			<img :src="feature.image_url" :alt="feature.name">
                         				<div class="details" v-if="feature.name && feature.description">
-                        					<span class="title" v-if="locale=='en-ca'">{{ feature.name }}</span>
-                        					<span class="title" v-else>{{ feature.name_2 }}</span>
+                        					<span class="title" v-if="locale=='en-ca'">
+                        					    <h3>{{ feature.name }}</h3>
+                    					    </span>
+                        					<span class="title" v-else>
+                        					    <h3>{{ feature.name_2 }}</h3>
+                    					    </span>
                         					<span class="info" v-if="locale=='en-ca'">{{ feature.description }}</span>
                         					<span class="info" v-else>{{ feature.description_2 }}</span>
                         				</div>
