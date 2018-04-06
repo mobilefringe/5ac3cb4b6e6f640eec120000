@@ -1,7 +1,49 @@
+.prev {
+    position: absolute;
+    top: 35%;
+    -moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    left: -28px;
+    &:after {
+        content: '\f104';
+        font-family: FontAwesome;
+        font-size: 2.75rem;
+        font-weight: normal;
+        font-style: normal;
+        color: #000;    
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.next {
+    position: absolute;
+    top: 35%;
+    -moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    right: -36px;
+    &:after {
+        content: '\f105';
+        font-family: FontAwesome;
+        font-size: 2.75rem;
+        font-weight: normal;
+        font-style: normal;
+        color: #000;    
+    } 
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .banner_option_1 {
     margin: 20px auto;
     padding: 0 8px;
     width: 80%;
+    position: relative;
     box-sizing: border-box;
     .slick-slide {
         padding: 0 8px;
