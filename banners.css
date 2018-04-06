@@ -1,6 +1,6 @@
 .prev {
     position: absolute;
-    top: 35%;
+    top: 50%;
     -moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
@@ -20,7 +20,7 @@
 }
 .next {
     position: absolute;
-    top: 35%;
+    top: 50%;
     -moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
