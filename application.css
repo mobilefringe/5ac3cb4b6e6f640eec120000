@@ -1,26 +1,5 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@font-face {
-    font-family: 'Didot-Regular';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000//1520382344000/Didot.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/application/font-woff/1520382344000/Didot.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Didot-Italic';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000//1519771652000/Didot-Italic.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000//1519771652000/Didot-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Didot-Bold';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000//1519280304000/DidotLTStd-Bold.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000//1519280304000/DidotLTStd-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
 
 /* COLOUR VARIABLES */
 $primary: #BADA55;
@@ -48,20 +27,17 @@ body {
     transition: all 0.3s ease;
 }
 h1 {
-    font-family: 'Didot-Bold';
     font-size: 4.85rem;
     line-height: 6.1875rem;
     color: #FFF;
 }
 h2 {
     margin: 0;
-    font-family: 'Didot-Bold';
     font-size: 3.5rem;
     line-height: 4.625rem;
 }
 h3 {
     margin: 0;
-    font-family: 'Didot-Bold';
     font-size: 1.875rem;
     line-height: 2.5rem;
 }
@@ -71,7 +47,6 @@ h4 {
 }
 h5 {
     margin: 0;
-    font-family: 'Didot-Bold';
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
@@ -137,7 +112,7 @@ hr {
     margin-right: auto;
 }
 strong, .bold {
-    font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 700;
 }
 .caps {
@@ -444,7 +419,6 @@ footer {
             color: inherit;
         }
         h3 {
-            font-family: 'Didot-Italic';
             letter-spacing: 1.6px;
         }
         .newsletter_desc {
@@ -466,28 +440,24 @@ footer {
             color: $primary;
         }
         ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-family: 'Didot-Bold';
             font-size: 1.125rem;
             line-height: 2.125rem;
             color: #FFF;   
             text-transform: uppercase;
         }
         ::-moz-placeholder { /* Firefox 19+ */
-            font-family: 'Didot-Bold';
             font-size: 1.125rem;
             line-height: 2.125rem;
             color: #FFF;   
             text-transform: uppercase;
         }
         :-ms-input-placeholder { /* IE 10+ */
-            font-family: 'Didot-Bold';
             font-size: 1.125rem;
             line-height: 2.125rem;
             color: #FFF;   
             text-transform: uppercase;
         }
         :-moz-placeholder { /* Firefox 18- */
-            font-family: 'Didot-Bold';
             font-size: 1.125rem;
             line-height: 2.125rem;
             color: #FFF;   
@@ -523,7 +493,6 @@ footer {
             float: right;
             border: 1px solid transparent;
             background: rgba(0,0,0,0.5);
-            font-family: 'Didot-Bold';
             font-size: 1.125rem;
             line-height: 2.125rem;
             color: #FFF;   
@@ -596,13 +565,11 @@ footer {
         text-align: center;
         h1 {
             margin: 0;
-            font-family: 'Didot-Bold';
             font-size: 9.375rem;
             line-height: 9.375rem;
         }
         p {
             margin: 0;
-            font-family: 'Didot-Italic';
             font-size: 4.5rem;
             line-height: 4.25rem;
             text-transform: uppercase;
@@ -863,7 +830,6 @@ footer {
         p {
             margin: 0;
             position: relative;
-            font-family: 'Didot-Bold';
             font-size: 0.875rem;
             line-height: 1.375rem;
             &:after {
@@ -907,7 +873,6 @@ footer {
     min-width: 156px;
     border: 1px solid #000;
     background: #FFF;
-    font-family: 'didot-bold';
     font-size: 0.75rem;
     line-height: 1.25rem;
     text-align: center;
@@ -1010,28 +975,24 @@ footer {
             line-height: 1.5rem;
         }
         ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-family: 'Didot-Regular';
             font-size: 1.5rem;
             line-height: 2.125rem;
             color: #4D4D4D;   
             text-transform: uppercase;
         }
         ::-moz-placeholder { /* Firefox 19+ */
-            font-family: 'Didot-Regular';
             font-size: 1.5rem;
             line-height: 2.125rem;
             color: #4D4D4D;   
             text-transform: uppercase;
         }
         :-ms-input-placeholder { /* IE 10+ */
-            font-family: 'Didot-Regular';
             font-size: 1.5rem;
             line-height: 2.125rem;
             color: #4D4D4D;   
             text-transform: uppercase;
         }
         :-moz-placeholder { /* Firefox 18- */
-            font-family: 'Didot-Regular';
             font-size: 1.5rem;
             line-height: 2.125rem;
             color: #4D4D4D;  
@@ -1090,7 +1051,6 @@ footer {
     }
     a {
         position: relative;
-        font-family: 'Didot-Bold';
         font-size: 1.25rem;
         line-height: 1.5625rem;
         color: #000;
@@ -1137,28 +1097,24 @@ footer {
         .input {
             color: #FFF;
             &::-webkit-input-placeholder {
-                font-family: 'Didot-Regular';
                 font-size: 1.25rem;
                 color: #FFF;
                 
                 transition: color 0.2s ease;
             }
             &:-moz-placeholder { /* Firefox 18- */
-                font-family: 'Didot-Regular';
                 font-size: 1.25rem;
                 color: #FFF;
                 -webkit-transition: color 0.2s ease;
                 transition: color 0.2s ease;
             }
             &::-moz-placeholder {  /* Firefox 19+ */
-                font-family: 'Didot-Regular';
                 font-size: 1.25rem;
                 color: #FFF;
                 -webkit-transition: color 0.2s ease;
                 transition: color 0.2s ease;
             }
             &:-ms-input-placeholder {  
-                font-family: 'Didot-Regular';
                 font-size: 1.25rem;
                 color: #FFF;
                 -webkit-transition: color 0.2s ease;
@@ -1226,7 +1182,6 @@ footer {
     }
     .store_name {
         padding: 2px 0;
-        font-family: 'Didot-Regular';
         font-size: 0.9375rem;
         line-height: 1.5rem;  
         transition: all 0.3s ease;
@@ -1376,7 +1331,6 @@ footer {
         .promo_title {
             margin: 48px 0 16px 0;
             position: relative;
-            font-family: 'didot-bold';
             font-size: 0.625rem;
             line-height: normal;
             text-align: center;
@@ -1406,7 +1360,6 @@ footer {
             left: 50%;
             transform: translateX(-50%);
             border: 1px solid #000;
-            font-family: 'didot-bold';
             font-size: 0.75rem;
             line-height: 1.25rem;
             text-align: center;
@@ -1502,7 +1455,6 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         border: 1px solid #000;
-        font-family: 'didot-bold';
         font-size: 0.75rem;
         line-height: 1.25rem;
         text-transform: uppercase;
@@ -1543,7 +1495,6 @@ footer {
     }
     .job_desc_title {
         margin: 0;
-        font-family: 'Didot-Bold';
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
@@ -1584,25 +1535,21 @@ footer {
                 border: 2px solid #000;    
             }
             &::-webkit-input-placeholder {
-                font-family: 'Didot-Regular';
                 font-size: 1.5rem;
                 line-height: normal;
                 color: #000;
             }
             &:-moz-placeholder { /* Firefox 18- */
-                font-family: 'Didot-Regular';
                 font-size: 1.5rem;
                 line-height: normal;
                 color: #000;
             }
             &::-moz-placeholder {  /* Firefox 19+ */
-                font-family: 'Didot-Regular';
                 font-size: 1.5rem;
                 line-height: normal;
                 color: #000;
             }
             &:-ms-input-placeholder {  
-                font-family: 'Didot-Regular';
                 font-size: 1.5rem;
                 line-height: normal;
                 color: #000;
@@ -1646,7 +1593,6 @@ footer {
     .stores_button_container.map_link {
         padding: 14px 10px;
         border: 2px solid transparent;
-        font-family: 'Didot-Regular';
         font-size: 1.5rem;
         line-height: normal;
         color: #000;
@@ -1682,7 +1628,6 @@ footer {
         .form-control {
             height: 60px;
             cursor: pointer;
-            font-family: 'Didot-Regular';
             font-size: 1.5rem;
             line-height: normal;
         }
@@ -1807,7 +1752,6 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         border: 1px solid #000;
-        font-family: 'didot-bold';
         font-size: 0.75rem;
         line-height: 1.25rem;
         text-transform: uppercase;
@@ -1932,9 +1876,9 @@ footer {
             margin: 0 10px;
         }
     }
-    .mobile_property_address p {
-        font-family: 'Didot-Regular';
-    }
+    // .mobile_property_address p {
+    //     font-family: 'Didot-Regular';
+    // }
     /* *** FOOTER *** */
     footer {
         background-image: none !important;
