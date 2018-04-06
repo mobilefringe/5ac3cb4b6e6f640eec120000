@@ -36,8 +36,12 @@
                         					<span class="title" v-else>
                         					    <h3>{{ feature.name_2 }}</h3>
                     					    </span>
-                        					<span class="info" v-if="locale=='en-ca'">{{ feature.description }}</span>
-                        					<span class="info" v-else>{{ feature.description_2 }}</span>
+                        					<span class="info" v-if="locale=='en-ca'">
+                        					    <p>{{ feature.description }}</p>
+                    					    </span>
+                        					<span class="info" v-else>
+                        					    <p>{{ feature.description_2 }}</p>
+                    					    </span>
                         				</div>
                             		</a>
                         	    </div>
