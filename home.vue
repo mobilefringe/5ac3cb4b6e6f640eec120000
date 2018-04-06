@@ -27,16 +27,14 @@
                         <div v-masonry-tile class="item" >
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                         	    <div class="feature_item_container">
-                        	        <a :href="feature.url">
+                        	        <a class="tile" :href="feature.url">
                             			<img :src="feature.image_url" alt="name">
-                            			<div class="feature_item_info" v-if="feature.name && feature.description ">
-                            				<div class="details">
-                            					<span class="title" v-if="locale=='en-ca'">{{ feature.name }}</span>
-                            					<span class="title" v-else>{{ feature.name_2 }}</span>
-                            					<span class="info" v-if="locale=='en-ca'">{{ feature.description }}</span>
-                            					<span class="info" v-else>{{ feature.description_2 }}</span>
-                            				</div>
-                            			</div>
+                        				<div class="details" v-if="feature.name && feature.description">
+                        					<span class="title" v-if="locale=='en-ca'">{{ feature.name }}</span>
+                        					<span class="title" v-else>{{ feature.name_2 }}</span>
+                        					<span class="info" v-if="locale=='en-ca'">{{ feature.description }}</span>
+                        					<span class="info" v-else>{{ feature.description_2 }}</span>
+                        				</div>
                             		</a>
                         	    </div>
                             </div>
