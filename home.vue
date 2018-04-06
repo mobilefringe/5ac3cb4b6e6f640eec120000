@@ -28,7 +28,7 @@
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                         	    <div class="feature_item_container">
                         	        <a class="tile" :href="feature.url">
-                            			<img :src="feature.image_url" alt="name">
+                            			<img :src="feature.image_url" :alt="feature.name">
                         				<div class="details" v-if="feature.name && feature.description">
                         					<span class="title" v-if="locale=='en-ca'">{{ feature.name }}</span>
                         					<span class="title" v-else>{{ feature.name_2 }}</span>
