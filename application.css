@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face {
     font-family: 'Didot-Regular';
     src: url('//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000//1520382344000/Didot.woff2') format('woff2'),
@@ -30,7 +30,7 @@ $font: #000;
 $social: #000;
 $link: #000;
 
-$font_family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+$font_family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 
 [v-cloak] {
     display: none!important;
