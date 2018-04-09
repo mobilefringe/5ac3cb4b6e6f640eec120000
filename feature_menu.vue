@@ -1,8 +1,8 @@
 <template>
     <div v-if="dataLoaded">
-        <div class="wrapper">
-            <ul>
-                <li>
+        <div class="feature_menu_wrapper">
+            <ul class="feature_menu_list">
+                <li class="feature_menu_item">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <div class="slider">
                         <p>home</p>
