@@ -23,7 +23,7 @@
             data: function () {
                 return {
                     showChat: false,
-                    chatURL: 'http://preview-twinpines.codecloudapp.com/chat.html',
+                    chatURL: 'http://twinpines.codecloudapp.com/chat.html',
                 };
             },
             watch: {
