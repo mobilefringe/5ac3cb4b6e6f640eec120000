@@ -47,22 +47,20 @@
                 };
             },
             created () {
-                this.loadData().then(response => {
-                   
-                    
+                // this.loadData().then(response => {
                     this.dataLoaded = true;
-                });
+                // });
             },
-            methods: {
-                loadData: async function() {
-                    try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: "http://billingsbridge.mallmaverick.com/api/v3/billings/social.json"})]);
-                        return results;
-                    } catch (e) {
-                        console.log("Error loading data: " + e.message);
-                    }
-                }
-            }
+            // methods: {
+            //     loadData: async function() {
+            //         try {
+            //             let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: "http://billingsbridge.mallmaverick.com/api/v3/billings/social.json"})]);
+            //             return results;
+            //         } catch (e) {
+            //             console.log("Error loading data: " + e.message);
+            //         }
+            //     }
+            // }
         });
     });
 </script>
