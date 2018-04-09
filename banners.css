@@ -103,9 +103,9 @@
             }
         }
     }
-    // .slick-slide.slick-center .banner {
+    .slick-slide.slick-active .banner {
     //     transform: scale(1.1);
     //     transition: all 1s ease-out;
-    //     opacity: 1;    
-    // }
+        opacity: 1;    
+    }
 }
