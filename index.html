@@ -26,7 +26,7 @@
 			<div class="main_content_container" v-if="dataLoaded">
 			    <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded"></header-component>
 			    
-			    <feature-menu-component></feature-menu-component>
+			    <feature-menu></feature-menu>
 			    
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
 					<router-view class="content" :locale="locale" ></router-view>
