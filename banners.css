@@ -1,4 +1,4 @@
-.prev {
+.banner_prev {
     position: absolute;
     top: 50%;
     -moz-transform: translate(-50%, -50%);
@@ -18,7 +18,7 @@
         cursor: pointer;
     }
 }
-.next {
+.banner_next {
     position: absolute;
     top: 50%;
     -moz-transform: translate(-50%, -50%);
