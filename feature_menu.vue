@@ -8,25 +8,25 @@
                         <p>home</p>
                     </div>
                 </li>
-                <li>
+                <li class="feature_menu_item">
                     <i class="fa fa-file" aria-hidden="true"></i>
                     <div class="slider">
                         <p>files</p>
                     </div>
                 </li>
-                <li class="home">
+                <li class="feature_menu_item">
                     <i class="fa fa-download" aria-hidden="true"></i>
                     <div class="slider">
                         <p>downloads</p>
                     </div>
                 </li>
-                <li>
+                <li class="feature_menu_item">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <div class="slider">
                         <p>notifications</p>
                     </div>
                 </li>
-                <li>
+                <li class="feature_menu_item">
                     <i class="fa fa-cog" aria-hidden="true"></i>
                     <div class="slider">
                         <p>settings</p>
