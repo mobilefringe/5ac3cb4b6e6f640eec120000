@@ -39,6 +39,11 @@
             cursor: pointer;
         }
     }
+    .slick-dots button {
+        background-color: #FFF;
+        border: 2px solid #FFF;
+        opacity: 0.5;
+    }
 }
 
 .banner {
