@@ -90,17 +90,6 @@
             transform: translate3d(-100%,0,0);
             transition: all 1s ease;
             width: 100%;
-  
-            &::after {
-                color: #FFF;
-                content: attr(data-content);
-                font-size: 2.5em;
-                font-family: 'Consolas' arial, sans-serif;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate3d(-50%, -50%, 0); 
-            }
         }
     }
     .slick-slide.slick-active .banner {
