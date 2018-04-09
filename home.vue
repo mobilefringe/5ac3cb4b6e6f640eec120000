@@ -128,7 +128,9 @@
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [8]);
                     this.instaFeed.map(insta => {
-                        insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
+                        if(insta.caption.text != null){
+                            insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
+                        }
                     });
 
                     this.dataLoaded = true;
