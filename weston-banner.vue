@@ -344,7 +344,7 @@
 
 <script>
     define(["Vue", "vue!vue-slick"], function (Vue, slick) {
-        return Vue.component("instagram", {
+        return Vue.component("weston-banner", {
             template: template, // the variable template will be injected,
             data: function() {
                 return {
