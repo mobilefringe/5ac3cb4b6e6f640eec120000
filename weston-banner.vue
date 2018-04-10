@@ -93,6 +93,7 @@
     padding-bottom: 10px;
     color: #fff;
     text-align: left;
+    text-transform: uppercase;
 }
 .banner-content-txt p {
     margin-left: 30px;
