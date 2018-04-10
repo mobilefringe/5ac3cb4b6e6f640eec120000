@@ -63,30 +63,30 @@
 }
 
 /* Legend */
-.banner-legend{
-  border:500px solid transparent;
-  border-left:800px solid rgba(52, 73, 94, .7);
-  border-bottom:0;
-  position:absolute;
-  bottom:0;
+.banner-legend {
+    position: absolute;
+    bottom: 0;
+    border: 796px solid transparent;
+    border-left: 796px solid rgba(0, 0, 0, .7);
+    border-bottom: 0;
 }
 
 /* Contents */
 .banner-content{
-  width:100%;
-  height:100%;
-  position:absolute;
-  overflow:hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
 }
 .banner-content-txt{
-  width:400px;
-  height:150px;
-  float:left;
-  position:relative;
-  top:300px;
-  -webkit-animation:content-s 7.5s infinite;
-  -moz-animation:content-s 7.5s infinite;
-  animation:content-s 7.5s infinite;
+    width: 400px;
+    height: 150px;
+    /*float: left;*/
+    position: absolute;
+    bottom: 0;
+    -webkit-animation:content-s 7.5s infinite;
+    -moz-animation:content-s 7.5s infinite;
+    animation:content-s 7.5s infinite;
 }
 .banner-content-txt h3 {
     margin: 0 0 10px 30px;
