@@ -7,8 +7,8 @@
                     <div class="banner-legend"></div> 
                     <div class="banner-content"> 
                         <div class="banner-content-txt"> 
-                            <h1> Your title </h1> 
-                            <h2> Your description </h2> 
+                            <h3> Your title </h3> 
+                            <p> Your description </p> 
                         </div> 
                     </div> 
                     <div class="images"> 
