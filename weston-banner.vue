@@ -125,16 +125,16 @@
 .switch ul{
   overflow:hidden;
 }
-.slick-slide.slick-active .banner-content-txt {
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  background:#f39c12;
-  position:relative;
-  -webkit-animation:on 30s infinite;
-  -moz-animation:on 30s infinite;
-  animation:on 30s infinite;
-}
+/*.slick-slide.slick-active .banner-content-txt {*/
+/*  width:100%;*/
+/*  height:100%;*/
+/*  border-radius:50%;*/
+/*  background:#f39c12;*/
+/*  position:relative;*/
+/*  -webkit-animation:on 30s infinite;*/
+/*  -moz-animation:on 30s infinite;*/
+/*  animation:on 30s infinite;*/
+/*}*/
 
 /* Animation */
 @-webkit-keyframes slide{
