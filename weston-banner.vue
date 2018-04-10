@@ -5,9 +5,9 @@
 	        <slick ref="slick" :options="westonOptions">
 				<div class="" v-for="banner in banners" v-if="banners">
 					<div class="slider">
-                        <div class="legend"></div> 
-                        <div class="content"> 
-                            <div class="content-txt"> 
+                        <div class="banner-legend"></div> 
+                        <div class="banner-content"> 
+                            <div class="banner-content-txt"> 
                                 <h1> Your title </h1> 
                                 <h2> Your description </h2> 
                             </div> 
@@ -64,7 +64,7 @@
 }
 
 /* Legend */
-.legend{
+.banner-legend{
   border:500px solid transparent;
   border-left:800px solid rgba(52, 73, 94, .7);
   border-bottom:0;
@@ -73,39 +73,39 @@
 }
 
 /* Contents */
-/*.content{*/
-/*  width:100%;*/
-/*  height:100%;*/
-/*  position:absolute;*/
-/*  overflow:hidden;*/
-/*}*/
-/*.content-txt{*/
-/*  width:400px;*/
-/*  height:150px;*/
-/*  float:left;*/
-/*  position:relative;*/
-/*  top:300px;*/
-/*  -webkit-animation:content-s 7.5s infinite;*/
-/*  -moz-animation:content-s 7.5s infinite;*/
-/*  animation:content-s 7.5s infinite;*/
-/*}*/
-/*.content-txt h1{*/
-/*  font-family:Intro;*/
-/*  font-size:24px;*/
-/*  color:#fff;*/
-/*  text-align:left;*/
-/*  margin-left:30px;*/
-/*  padding-bottom:10px;*/
-/*}*/
-/*.content-txt h2{*/
-/*  font-family:Quicksand;*/
-/*  font-weight:normal;*/
-/*  font-size:14px;*/
-/*  font-style:italic;*/
-/*  color:#fff;*/
-/*  text-align:left;*/
-/*  margin-left:30px;*/
-/*}*/
+.banner-content{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+}
+.banner-content-txt{
+  width:400px;
+  height:150px;
+  float:left;
+  position:relative;
+  top:300px;
+  -webkit-animation:content-s 7.5s infinite;
+  -moz-animation:content-s 7.5s infinite;
+  animation:content-s 7.5s infinite;
+}
+.banner-content-txt h1{
+  font-family:Intro;
+  font-size:24px;
+  color:#fff;
+  text-align:left;
+  margin-left:30px;
+  padding-bottom:10px;
+}
+.banner-content-txt h2{
+  font-family:Quicksand;
+  font-weight:normal;
+  font-size:14px;
+  font-style:italic;
+  color:#fff;
+  text-align:left;
+  margin-left:30px;
+}
 
 /* Switch */
 .switch{
