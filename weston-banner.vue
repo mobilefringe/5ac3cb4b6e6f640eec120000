@@ -89,15 +89,14 @@
   animation:content-s 7.5s infinite;
 }
 .banner-content-txt h3 {
-    margin-left: 30px;
-    padding-bottom: 10px;
-    color: #fff;
+    margin: 0 0 10px 30px;
+    color: #FFF;
     text-align: left;
     text-transform: uppercase;
 }
 .banner-content-txt p {
     margin-left: 30px;
-    color: #fff;
+    color: #FFF;
     text-align :left;
 }
 
