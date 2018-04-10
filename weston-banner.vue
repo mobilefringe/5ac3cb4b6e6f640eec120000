@@ -1,26 +1,24 @@
 <template>
-    <div class="insta_feed_container">
-        <div class="banners banner_option_2">
-	        <div class="prev"></div>
-	        <slick ref="slick" :options="westonOptions">
-				<div class="" v-for="banner in banners" v-if="banners">
-					<div class="slider">
-                        <div class="banner-legend"></div> 
-                        <div class="banner-content"> 
-                            <div class="banner-content-txt"> 
-                                <h1> Your title </h1> 
-                                <h2> Your description </h2> 
-                            </div> 
-                        </div> 
-                        <div class="images"> 
-                            <img :src="banner.image_url"> 
+    <div id="slider" class="">
+        <div class="prev"></div>
+        <slick ref="slick" :options="westonOptions">
+			<div class="" v-for="banner in banners" v-if="banners">
+				<div class="slider">
+                    <div class="banner-legend"></div> 
+                    <div class="banner-content"> 
+                        <div class="banner-content-txt"> 
+                            <h1> Your title </h1> 
+                            <h2> Your description </h2> 
                         </div> 
                     </div> 
-				</div>
-			</slick>
-			<div class="next"></div>
-	    </div>      
-    </div> 
+                    <div class="images"> 
+                        <img :src="banner.image_url"> 
+                    </div> 
+                </div> 
+			</div>
+		</slick>
+		<div class="next"></div>
+    </div>      
 </template>
 
 <style>
