@@ -87,7 +87,7 @@
     bottom: 0;
     /*-webkit-animation:content-s 7.5s infinite;*/
     /*-moz-animation:content-s 7.5s infinite;*/
-    animation: content-s 7.5s;
+    animation:content-s 7.5s infinite;
 }
 .banner-content-txt h3 {
     margin: 0 0 10px 30px;
@@ -125,15 +125,15 @@
 .switch ul{
   overflow:hidden;
 }
-.on {
+.slick-slide.slick-active .banner-content-text {
   width:100%;
   height:100%;
   border-radius:50%;
   background:#f39c12;
   position:relative;
-  /*-webkit-animation:on 30s infinite;*/
-  /*-moz-animation:on 30s infinite;*/
-  animation:on 30s ;
+  -webkit-animation:on 30s infinite;
+  -moz-animation:on 30s infinite;
+  animation:on 30s infinite;
 }
 
 /* Animation */
