@@ -87,7 +87,7 @@
     bottom: 0;
     /*-webkit-animation:content-s 7.5s infinite;*/
     /*-moz-animation:content-s 7.5s infinite;*/
-    animation:content-s 7.5s infinite;
+    animation:content-s 7.5s;
 }
 .banner-content-txt h3 {
     margin: 0 0 10px 30px;
