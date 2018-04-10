@@ -88,15 +88,13 @@
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
 }
-.banner-content-txt h1{
-  font-family:Intro;
-  font-size:24px;
-  color:#fff;
-  text-align:left;
-  margin-left:30px;
-  padding-bottom:10px;
+.banner-content-txt h3 {
+    margin-left: 30px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: left;
 }
-.banner-content-txt h2{
+.banner-content-txt p{
   font-family:Quicksand;
   font-weight:normal;
   font-size:14px;
