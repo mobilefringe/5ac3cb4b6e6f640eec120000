@@ -94,14 +94,10 @@
     color: #fff;
     text-align: left;
 }
-.banner-content-txt p{
-  font-family:Quicksand;
-  font-weight:normal;
-  font-size:14px;
-  font-style:italic;
-  color:#fff;
-  text-align:left;
-  margin-left:30px;
+.banner-content-txt p {
+    margin-left: 30px;
+    color: #fff;
+    text-align :left;
 }
 
 /* Switch */
