@@ -1,8 +1,9 @@
 <template>
     <div id="slider" class="banners">
+        
         <div class="prev"></div>
         <slick ref="slick" :options="westonOptions">
-			<div class="" v-for="banner in banners" v-if="banners">
+			<div class="slides" v-for="banner in banners" v-if="banners">
 				<div class="slider">
                     <div class="banner-legend"></div> 
                     <div class="banner-content"> 
@@ -23,30 +24,30 @@
 
 <style>
 /* Slider */
-#slider{
-  width:100%;
-  height:500px;
-  position:relative;
-  overflow:hidden;
+#slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
 }
-.slides{
-  width:100%;
-  height:400%;
-  position:relative;
-  -webkit-animation:slide 30s infinite;
-  -moz-animation:slide 30s infinite;
-  animation:slide 30s infinite;
+.slides {
+    width: 100%;
+    height: 400%;
+    position: relative;
+    -webkit-animation: slide 30s infinite;
+    -moz-animation: slide 30s infinite;
+    animation: slide 30s infinite;
 }
-.slider{
-  width:100%;
-  height:25%;
-  position:relative;
-  z-index:1;
-  overflow:hidden;
+.slider {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
-.slide img{
-  width:100%;
-  height:100%;
+.slide img {
+    width: 100%;
+    height: 100%;
 }
 .slide img{
   width:100%;
