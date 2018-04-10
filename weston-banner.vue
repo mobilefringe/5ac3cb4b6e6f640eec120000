@@ -125,7 +125,7 @@
 .switch ul{
   overflow:hidden;
 }
-.slick-slide.slick-active .banner-content-text {
+.slick-slide.slick-active .banner-content-txt {
   width:100%;
   height:100%;
   border-radius:50%;
