@@ -356,12 +356,11 @@
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg" }
                     ],
                     westonOptions: {
-                        centerMode: true,
-                        centerPadding: '25%',
+                    
                         slidesToShow: 1,
                         speed: 1000,
-                        nextArrow: '.banner_option_1 .next',
-                        prevArrow: '.banner_option_1 .prev',
+                        // nextArrow: '.banner_option_1 .next',
+                        // prevArrow: '.banner_option_1 .prev',
                     }
                 }
             },
