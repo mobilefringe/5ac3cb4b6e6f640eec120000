@@ -3,7 +3,7 @@
         
         <div class="prev"></div>
         <slick ref="slick" :options="westonOptions">
-			<div class="slides" v-for="banner in banners" v-if="banners">
+			<div class="" v-for="banner in banners" v-if="banners">
 				<div class="slider">
                     <div class="banner-legend"></div> 
                     <div class="banner-content"> 
