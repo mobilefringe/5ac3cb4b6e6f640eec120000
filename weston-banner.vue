@@ -357,7 +357,7 @@
                     ],
                     westonOptions: {
                         autoplay: true,
-                        autoplaySpeed: 6000,
+                        // autoplaySpeed: 6000,
                         cssEase: 'ease',
                         dots: true,
                         infinite: true,
