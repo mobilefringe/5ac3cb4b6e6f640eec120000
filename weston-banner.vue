@@ -1,6 +1,25 @@
 <template>
     <div class="insta_feed_container">
-          
+        <div class="banners banner_option_2">
+	        <div class="prev"></div>
+	        <slick ref="slick" :options="westonOptions">
+				<div class="" v-for="banner in banners" v-if="banners">
+					<div class="slider">
+                        <div class="legend"></div> 
+                        <div class="content"> 
+                            <div class="content-txt"> 
+                                <h1> Your title </h1> 
+                                <h2> Your description </h2> 
+                            </div> 
+                        </div> 
+                        <div class="images"> 
+                            <img :src="banner.image_url"> 
+                        </div> 
+                    </div> 
+				</div>
+			</slick>
+			<div class="next"></div>
+	    </div>      
     </div> 
 </template>
 
@@ -327,32 +346,42 @@
     define(["Vue", "vue!vue-slick"], function (Vue, slick) {
         return Vue.component("instagram", {
             template: template, // the variable template will be injected,
-            data: function () {
+            data: function() {
                 return {
                     dataLoaded: false,
-                    instaUser: null,
-                    instaFeed: null,
-                };
-            },
-            created () {
-                this.loadData().then(response => {
-                    var instaFeed = response[0].data;
-                    var insta_feed = instaFeed.social.instagram;
-                    this.instaUser = insta_feed[0];
-                    this.instaFeed = _.slice(insta_feed, [0], [9]);
-                    
-                    this.dataLoaded = true;
-                });
-            },
-            methods: {
-                loadData: async function() {
-                    try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: "http://stlaurent.mallmaverick.com/api/v3/stlaurent/social.json"})]);
-                        return results;
-                    } catch (e) {
-                        console.log("Error loading data: " + e.message);
+                    banners: [
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg" }
+                    ],
+                    westonOptions: {
+                        centerMode: true,
+                        centerPadding: '25%',
+                        slidesToShow: 1,
+                        speed: 1000,
+                        nextArrow: '.banner_option_1 .next',
+                        prevArrow: '.banner_option_1 .prev',
                     }
                 }
+            },
+            created(){
+                // this.loadData().then(response => {
+                //   this.dataLoaded = true;
+                // });
+            },
+            computed: {
+                
+            },
+            methods: {
+                // loadData: async function() {
+                //     try {
+                //         let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
+                //         return results;
+                //     } catch (e) {
+                //         console.log("Error loading data: " + e.message);
+                //     }
+                // }
             }
         });
     });
