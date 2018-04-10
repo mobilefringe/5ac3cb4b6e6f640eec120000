@@ -354,7 +354,7 @@
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg" }
                     ],
                     westonOptions: {
-                        autoplay: true,
+                        // autoplay: true,
                         // autoplaySpeed: 6000,
                         cssEase: 'ease',
                         dots: true,
