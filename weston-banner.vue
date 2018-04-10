@@ -356,11 +356,14 @@
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg" }
                     ],
                     westonOptions: {
-                    
+                        autoplay: true,
+                        autoplaySpeed: 6000,
+                        cssEase: 'ease',
+                        dots: true,
+                        infinite: true,
+                        nextArrow: '.next',
+                        prevArrow: '.prev',
                         slidesToShow: 1,
-                        speed: 1000,
-                        // nextArrow: '.banner_option_1 .next',
-                        // prevArrow: '.banner_option_1 .prev',
                     }
                 }
             },
