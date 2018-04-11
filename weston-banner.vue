@@ -125,8 +125,7 @@
                         infinite: true,
                         nextArrow: '.next',
                         prevArrow: '.prev',
-                        speed: 500,
-                        vertical: true
+                        speed: 500
                     }
                 }
             }
