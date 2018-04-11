@@ -1,7 +1,7 @@
 <template>
     <div class="banners chrislea">
         <div class="prev"></div>
-        <slick ref="slick" :options="chrisleaOptions" key="banners2">
+        <slick ref="slick" :options="chrisleaOptions">
 			<div class="" v-for="banner in banners" v-if="banners">
 				<div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
 				    <div class="details">
