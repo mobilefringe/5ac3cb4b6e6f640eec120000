@@ -31,7 +31,7 @@
 
 <script>
     define(["Vue", "vue!vue-slick"], function (Vue, slick) {
-        return Vue.component("weston-banner", {
+        return Vue.component("chrislea-banner", {
             template: template, // the variable template will be injected,
             props:['banners'],
             data: function() {
