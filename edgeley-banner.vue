@@ -22,7 +22,7 @@
     padding: 0 8px;
     box-sizing: border-box;
 }
-.edgeley .banner {
+.edgeley .slick-slide .banner {
     max-width: 100%;
     position: relative;
     transform: scale(0.9);
