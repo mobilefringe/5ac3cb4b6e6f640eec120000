@@ -1,4 +1,29 @@
 <template>
+    <div class="banners chrislea">
+        <div class="prev"></div>
+        <slick ref="slick" :options="slickOptions2" key="banners2">
+			<div class="" v-for="banner in banners" v-if="banners">
+				<div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
+				    <div class="details">
+    					<span class="title">
+    					    <h3>{{ banner.name }}</h3>
+					    </span>
+    					<!--<span class="title" v-else>-->
+    					<!--    <h3>{{ feature.name_2 }}</h3>-->
+					    <!--</span>-->
+    					<span class="info">
+    					    <p>{{ banner.description }}</p>
+					    </span>
+    					<!--<span class="info" v-else>-->
+    					<!--    <p>{{ feature.description_2 }}</p>-->
+					    <!--</span>-->
+    				</div>
+				</div>
+			</div>
+		</slick>
+		<div class="next"></div>
+    </div>
+        		    
     <div id="slider" class="banners">
         <div class="prev"></div>
         <slick ref="slick" :options="chrisleaOptions">
