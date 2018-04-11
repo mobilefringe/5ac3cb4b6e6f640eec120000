@@ -1,7 +1,7 @@
 <template>
     <div id="slider" class="banners">
         <div class="prev"></div>
-        <slick ref="slick" :options="westonOptions">
+        <slick ref="slick" :options="chrisleaOptions">
 			<div v-for="banner in banners" v-if="banners">
 				<div class="slider">
                     <div class="banner-legend"></div> 
