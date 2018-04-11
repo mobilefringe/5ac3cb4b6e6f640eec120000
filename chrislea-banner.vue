@@ -1,7 +1,7 @@
 <template>
-    <div class="banners chrislea">
+    <div class="banners chrislea banner_option_2">
         <div class="prev"></div>
-        <slick ref="slick" :options="slickOptions2" key="banners2">
+        <slick ref="slick" :options="chrisleaOptions" key="banners2">
 			<div class="" v-for="banner in banners" v-if="banners">
 				<div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
 				    <div class="details">
@@ -23,27 +23,6 @@
 		</slick>
 		<div class="next"></div>
     </div>
-        		    
-    <div id="slider" class="banners">
-        <div class="prev"></div>
-        <slick ref="slick" :options="chrisleaOptions">
-			<div v-for="banner in banners" v-if="banners">
-				<div class="slider">
-                    <div class="banner-legend"></div> 
-                    <div class="banner-content"> 
-                        <div class="banner-content-txt"> 
-                            <h3>{{ banner.name }}</h3> 
-                            <p>{{ banner.description }}</p> 
-                        </div> 
-                    </div> 
-                    <div class="images"> 
-                        <img :src="banner.image_url"> 
-                    </div> 
-                </div> 
-			</div>
-		</slick>
-		<div class="next"></div>
-    </div>      
 </template>
 
 <style>
@@ -59,13 +38,13 @@
                 return {
                     chrisleaOptions: {
                         autoplay: true,
-                        autoplaySpeed: 8000,
+                        autoplaySpeed: 6000,
                         cssEase: 'ease',
                         dots: true,
                         infinite: true,
-                        nextArrow: '.next',
-                        prevArrow: '.prev',
-                        speed: 500
+                        nextArrow: '.banner_option_2 .next',
+                        prevArrow: '.banner_option_2 .prev',
+                        slidesToShow: 1,
                     }
                 }
             }
