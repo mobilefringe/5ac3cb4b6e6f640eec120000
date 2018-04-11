@@ -6,7 +6,7 @@
                 <button class="slides-nav__next js-next">Next</button>
             </nav>
         </section>
-        <section class="slide" v-for="banner in banners" v-if="banners">
+        <section v-for="(banner, index) in banners" v-if="banners" class="slide" :class="{ 'is-active': index === 0 }">
             <div class="slide__content">
                 <figure class="slide__figure">
                     <div class="slide__img" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
