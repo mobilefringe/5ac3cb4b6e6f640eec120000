@@ -116,8 +116,12 @@
         border: 300px solid transparent;
         border-left: 300px solid rgba(0, 0, 0, .7);
         border-bottom: 0;
-        /*border: 300px solid transparent;*/
-        /*border-left: 300px solid rgba(0, 0, 0, .7);*/
+    }
+    .banner-content-txt h3 {
+        margin: 0 0 10px 10px;
+    }
+    .banner-content-txt p {
+        margin-left: 10px;
     }
 }
 </style>
