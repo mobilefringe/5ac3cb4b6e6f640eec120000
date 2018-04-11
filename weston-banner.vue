@@ -108,7 +108,7 @@
     100% { left: 0; }
 }
 
-@media(max-width: 1024px){
+@media(max-width: 768px){
     .banner {
         height: 300px;
     }   
