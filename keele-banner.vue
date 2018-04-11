@@ -102,7 +102,7 @@
             data: function() {
                 return {
                     keeleOptions: {
-                        autoplay: true,
+                        // autoplay: true,
                         autoplaySpeed: 8000,
                         cssEase: 'ease',
                         dots: true,
