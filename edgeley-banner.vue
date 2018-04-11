@@ -47,7 +47,7 @@
                         autoplay: true,
                         autoplaySpeed: 8000,
                         centerMode: true,
-                        centerPadding: '15%',
+                        centerPadding: '10%',
                         slidesToShow: 1,
                         speed: 1000,
                         nextArrow: '.next',
