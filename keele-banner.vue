@@ -40,18 +40,18 @@
 }
 
 .slide{
-  z-index: -1;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  transition: z-index 1s ease;
-  
-  // Bring active layer to foreground
-  &.is-active{
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    transition: z-index 1s ease;
+}
+/* Bring active layer to foreground */
+.slick-active.is-active{
     z-index: 19;
     transition: z-index 1s ease;
-  }
+}
 </style>
 
 <script>
