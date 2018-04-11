@@ -23,12 +23,13 @@
                 return {
                     edgeleyOptions: {
                         autoplay: true,
-                        autoplaySpeed: 6000,
-                        cssEase: 'ease',
-                        dots: true,
-                        infinite: true,
+                        autoplaySpeed: 8000,
+                        centerMode: true,
+                        centerPadding: '25%',
+                        slidesToShow: 1,
+                        speed: 1000,
                         nextArrow: '.next',
-                        prevArrow: '.prev'
+                        prevArrow: '.prev',
                     }
                 }
             }
