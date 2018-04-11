@@ -33,16 +33,7 @@
             props:['banners'],
             data: function() {
                 return {
-                    keeleOptions: {
-                        // autoplay: true,
-                        autoplaySpeed: 8000,
-                        cssEase: 'ease',
-                        dots: true,
-                        infinite: true,
-                        nextArrow: '.next',
-                        prevArrow: '.prev',
-                        speed: 500
-                    }
+                    
                 }
             }
         });
