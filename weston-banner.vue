@@ -1,5 +1,5 @@
 <template>
-    <div class="weston">
+    <div class="weston banners">
         <div class="prev"></div>
         <slick ref="slick" :options="westonOptions">
 			<div v-for="banner in banners" v-if="banners">
