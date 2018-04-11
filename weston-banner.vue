@@ -113,6 +113,9 @@
         height: 300px;
     }   
     .banner-legend {
+        border: 300px solid transparent;
+        border-left: 300px solid rgba(0, 0, 0, .7);
+        border-bottom: 0;
         /*border: 300px solid transparent;*/
         /*border-left: 300px solid rgba(0, 0, 0, .7);*/
     }
