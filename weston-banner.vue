@@ -114,15 +114,16 @@
     define(["Vue", "vue!vue-slick"], function (Vue, slick) {
         return Vue.component("weston-banner", {
             template: template, // the variable template will be injected,
+            props:['banners'],
             data: function() {
                 return {
                     dataLoaded: false,
-                    banners: [
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg" }
-                    ],
+                    // banners: [
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg" },
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg" },
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg" },
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg" }
+                    // ],
                     westonOptions: {
                         arrows: true,
                         autoplay: true,
