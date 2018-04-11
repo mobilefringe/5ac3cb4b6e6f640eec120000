@@ -100,7 +100,7 @@
     text-align :left;
 }
 .slick-slide.slick-active .banner-content-txt{
-    animation: content-s 7.5s once;
+    animation: content-s 7.5s;
 }
 /* Switch */
 /*.switch{*/
