@@ -39,6 +39,9 @@
                 return {
                     
                 }
+            },
+            created(){
+                SliceSlider.init();    
             }
         });
     });
