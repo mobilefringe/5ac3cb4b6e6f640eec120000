@@ -40,6 +40,9 @@
                     
                 }
             },
+            mounted() {
+                this.SliceSlider.init();
+            },
             created(){
                 // SliceSlider.init();    
             }
