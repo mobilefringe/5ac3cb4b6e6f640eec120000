@@ -44,22 +44,22 @@
     z-index: 1;
     overflow: hidden;
 }
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-.slide img{
-  width:100%;
-  height:100%;
-}
-.image{
-  width:100%;
-  height:100%;
-}
-.image img{
-  width:100%;
-  height:100%;
-}
+/*.slide img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+/*.slide img{*/
+/*  width:100%;*/
+/*  height:100%;*/
+/*}*/
+/*.image{*/
+/*  width:100%;*/
+/*  height:100%;*/
+/*}*/
+/*.image img{*/
+/*  width:100%;*/
+/*  height:100%;*/
+/*}*/
 
 /* Legend */
 .banner-legend {
@@ -86,7 +86,7 @@
     bottom: 0;
     /*-webkit-animation:content-s 7.5s infinite;*/
     /*-moz-animation:content-s 7.5s infinite;*/
-    animation:content-s 7.5s infinite;
+    animation: content-s 7.5s infinite;
 }
 .banner-content-txt h3 {
     margin: 0 0 10px 30px;
@@ -101,29 +101,29 @@
 }
 
 /* Switch */
-.switch{
-    width:120px;
-    height:10px;
-    position:absolute;
-    bottom:50px;
-    z-index:99;
-    left:30px;
-}
-.switch > ul{
-  list-style:none;
-}
-.switch > ul > li{
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#333;
-  float:left;
-  margin-right:5px;
-  cursor:pointer;
-}
-.switch ul{
-  overflow:hidden;
-}
+/*.switch{*/
+/*    width:120px;*/
+/*    height:10px;*/
+/*    position:absolute;*/
+/*    bottom:50px;*/
+/*    z-index:99;*/
+/*    left:30px;*/
+/*}*/
+/*.switch > ul{*/
+/*  list-style:none;*/
+/*}*/
+/*.switch > ul > li{*/
+/*  width:10px;*/
+/*  height:10px;*/
+/*  border-radius:50%;*/
+/*  background:#333;*/
+/*  float:left;*/
+/*  margin-right:5px;*/
+/*  cursor:pointer;*/
+/*}*/
+/*.switch ul{*/
+/*  overflow:hidden;*/
+/*}*/
 /*.slick-slide.slick-active .banner-content-txt {*/
 /*  width:100%;*/
 /*  height:100%;*/
@@ -215,29 +215,29 @@
   }
 }
 
-@-webkit-keyframes content-s{
-  0%{left:-420px;}
-  10%{left:0px;}
-  30%{left:0px;}
-  40%{left:0px;}
-  50%{left:0px;}
-  60%{left:0px;}
-  70%{left:0;}
-  80%{left:-420px;}
-  90%{left:-420px;}
-  100%{left:-420px;}
+@-webkit-keyframes content-s {
+    0% {left:-420px;}
+    10% {left:0px;}
+    30% {left:0px;}
+    40% {left:0px;}
+    50% {left:0px;}
+    60% {left:0px;}
+    70% {left:0;}
+    80% {left:-420px;}
+    90% {left:-420px;}
+    100% {left:-420px;}
 }
 @-moz-keyframes content-s{
-  0%{left:-420px;}
-  10%{left:0px;}
-  30%{left:0px;}
-  40%{left:0px;}
-  50%{left:0px;}
-  60%{left:0px;}
-  70%{left:0;}
-  80%{left:-420px;}
-  90%{left:-420px;}
-  100%{left:-420px;}
+    0% {left:-420px;}
+    10% {left:0px;}
+    30% {left:0px;}
+    40% {left:0px;}
+    50% {left:0px;}
+    60% {left:0px;}
+    70%{left:0;}
+    80%{left:-420px;}
+    90%{left:-420px;}
+    100%{left:-420px;}
 }
 @keyframes content-s{
   0%{left:-420px;}
@@ -350,7 +350,7 @@
                     ],
                     westonOptions: {
                         arrows: true,
-                        autoplay: true,
+                        // autoplay: true,
                         // autoplaySpeed: 6000,
                         cssEase: 'ease',
                         dots: true,
