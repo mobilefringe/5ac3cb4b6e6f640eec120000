@@ -101,7 +101,7 @@
             props:['banners'],
             data: function() {
                 return {
-                    westonOptions: {
+                    keeleOptions: {
                         autoplay: true,
                         autoplaySpeed: 8000,
                         cssEase: 'ease',
