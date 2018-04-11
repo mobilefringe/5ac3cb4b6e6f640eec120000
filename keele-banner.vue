@@ -23,7 +23,7 @@
 </template>
 
 <style>
-.weston {
+.keele {
     position: relative;
 }
 
