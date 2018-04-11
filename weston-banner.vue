@@ -121,7 +121,7 @@
         height: 90px;
     }
     .banner-content-txt h3 {
-        margin: 0 0 10px 10px;
+        margin: 0 0 0 10px;
     }
     .banner-content-txt p {
         margin-left: 10px;
