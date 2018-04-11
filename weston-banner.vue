@@ -107,6 +107,16 @@
     80% { left: 0; }
     100% { left: 0; }
 }
+
+@media(max-width: 1024px){
+    .banner {
+        height: 300px;
+    }   
+    .banner-legend {
+        border: 300px solid transparent;
+        border-left: 300px solid rgba(0, 0, 0, .7);
+    }
+}
 </style>
 
 <script>
