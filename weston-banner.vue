@@ -22,52 +22,6 @@
 .weston {
     position: relative;
 }
-/*.prev {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    -moz-transform: translate(-50%, -50%);*/
-/*	-webkit-transform: translate(-50%, -50%);*/
-/*	-ms-transform: translate(-50%, -50%);*/
-/*	transform: translate(-50%, -50%);*/
-/*    left: -28px;*/
-/*}*/
-/*.prev::after {*/
-/*    content: '\f104';*/
-/*    font-family: FontAwesome;*/
-/*    font-size: 2.75rem;*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*    color: #000;    */
-/*}*/
-
-/*.weston .next {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    -moz-transform: translate(-50%, -50%);*/
-/*	-webkit-transform: translate(-50%, -50%);*/
-/*	-ms-transform: translate(-50%, -50%);*/
-/*	transform: translate(-50%, -50%);*/
-/*    right: -36px;*/
-/*}*/
-/*.weston .next:after {*/
-/*    content: '\f105';*/
-/*    font-family: FontAwesome;*/
-/*    font-size: 2.75rem;*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*    color: #000;    */
-/*} */
-/*.weston .prev:hover, .weston .next:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-/*.slick-dots button {*/
-/*    background-color: #FFF;*/
-/*    border: 2px solid #FFF;*/
-/*    opacity: 0.5;*/
-/*}*/
-/*.slick-active button {*/
-/*    opacity: 1;*/
-/*}*/
 
 /* Legend */
 .banner-legend {
