@@ -167,7 +167,7 @@
                         dots: true,
                         infinite: true,
                         nextArrow: '.weston .next',
-                        prevArrow: '.weston .prev',
+                        prevArrow: '.prev',
                         speed: 500
                     }
                 }
