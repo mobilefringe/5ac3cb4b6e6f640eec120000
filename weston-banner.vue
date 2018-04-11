@@ -4,17 +4,19 @@
         <slick ref="slick" :options="westonOptions">
 			<div v-for="banner in banners" v-if="banners">
 				<div class="slider">
-                    <div class="banner-legend"></div> 
-                    <div class="banner-content"> 
-                        <div class="banner-content-txt"> 
-                            <h3>{{ banner.name }}</h3> 
-                            <p>{{ banner.description }}</p> 
+				    <div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
+                        <div class="banner-legend"></div> 
+                        <div class="banner-content"> 
+                            <div class="banner-content-txt"> 
+                                <h3>{{ banner.name }}</h3> 
+                                <p>{{ banner.description }}</p> 
+                            </div> 
                         </div> 
+                        <!--<div class="images"> -->
+                        <!--    <img :src="banner.image_url"> -->
+                        <!--</div> -->
                     </div> 
-                    <div class="images"> 
-                        <img :src="banner.image_url"> 
-                    </div> 
-                </div> 
+                </div>
 			</div>
 		</slick>
 		<div class="next"></div>
