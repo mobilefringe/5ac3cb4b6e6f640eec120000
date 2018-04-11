@@ -41,7 +41,7 @@
                 }
             },
             mounted() {
-                this.SliceSlider.init();
+                slice.init();
             },
             created(){
                 // SliceSlider.init();    
