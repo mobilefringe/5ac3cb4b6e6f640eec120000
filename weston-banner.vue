@@ -118,7 +118,6 @@
             data: function() {
                 return {
                     westonOptions: {
-                        arrows: true,
                         autoplay: true,
                         autoplaySpeed: 8000,
                         cssEase: 'ease',
@@ -126,7 +125,7 @@
                         infinite: true,
                         nextArrow: '.next',
                         prevArrow: '.prev',
-                        slidesToShow: 1,
+                        speed: 500,
                     }
                 }
             }
