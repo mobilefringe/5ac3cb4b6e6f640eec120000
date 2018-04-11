@@ -6,11 +6,10 @@
                 <button class="slides-nav__next js-next">Next</button>
             </nav>
         </section>
-
-        <section class="slide is-active">
+        <section class="slide is-active" v-for="banner in banners" v-if="banners">
             <div class="slide__content">
                 <figure class="slide__figure">
-                    <div class="slide__img" style="background-image: url(https://source.unsplash.com/nfTA8pdaq9A/2000x1100)"></div>
+                    <div class="slide__img" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                 </figure>
                 <header class="slide__header">
                     <h2 class="slide__title">
