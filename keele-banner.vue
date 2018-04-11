@@ -31,8 +31,8 @@
 </style>
 
 <script>
-    define(["Vue", "jquery", "slice"], function (Vue, $, slice) {
-        console.log(slice)
+    define(["Vue", "jquery", "slice"], function (Vue, $, SliceSlider) {
+        console.log(SliceSlider)
         return Vue.component("keele-banner", {
             template: template, // the variable template will be injected,
             props:['banners'],
@@ -42,7 +42,7 @@
                 }
             },
             mounted() {
-                slice.init();
+                SliceSlider.init();
             },
             created(){
                 // SliceSlider.init();    
