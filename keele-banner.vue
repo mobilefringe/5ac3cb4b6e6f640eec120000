@@ -43,6 +43,7 @@
 .slide__content {
     position: relative;
     margin: 0 auto;
+    height: 500px;
     height: $slide-content-size-sm;
     width: $slide-content-size-sm;
     top: (100% - $slide-content-size-sm) / 2;
