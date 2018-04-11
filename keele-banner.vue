@@ -42,7 +42,7 @@
                 }
             },
             mounted() {
-                SliceSlider.init();
+                SliceSlider();
             },
             created(){
                 // SliceSlider.init();    
