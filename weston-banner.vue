@@ -215,30 +215,30 @@
   }
 }
 
-@-webkit-keyframes content-s {
-    0% { left: -420px; }
-    10% { left: 0px; }
-    30% {left:0px;}
-    40% {left:0px;}
-    50% {left:0px;}
-    60% {left:0px;}
-    70% {left:0;}
-    80% {left:-420px;}
-    90% {left:-420px;}
-    100% {left:-420px;}
-}
-@-moz-keyframes content-s{
-    0% {left:-420px;}
-    10% {left:0px;}
-    30% {left:0px;}
-    40% {left:0px;}
-    50% {left:0px;}
-    60% {left:0px;}
-    70%{left:0;}
-    80%{left:-420px;}
-    90%{left:-420px;}
-    100%{left:-420px;}
-}
+/*@-webkit-keyframes content-s {*/
+/*    0% { left: -420px; }*/
+/*    10% { left: 0px; }*/
+/*    30% {left:0px;}*/
+/*    40% {left:0px;}*/
+/*    50% {left:0px;}*/
+/*    60% {left:0px;}*/
+/*    70% {left:0;}*/
+/*    80% {left:-420px;}*/
+/*    90% {left:-420px;}*/
+/*    100% {left:-420px;}*/
+/*}*/
+/*@-moz-keyframes content-s{*/
+/*    0% {left:-420px;}*/
+/*    10% {left:0px;}*/
+/*    30% {left:0px;}*/
+/*    40% {left:0px;}*/
+/*    50% {left:0px;}*/
+/*    60% {left:0px;}*/
+/*    70%{left:0;}*/
+/*    80%{left:-420px;}*/
+/*    90%{left:-420px;}*/
+/*    100%{left:-420px;}*/
+/*}*/
 @keyframes content-s{
   /*0%{left:-420px;}*/
   /*10%{left:20px;}*/
