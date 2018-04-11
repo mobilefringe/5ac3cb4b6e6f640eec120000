@@ -31,6 +31,7 @@
 	transform: translate(-50%, -50%);
     left: -28px;
 }
+
 .prev:after {
     content: '\f104';
     font-family: FontAwesome;
@@ -39,6 +40,7 @@
     font-style: normal;
     color: #000;    
 }
+
 .weston .next {
     position: absolute;
     top: 50%;
