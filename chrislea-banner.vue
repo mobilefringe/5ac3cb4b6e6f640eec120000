@@ -63,7 +63,6 @@
 .details .title .info {
 	margin-top: 5px;
 }
-
 .slick-slide.slick-active .banner {
     opacity: 1;
 }
