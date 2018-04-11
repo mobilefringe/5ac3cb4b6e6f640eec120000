@@ -1,19 +1,17 @@
 <template>
-    <div id="slider" class="banners">
+    <div class="banners">
         <div class="prev"></div>
         <slick ref="slick" :options="westonOptions">
 			<div v-for="banner in banners" v-if="banners">
-				<div class="slider">
-				    <div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
-                        <div class="banner-legend"></div> 
-                        <div class="banner-content"> 
-                            <div class="banner-content-txt"> 
-                                <h3>{{ banner.name }}</h3> 
-                                <p>{{ banner.description }}</p> 
-                            </div> 
+			    <div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
+                    <div class="banner-legend"></div> 
+                    <div class="banner-content"> 
+                        <div class="banner-content-txt"> 
+                            <h3>{{ banner.name }}</h3> 
+                            <p>{{ banner.description }}</p> 
                         </div> 
                     </div> 
-                </div>
+                </div> 
 			</div>
 		</slick>
 		<div class="next"></div>
@@ -21,21 +19,6 @@
 </template>
 
 <style>
-/* Slider */
-/*#slider {*/
-/*    width: 100%;*/
-/*    height: 500px;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*}*/
-.slider {
-    width: 100%;
-    height: 25%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
 /* Legend */
 .banner-legend {
     position: absolute;
