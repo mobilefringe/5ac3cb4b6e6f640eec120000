@@ -97,8 +97,7 @@
                         dots: true,
                         infinite: true,
                         nextArrow: '.next',
-                        prevArrow: '.prev',
-                        slidesToShow: 1,
+                        prevArrow: '.prev'
                     }
                 }
             }
