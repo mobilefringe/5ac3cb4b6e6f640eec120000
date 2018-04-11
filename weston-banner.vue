@@ -7,8 +7,8 @@
                     <div class="banner-legend"></div> 
                     <div class="banner-content"> 
                         <div class="banner-content-txt"> 
-                            <h3> Your title </h3> 
-                            <p> Your description </p> 
+                            <h3>{{ banner.name }}</h3> 
+                            <p>{{ banner.description }}</p> 
                         </div> 
                     </div> 
                     <div class="images"> 
