@@ -48,8 +48,8 @@
 .banner-legend {
     position: absolute;
     bottom: 0;
-    border: 796px solid transparent;
-    border-left: 796px solid rgba(0, 0, 0, .7);
+    border: 500px solid transparent;
+    border-left: 500px solid rgba(0, 0, 0, .7);
     border-bottom: 0;
 }
 
