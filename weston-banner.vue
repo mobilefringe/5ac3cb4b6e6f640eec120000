@@ -19,6 +19,9 @@
 </template>
 
 <style>
+.weston {
+    position: relative;
+}
 /* Legend */
 .banner-legend {
     position: absolute;
