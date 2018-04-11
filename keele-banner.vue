@@ -1,9 +1,25 @@
 <template>
-    <div class="weston banners">
+    <div class="keele banners">
         <div class="prev"></div>
-        <slick ref="slick" :options="westonOptions">
+        <slick ref="slick" :options="keeleOptions">
 			<div v-for="banner in banners" v-if="banners">
-			    <div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
+			    <div class="slide">
+                    <div class="slide__content">
+                        <figure class="slide__figure">
+                            <div class="slide__img" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
+                        </figure>
+                        <header class="slide__header">
+                            <h2 class="slide__title">
+                                <span class="title-line"><span>Click, Key</span></span>
+                                <span class="title-line"><span>Or Scroll Fool</span></span>
+                            </h2>
+                        </header>
+                    </div>
+                </div>
+			
+			
+			
+			    <!--<div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">-->
                     <!--<div class="banner-legend"></div> -->
                     <!--<div class="banner-content"> -->
                     <!--    <div class="banner-content-txt"> -->
@@ -11,11 +27,11 @@
                     <!--        <p>{{ banner.description }}</p> -->
                     <!--    </div> -->
                     <!--</div> -->
-                </div> 
+                <!--</div> -->
 			</div>
 		</slick>
 		<div class="next"></div>
-    </div>      
+    </div>
 </template>
 
 <style>
@@ -23,89 +39,19 @@
     position: relative;
 }
 
-/* Legend */
-.banner-legend {
-    position: absolute;
-    bottom: 0;
-    border: 500px solid transparent;
-    border-left: 500px solid rgba(0, 0, 0, .7);
-    border-bottom: 0;
-}
-
-/* Contents */
-.banner-content {
-    width: 100%;
-    height: 100%;
-    max-height: 500px;
-    position: absolute;
-    overflow: hidden;
-}
-.banner-content-txt {
-    width: 400px;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-}
-.banner-content-txt h3 {
-    margin: 0 0 10px 30px;
-    color: #FFF;
-    text-align: left;
-    text-transform: uppercase;
-}
-.banner-content-txt p {
-    margin-left: 30px;
-    color: #FFF;
-    text-align :left;
-}
-.slick-slide.slick-active .banner-content-txt{
-    animation: content-s 7.5s;
-}
-
-/* Text Animation */
-@-webkit-keyframes content-s {
-    0%  { left: -420px; }
-    20% { left: 20px; }
-    40% { left: 0; }
-    60% { left: 0; }
-    80% { left: 0; }
-    100% { left: 0; }
-}
-@-moz-keyframes content-s {
-    0%  { left: -420px; }
-    20% { left: 20px; }
-    40% { left: 0; }
-    60% { left: 0; }
-    80% { left: 0; }
-    100% { left: 0; }
-}
-@keyframes content-s {
-    0%  { left: -420px; }
-    20% { left: 20px; }
-    40% { left: 0; }
-    60% { left: 0; }
-    80% { left: 0; }
-    100% { left: 0; }
-}
-
-@media(max-width: 768px){
-    .banner {
-        height: 300px;
-    }   
-    .banner-legend {
-        border: 300px solid transparent;
-        border-left: 300px solid rgba(0, 0, 0, .7);
-        border-bottom: 0;
-    }
-    .banner-content-txt {
-        height: 90px;
-    }
-    .banner-content-txt h3 {
-        margin: 0 0 0 10px;
-    }
-    .banner-content-txt p {
-        margin-left: 10px;
-    }
-}
+.slide{
+  z-index: -1;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: z-index 1s ease;
+  
+  // Bring active layer to foreground
+  &.is-active{
+    z-index: 19;
+    transition: z-index 1s ease;
+  }
 </style>
 
 <script>
