@@ -42,8 +42,8 @@
                         cssEase: 'ease',
                         dots: true,
                         infinite: true,
-                        nextArrow: '.banner_option_2 .next',
-                        prevArrow: '.banner_option_2 .prev',
+                        nextArrow: '.next',
+                        prevArrow: '.prev',
                         slidesToShow: 1,
                     }
                 }
