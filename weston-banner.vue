@@ -22,12 +22,12 @@
 
 <style>
 /* Slider */
-#slider {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-}
+/*#slider {*/
+/*    width: 100%;*/
+/*    height: 500px;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
 .slider {
     width: 100%;
     height: 25%;
