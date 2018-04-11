@@ -117,6 +117,9 @@
         border-left: 300px solid rgba(0, 0, 0, .7);
         border-bottom: 0;
     }
+    .banner-content-txt {
+        height: 90px;
+    }
     .banner-content-txt h3 {
         margin: 0 0 10px 10px;
     }
