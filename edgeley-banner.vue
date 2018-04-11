@@ -11,7 +11,7 @@
 </template>
 
 <style>
-.banner_option_1 {
+.edgeley {
     margin: 20px auto;
     padding: 0 8px;
     width: 100%;
