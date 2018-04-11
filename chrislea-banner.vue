@@ -79,7 +79,7 @@
 .slick-slide.slick-active .banner .details .title {
 	transition-delay: 0.35s;
 }
-.slick-slide.slick-active .banner .details .title .info {
+.slick-slide.slick-active .banner .details .info {
 	transition-delay: 0.45s;
 }
 </style>
