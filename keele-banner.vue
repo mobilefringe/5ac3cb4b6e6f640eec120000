@@ -31,7 +31,7 @@
     padding: 0;
     width: 100%;
     height: 500px;
-    position: absolute;
+    /*position: absolute;*/
     z-index: -1;
     transition: z-index 1s ease;
 }
@@ -44,7 +44,7 @@
     position: relative;
     margin: 0 auto;
     height: 500px;
-    height: $slide-content-size-sm;
+    /*height: $slide-content-size-sm;*/
     width: $slide-content-size-sm;
     top: (100% - $slide-content-size-sm) / 2;
 }
