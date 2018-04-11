@@ -22,7 +22,7 @@
 .weston {
     position: relative;
 }
-.prev {
+.weston .prev {
     position: absolute;
     top: 50%;
     -moz-transform: translate(-50%, -50%);
@@ -31,7 +31,7 @@
 	transform: translate(-50%, -50%);
     left: -28px;
 }
-.prev:after {
+.weston .prev:after {
     content: '\f104';
     font-family: FontAwesome;
     font-size: 2.75rem;
@@ -39,7 +39,7 @@
     font-style: normal;
     color: #000;    
 }
-.next {
+.weston .next {
     position: absolute;
     top: 50%;
     -moz-transform: translate(-50%, -50%);
@@ -48,7 +48,7 @@
 	transform: translate(-50%, -50%);
     right: -36px;
 }
-.next:after {
+.weston .next:after {
     content: '\f105';
     font-family: FontAwesome;
     font-size: 2.75rem;
@@ -56,7 +56,7 @@
     font-style: normal;
     color: #000;    
 } 
-.prev:hover, .next:hover {
+.weston .prev:hover, .weston .next:hover {
     cursor: pointer;
 }
 .slick-dots button {
