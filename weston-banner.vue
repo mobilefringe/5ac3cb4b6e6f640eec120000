@@ -1,5 +1,5 @@
 <template>
-    <div class="banners">
+    <div class="banners weston">
         <div class="prev"></div>
         <slick ref="slick" :options="westonOptions">
 			<div v-for="banner in banners" v-if="banners">
@@ -117,8 +117,8 @@
                         cssEase: 'ease',
                         dots: true,
                         infinite: true,
-                        nextArrow: '.next',
-                        prevArrow: '.prev',
+                        nextArrow: '.weston .next',
+                        prevArrow: '.weston .prev',
                         speed: 500
                     }
                 }
