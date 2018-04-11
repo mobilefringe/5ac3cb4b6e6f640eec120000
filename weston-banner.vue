@@ -12,9 +12,6 @@
                                 <p>{{ banner.description }}</p> 
                             </div> 
                         </div> 
-                        <!--<div class="images"> -->
-                        <!--    <img :src="banner.image_url"> -->
-                        <!--</div> -->
                     </div> 
                 </div>
 			</div>
