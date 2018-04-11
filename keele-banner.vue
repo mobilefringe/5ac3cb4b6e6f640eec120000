@@ -32,6 +32,7 @@
 
 <script>
     define(["Vue", "jquery", "slice"], function (Vue, $, slice) {
+        console.log(slice)
         return Vue.component("keele-banner", {
             template: template, // the variable template will be injected,
             props:['banners'],
