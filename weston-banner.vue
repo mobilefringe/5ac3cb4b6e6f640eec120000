@@ -99,7 +99,9 @@
     color: #FFF;
     text-align :left;
 }
-
+.slick-slide.slick-active .banner-content-txt{
+    animation: content-s 7.5s once;
+}
 /* Switch */
 /*.switch{*/
 /*    width:120px;*/
