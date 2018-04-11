@@ -28,14 +28,6 @@
     position: relative;
     overflow: hidden;
 }
-/*.slides {*/
-/*    width: 100%;*/
-/*    height: 400%;*/
-/*    position: relative;*/
-/*    -webkit-animation: slide 30s infinite;*/
-/*    -moz-animation: slide 30s infinite;*/
-/*    animation: slide 30s infinite;*/
-/*}*/
 .slider {
     width: 100%;
     height: 25%;
