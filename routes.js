@@ -146,6 +146,16 @@ define([], function() {
                 name: 'Banners'
             }]
         },
+        {
+            path: '/button_examples',
+            component: view('default'),
+            redirect: '/',
+            children: [{
+                path: '',
+                component: view('button_examples'),
+                name: 'Buttons'
+            }]
+        },
         // {
         //     path: '/community',
         //     component: view('default'),
