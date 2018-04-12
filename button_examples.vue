@@ -9,10 +9,10 @@
         		            
         		        </div>
         		        <div class="col-md-3">
-        		            <div class="btn btn-slice"></div>    
+        		            <div class="btn btn-slice">Slice</div>    
         		        </div>
         		        <div class="col-md-3">
-        		            <div class="btn btn-slice-fill"></div>    
+        		            <div class="btn btn-slice-fill">Slice</div>    
         		        </div>
         		        <div class="col-md-3">
         		            
