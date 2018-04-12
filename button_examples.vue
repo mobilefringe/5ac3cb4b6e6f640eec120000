@@ -24,6 +24,18 @@
     </div>
 </template>
 
+<style>
+    .btn {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: 30px;
+        max-width: 250px;
+        margin: 1rem auto;
+        text-transform: uppercase;
+        border: 1px solid #000;
+    }
+</style>
 <script>
     define(["Vue"], function(Vue) {
         return Vue.component("buttons-component", {
