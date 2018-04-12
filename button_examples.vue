@@ -1,0 +1,70 @@
+<template>
+    <div> <!-- without an outer container div this component template will not render -->
+        <loader v-if="!dataLoaded"></loader>
+        <transition name="fade">
+            <div v-if="dataLoaded" v-cloak>
+        		<div class="site_container">
+        		    <div class="row">
+        		        <div class="col-md-3">
+        		            
+        		        </div>
+        		        <div class="col-md-3">
+        		            <div class="btn btn-slice"></div>    
+        		        </div>
+        		        <div class="col-md-3">
+        		            <div class="btn btn-slice-fill"></div>    
+        		        </div>
+        		        <div class="col-md-3">
+        		            
+        		        </div>
+        		    </div>
+                </div>
+            </div>
+        </transition>
+    </div>
+</template>
+
+<script>
+    define(["Vue"], function(Vue) {
+        return Vue.component("buttons-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    dataLoaded: false,
+                    banners: [
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Slide One", "description": "Description One" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Slide Two", "description": "Description Two" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Slide Three", "description": "Description Three" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg", "name": "Slide Four", "description": "Description Four" }
+                    ],
+                    slickOptions3: {
+                        arrows: false,
+                        autoplay: true,
+                        centerMode: true,
+                        centerPadding: '5%',
+                        cssEase:'ease-in-out',
+                        slidesToShow: 5,
+                    }
+                }
+            },
+            created(){
+                this.loadData().then(response => {
+                   this.dataLoaded = true;
+                });
+            },
+            computed: {
+
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
+                        return results;
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                }
+            }
+        });
+    });
+</script>
