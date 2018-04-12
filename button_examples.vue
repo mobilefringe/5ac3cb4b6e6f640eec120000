@@ -68,7 +68,7 @@
     /*}*/
 </style>
 <script>
-    define(["Vue"], function(Vue) {
+    define(["Vue"], function(Vue)) {
         return Vue.component("buttons-component", {
             template: template, // the variable template will be injected
             data: function() {
