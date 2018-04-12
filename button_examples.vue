@@ -74,39 +74,39 @@
             data: function() {
                 return {
                     dataLoaded: false,
-                    banners: [
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Slide One", "description": "Description One" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Slide Two", "description": "Description Two" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Slide Three", "description": "Description Three" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg", "name": "Slide Four", "description": "Description Four" }
-                    ],
-                    slickOptions3: {
-                        arrows: false,
-                        autoplay: true,
-                        centerMode: true,
-                        centerPadding: '5%',
-                        cssEase:'ease-in-out',
-                        slidesToShow: 5,
-                    }
+                    // banners: [
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Slide One", "description": "Description One" },
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Slide Two", "description": "Description Two" },
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Slide Three", "description": "Description Three" },
+                    //     { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg", "name": "Slide Four", "description": "Description Four" }
+                    // ],
+                    // slickOptions3: {
+                    //     arrows: false,
+                    //     autoplay: true,
+                    //     centerMode: true,
+                    //     centerPadding: '5%',
+                    //     cssEase:'ease-in-out',
+                    //     slidesToShow: 5,
+                    // }
                 }
             },
             created(){
-                this.loadData().then(response => {
+                // this.loadData().then(response => {
                    this.dataLoaded = true;
-                });
+                // });
             },
             computed: {
 
             },
             methods: {
-                loadData: async function() {
-                    try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
-                        return results;
-                    } catch (e) {
-                        console.log("Error loading data: " + e.message);
-                    }
-                }
+                // loadData: async function() {
+                //     try {
+                //         let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
+                //         return results;
+                //     } catch (e) {
+                //         console.log("Error loading data: " + e.message);
+                //     }
+                // }
             }
         });
     });
