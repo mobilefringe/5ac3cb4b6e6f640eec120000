@@ -63,7 +63,7 @@
     transform-origin: unset;
     text-align: center;
 }
-// .sli
+
 </style>
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
