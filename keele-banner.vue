@@ -68,7 +68,6 @@
                     this.currentSlideIndex--;
 
                     this.showSlide();
-                    console.log("sliding to prev", this.currentSlideIndex);
                 },
                 nextSlide() {
                     this.currentSlideIndex++;
@@ -79,7 +78,6 @@
                     }
 
                     this.showSlide();
-                    console.log("sliding to next", this.currentSlideIndex);
                 },
                 showSlide() {
                     var vm = this;
