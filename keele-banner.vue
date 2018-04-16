@@ -83,7 +83,7 @@
         return Vue.component("keele-banner", {
             template: template, // the variable template will be injected
             props: {
-                bannerlist: {
+                banners: {
                     type: Array,
                     required: true
                 },
