@@ -80,7 +80,7 @@
 
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
-        return Vue.component("slice-slider", {
+        return Vue.component("keele-banner", {
             template: template, // the variable template will be injected
             props: {
                 bannerlist: {
