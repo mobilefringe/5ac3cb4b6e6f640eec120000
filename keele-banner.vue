@@ -62,7 +62,7 @@
                 </nav>
               </section>
             
-              <section class="slide" v-for = "(banner,index) in bannerlist" :class="{'is-active': (index==0)}">
+              <section class="slide" v-for = "(banner,index) in banners" :class="{'is-active': (index==0)}">
                 <div class="slide__content">
                   <figure class="slide__figure"><div class="slide__img" :style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div></figure>
                   <header class="slide__header">
