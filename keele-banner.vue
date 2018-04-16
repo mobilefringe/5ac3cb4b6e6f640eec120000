@@ -27,6 +27,44 @@
     </div>
 </template>
 
+<style>
+    /******* SLICE SLIDER STYLE *********/
+.slide__title{
+    font-size: 3.75em;
+    color: #fff;
+    line-height: normal;
+    color: #eee;
+    text-shadow: #000 0px -1px;
+}
+.slides-nav button{
+    font-family: $font_family;  
+}
+.slides-nav button:after {
+    height:2px;
+    top:auto;
+    bottom:0;
+}
+.slides-nav {
+    z-index: 99;
+    position: absolute;
+    right: auto;
+    display: block;
+    /* align-items: center; */
+    height: auto;
+    width: 100%;
+    bottom: 25px;
+}
+.slides-nav__nav {
+    position: relative;
+    right: 0;
+    display: block;
+    font-size: 1em;
+    transform: initial;
+    transform-origin: unset;
+    text-align: center;
+}
+// .sli
+</style>
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
         return Vue.component("keele-banner", {
