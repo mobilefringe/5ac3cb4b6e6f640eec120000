@@ -101,7 +101,7 @@
                     currentSlideIndex: 0,
                     scrollThreshold: 40,
                     slides: [],
-                    numSlides: this.bannerlist.length
+                    numSlides: this.banners.length
                 }  
             },
             mounted() {
