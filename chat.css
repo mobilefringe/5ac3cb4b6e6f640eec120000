@@ -9,10 +9,8 @@ body {
 #chaticon {
     // padding: 15px 12px;
     padding: 20px 17px;
-    // width: 50px;
-    width: 80px;
-    // height: 50px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: fixed; 
     bottom: 20px; 
     left: 30px;
@@ -20,7 +18,7 @@ body {
     border-radius: 50%;
     background: #417505;
     // -webkit-filter: drop-shadow(10px 10px 10px #111);
-    // filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 #chatbot {
