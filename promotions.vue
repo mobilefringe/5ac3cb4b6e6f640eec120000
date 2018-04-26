@@ -76,10 +76,9 @@
                     } else {
                         this.pageBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
                     }
-                    console.log(this.pageBanner);
+
                     this.promos = this.promotions;
-                    console.log(this.promos);
-                    
+
                     this.dataLoaded = true;
                 });
             },
