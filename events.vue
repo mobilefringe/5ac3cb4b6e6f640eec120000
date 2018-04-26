@@ -69,8 +69,6 @@
             },
             created() {
                 this.loadData().then(response => {
-                    this.dataLoaded = true;
-                    
                     var temp_repo = this.findRepoByName('Events Banner').images;
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
@@ -79,6 +77,7 @@
                     }
 
                     this.promos = this.events;
+                    this.dataLoaded = true;
                 });
             },
             computed: {
