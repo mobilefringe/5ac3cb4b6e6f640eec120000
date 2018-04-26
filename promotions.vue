@@ -71,6 +71,7 @@
             created() {
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Promotions Banner').images;
+                    console.log(temp_repo)
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
