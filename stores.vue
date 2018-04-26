@@ -95,6 +95,7 @@
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Directory Banner');
                     if(temp_repo !=null) {
+                        console.log(temp_repo)
                         this.storeBanner = temp_repo.images[0];
                     }
                     
