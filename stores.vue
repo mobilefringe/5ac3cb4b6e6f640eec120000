@@ -97,7 +97,7 @@
                     console.log(temp_repo)
                     if(temp_repo != null) {
                         
-                        this.storeBanner = temp_repo.images[0];
+                        this.storeBanner = temp_repo[0];
                     }
                     
                     this.dataLoaded = true;
