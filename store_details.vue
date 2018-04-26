@@ -15,13 +15,21 @@
     
 					<div class="details_store_image">
 						<img v-lazy="currentStore.store_front_url_abs" class="image"/>
+						<div>
+						    <a v-if="currentStore.website" :href="'//' + currentStore.website" target="_blank">
+        				        <div class="details_store_website animated_btn">{{$t("stores_page.store_website")}}</div>
+        				    </a>
+    				        <a v-if="currentStore.website" :href="'//' + currentStore.website" target="_blank">
+        				        <div class="details_store_website animated_btn">{{$t("stores_page.store_website")}}</div>
+        				    </a>
+						</div>
 						<h4 v-if="currentStore.phone" class="details_store_phone">{{$t("stores_page.store_phone")}}:<br class="visible_mobile"> {{ currentStore.phone }}</h4>
 					</div>
     				<div class="details_store_desc">
     				    <div v-html="currentStore.description"></div>
-    				    <a v-if="currentStore.website" :href="'//' + currentStore.website" target="_blank">
-    				        <div class="details_store_website animated_btn">{{$t("stores_page.store_website")}}</div>
-    				    </a>
+    				    <!--<a v-if="currentStore.website" :href="'//' + currentStore.website" target="_blank">-->
+    				    <!--    <div class="details_store_website animated_btn">{{$t("stores_page.store_website")}}</div>-->
+    				    <!--</a>-->
     				</div>
     			</div>
 		    </div>
