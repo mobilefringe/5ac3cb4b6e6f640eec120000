@@ -135,6 +135,7 @@
                     'findRepoByName'
                 ]),
                 allStores() {
+                    console.log(this.processedStores)
                     var store_list = this.processedStores
                     var vm = this;
                     var hover_image = "";
