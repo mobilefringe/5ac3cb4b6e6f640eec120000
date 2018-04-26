@@ -76,9 +76,8 @@
                     } else {
                         this.pageBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
                     }
-                    console.log(this.pageBanner)
-                    this.promos = this.promotions;
 
+                    this.promos = this.promotions;
                     this.dataLoaded = true;
                 });
             },
