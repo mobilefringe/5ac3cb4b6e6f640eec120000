@@ -60,7 +60,7 @@
             							<span v-else>
             							    <img class="store_no_hover_img" :src="store.store_front_url_abs"/>    
             							</span>
-            							<div class="store_coming_soon store_promotion" >
+            							<div class="store_coming_soon store_promotion" v-if="store.total_published_promos">
         									<div class="new_store">{{$t("stores_page.promotion")}}</div>
         								</div>
         								<div class="store_coming_soon" v-if="!store.total_published_promos && !store.is_new_store && store.is_coming_soon_store">
