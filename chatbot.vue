@@ -26,6 +26,13 @@
                     chatURL: 'http://twinpines.codecloudapp.com/chat.html',
                 };
             },
+            created() {
+                setTimeout(function() {
+                    console.log('Running animation');
+                    $('#chaticon').addClass('wobble');
+                }, 4000);
+                
+            }
             watch: {
                 showChat: function() {
                     if(this.showChat == true){
