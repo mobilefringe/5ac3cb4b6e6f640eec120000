@@ -93,10 +93,10 @@
             },
             created (){
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Directory Banner');
-                    if(temp_repo) {
-                        this.storeBanner = temp_repo.images[0];
-                    }
+                    // var temp_repo = this.findRepoByName('Directory Banner');
+                    // if(temp_repo) {
+                    //     this.storeBanner = temp_repo.images[0];
+                    // }
                     
                     this.dataLoaded = true;
                 });
