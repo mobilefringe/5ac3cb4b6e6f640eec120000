@@ -29,7 +29,7 @@
     			</div>
     			<div class="store_promo_container" v-if="currentStore && currentStore.total_published_promos > 0">
     			    Promotions
-    			    <div class="promo_container clearfix" v-for="(promo, index) in paginated('promos')">
+    			    <div class="promo_container clearfix" v-for="promo in promotions">
 					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
 					    <div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>
 					    <div class="promo_content">
