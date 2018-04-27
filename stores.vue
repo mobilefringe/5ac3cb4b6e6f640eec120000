@@ -96,7 +96,7 @@
                 }
             },
             created (){
-                console.log(this.$route)
+                
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Directory Banner').images;
                     if(temp_repo != null) {
@@ -104,6 +104,15 @@
                     } else {
                         this.storeBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
                     }
+                    
+                    console.log(this.$route)
+                    this.query = this.$route.query.category
+                    if(this.query === "fast_food"){
+                        console.log("YES")
+                    } else {
+                        
+                    }
+                
                     this.dataLoaded = true;
                 });
             },
