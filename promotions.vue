@@ -27,8 +27,13 @@
         					        <p class="promo_title" v-else>{{ property.name }}</p>
         					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
         							<h3 class="" v-else>{{ promo.name_short_2 }}</h3>
-        					        <p class="promo_desc"  v-if="locale=='en-ca'" >{{ promo.description_short }}</p>
-        							<p class="promo_desc" v-else>{{ promo.description_short_2 }}</p>
+        							<p class="promo_dates" v-if="isMultiDayEvent(event)">
+        							    {{ event.start_date | moment("dddd, MMMM D, YYYY", timezone)}} to {{ event.end_date | moment("dddd, MMMM D, YYYY", timezone)}}
+                                    </p>
+                                    <p class="promo_dates" v-else>{{ event.start_date | moment("dddd, MMMM D, YYYY", timezone)}}</p>
+        							  
+        					  <!--      <p class="promo_desc"  v-if="locale=='en-ca'" >{{ promo.description_short }}</p>-->
+        							<!--<p class="promo_desc" v-else>{{ promo.description_short_2 }}</p>-->
         							<router-link :to="'/promotions/'+ promo.slug" >
     								   <div class="promo_learn_more animated_btn">{{ $t("promos_page.read_more") }}</div>
         						    </router-link>
