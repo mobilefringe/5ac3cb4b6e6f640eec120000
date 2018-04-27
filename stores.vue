@@ -126,6 +126,7 @@
                 }
             },
             watch: {
+                console.log(selectedCat)
                 windowWidth: function() {
                     if (this.windowWidth <= 768) {
                         this.mobile_store = true;
