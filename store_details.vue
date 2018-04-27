@@ -12,7 +12,6 @@
                             </div>
                         </div>
                     </div>
-    
 					<div class="details_store_image">
 						<img v-lazy="currentStore.store_front_url_abs" class="image"/>
 						<div class="details_btn_container">
@@ -27,6 +26,9 @@
     				<div class="details_store_desc">
     				    <div v-html="currentStore.description"></div>
     				</div>
+    			</div>
+    			<div v-if="currentStore">
+    			    Promotions
     			</div>
 		    </div>
 		</transition>
