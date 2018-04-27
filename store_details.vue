@@ -110,7 +110,8 @@
                     'timezone',
                     'processedStores',
                     'findStoreBySlug',
-                    'findCategoryById'
+                    'findCategoryById',
+                    'findPromoById'
                 ]),
                 storeCategory() {
                     var currentStoreCategory = this.currentStore.categories[0];
