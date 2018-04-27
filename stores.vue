@@ -106,7 +106,7 @@
                 });
             },
             mounted () {
-                console.log(this.$route.query)
+                console.log(this.$route)
                 // this.form_data.email = this.$route.query.email;
                 // $("#fieldEmail").val(this.$route.query.email);
             },
@@ -119,7 +119,7 @@
                     }
                 },
                 $route () {
-                    (this.$route.query)
+                    (this.$route)
                     // this.form_data.email = this.$route.query.email;
                 }
             },
