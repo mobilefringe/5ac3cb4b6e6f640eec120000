@@ -44,7 +44,7 @@
                 return {
                     dataLoaded: false,
                     currentStore: null,
-                    promotions: null
+                    promotions : []
                 }
             },
             props:['id', 'locale'],
