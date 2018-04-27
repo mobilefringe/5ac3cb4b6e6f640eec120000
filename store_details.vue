@@ -28,7 +28,11 @@
     				</div>
     			</div>
     			<div class="store_promo_container" v-if="currentStore && currentStore.total_published_promos > 0">
-    			    Promotions
+    			    <div class="row hidden_phone">
+        		        <div class="col-md-12">
+        		            <h3 class="promo_page_title center">{{ $t("promos_page.promotions_title") }}</h3>
+        		        </div>
+        		    </div>
     			    <div class="promo_container clearfix" v-for="promo in promotions">
 					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
 					    <div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>
