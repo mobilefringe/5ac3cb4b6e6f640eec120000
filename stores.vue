@@ -91,7 +91,8 @@
                     windowWidth: 0,
                     selectedCat: null,
                     filteredStores: null,
-                    search_result : null
+                    search_result : null,
+                    query: ""
                 }
             },
             created (){
@@ -108,8 +109,12 @@
             },
             mounted () {
                 console.log(this.$route)
-                // this.form_data.email = this.$route.query.email;
-                // $("#fieldEmail").val(this.$route.query.email);
+                this.query = this.$route.query.category
+                if(this.query === "fast_food"){
+                    console.log("YES")
+                } else {
+                    
+                }
             },
             watch: {
                 windowWidth: function() {
@@ -120,8 +125,13 @@
                     }
                 },
                 $route () {
-                    (this.$route)
-                    // this.form_data.email = this.$route.query.email;
+                    console.log(this.$route)
+                    this.query = this.$route.query.category
+                    if(this.query === "fast_food"){
+                        console.log("YES")
+                    } else {
+                        
+                    }
                 }
             },
             mounted() {
