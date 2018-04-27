@@ -48,7 +48,7 @@
                                             <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                                         </div>
                                         <div class="center">
-                                            <button class="submit_btn animated_btn coolBeans" type="submit" :disabled="formSuccess">{{ $t("contact_page.form_send") }}</button>
+                                            <button class="submit_btn animated_btn swing_in" type="submit" :disabled="formSuccess">{{ $t("contact_page.form_send") }}</button>
                                         </div>
                                     </div>
                                 </div>
