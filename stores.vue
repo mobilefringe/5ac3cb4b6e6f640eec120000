@@ -105,6 +105,11 @@
                     this.dataLoaded = true;
                 });
             },
+            mounted () {
+                console.log(this.$route.query)
+                // this.form_data.email = this.$route.query.email;
+                // $("#fieldEmail").val(this.$route.query.email);
+            },
             watch: {
                 windowWidth: function() {
                     if (this.windowWidth <= 768) {
@@ -113,6 +118,10 @@
                         this.mobile_store = false;
                     }
                 },
+                $route () {
+                    (this.$route.query)
+                    // this.form_data.email = this.$route.query.email;
+                }
             },
             mounted() {
                 // this.filteredStores = this.allStores;
