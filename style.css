@@ -1808,75 +1808,7 @@ strong, .bold {
     line-height: 60px;
     margin-bottom: 30px;
 }
-// .directory_btn:after {
-//     content: " ";
-//     height: 5px;
-//     width: 84px;
-//     background: #fff;
-//     position: absolute;
-//     left: 50%;
-//     bottom: 10px;
-//     -webkit-transform: translate(-50%, 0%);
-//     -ms-transform: translate(-50%, 0%);
-//     transform: translate(-50%, 0%);
-// }
-// .alpha_list {
-//     margin-top: 30px;
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -ms-flex-pack: distribute;
-//     justify-content: space-between;
-//     font-size: 2.25rem;
-//     font-family: "LeagueGothic-Regular", sans-serif;
-//     a {
-//         color: #FFF;
-//     }
-// }
 
-// .store_logo_container {
-//     margin-bottom: 30px;
-//     // width: 166px;
-//     min-height: 170px;
-//     position: relative;
-//     // border: 3px solid #FFF;
-//     transition: all 0.3s ease;
-//     font-family: "LeagueGothic-Regular", sans-serif;
-//     font-size: 3.75rem;
-//     color: #000;
-//     text-align: center;
-//     vertical-align: middle;
-//     line-height: 160px;  
-//     .store_img {
-//         max-width: 100%;
-//         position: relative;
-//         filter: gray; /* IE6-9 */
-//         -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-//         -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-//         -webkit-backface-visibility: hidden; /* Fix for transition flickering */
-//     }
-//     .store_hover {
-//         max-width: 100%;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         display: none;
-//     }
-// }
-
-// .store_logo_container:hover {
-//     background: $accent;
-//     .store_coming_soon {
-//         background-image: url(//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/png/1501873798000/RectangleWhite.png);
-//     }
-//     .new_store {
-//         color:$accent;  
-//     }
-// }
-
-.store_logo_container.no_hover {
-    background: transparent;
-}
 .store_list_promos {
     width: 100%;
     position: absolute;
@@ -1884,47 +1816,7 @@ strong, .bold {
     // left: 21%;
     text-align: center;
 }
-// .store_coming_soon {
-//     position: absolute;
-//     top: 5px;
-//     right: 0;
-//     width: 80%;
-//     height: 30px;
-//     background-image: url("//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1517508256971/Rectangle 10.png");
-//     background-size: contain;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-// }
 
-.store_coming_soon.store_details {
-    background-image: url("//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1517508256971/Rectangle 10.png");
-    background-position: center right;
-    height: 40px;
-    top: 0;
-    right: 15px;
-   .new_store {
-           padding-top: 10px;
-           font-size:1rem;
-           text-align:right;
-   }
-}
-.promo_exist{
-    // margin-right: 10px;
-    padding: 0 15px;
-    font-size: 0.9rem;
-    color: #000;
-}
-.new_store {
-    margin: 0 20px;
-    padding-top: 5px;
-    font-family: "ProximaNova-Light";
-    font-size: 0.75rem;
-    color: #fff;
-    line-height: 22px;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    text-align: center;
-}
 /* STORE DETAILS */
 .store_logo {
     margin: 0 auto;
