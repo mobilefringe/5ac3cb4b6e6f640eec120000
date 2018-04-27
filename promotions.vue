@@ -35,7 +35,7 @@
         					  <!--      <p class="promo_desc"  v-if="locale=='en-ca'" >{{ promo.description_short }}</p>-->
         							<!--<p class="promo_desc" v-else>{{ promo.description_short_2 }}</p>-->
         							<router-link :to="'/promotions/'+ promo.slug" >
-    								   <div class="promo_learn_more animated_btn coolBeans">{{ $t("promos_page.read_more") }}</div>
+    								   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
         						    </router-link>
         					    </div>
         					</div>
