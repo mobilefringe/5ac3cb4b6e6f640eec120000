@@ -96,7 +96,7 @@
                 }
             },
             created (){
-                console.log(this.$route)
+                // console.log(this.$route)
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Directory Banner').images;
                     if(temp_repo != null) {
