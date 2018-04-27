@@ -3,7 +3,7 @@
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak class="site_container">
-                <div class="">
+                <div class="margin_60">
                     <div class="details_store_name">
                         <div class="details_border">
                             <div>
