@@ -27,7 +27,7 @@
     				    <div v-html="currentStore.description"></div>
     				</div>
     			</div>
-    			<div v-if="currentStore">
+    			<div v-if="currentStore.total_published_promos">
     			    Promotions
     			</div>
 		    </div>
