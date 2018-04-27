@@ -12,11 +12,11 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-        		    <div class="row hidden_phone">
-        		        <div class="col-md-12">
-        		            <h3 class="promo_page_title center">{{ $t("promos_page.promotions_title") }}</h3>
-        		        </div>
-        		    </div>
+        		    <!--<div class="row hidden_phone">-->
+        		    <!--    <div class="col-md-12">-->
+        		    <!--        <h3 class="promo_page_title center">{{ $t("promos_page.promotions_title") }}</h3>-->
+        		    <!--    </div>-->
+        		    <!--</div>-->
         			<div id="promos_container" class="clearfix" v-if="promotions.length > 0">
         				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">
         					<div class="promo_container clearfix" v-for="(promo, index) in paginated('promos')">
