@@ -27,7 +27,7 @@
         					        <p class="promo_title" v-else>{{ property.name }}</p>
         					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
         							<h3 class="" v-else>{{ promo.name_short_2 }}</h3>
-        							<p class="promo_dates" v-if="isMultiDayEvent(event)">
+        							<p class="promo_dates" v-if="isMultiDay(promo)">
         							    {{ event.start_date | moment("dddd, MMMM D, YYYY", timezone)}} to {{ event.end_date | moment("dddd, MMMM D, YYYY", timezone)}}
                                     </p>
                                     <p class="promo_dates" v-else>{{ event.start_date | moment("dddd, MMMM D, YYYY", timezone)}}</p>
@@ -124,7 +124,17 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                }
+                },
+                isMultiDay(promo) {
+                    var timezone = this.timezone
+                    var start_date = moment(promo.start_date).tz(timezone).format("MM-DD-YYYY")
+                    var end_date = moment(promo.end_date).tz(timezone).format("MM-DD-YYYY")
+                    if (start_date === end_date) {
+                        return false
+                    } else {
+                        return true
+                    }
+                },
             }
         });
     });
