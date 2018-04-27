@@ -92,9 +92,18 @@
                     var vm = this;
                     var temp_promo = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
-                        console.log(value)
                         var current_promo = vm.findPromoById(value);
-                        console.log(current_promo)
+                        
+                        value.name_short = _.truncate(value.name, { 'length': 21, 'separator': ' ' });
+                        value.name_short_2 = _.truncate(value.name_2, { 'length': 21, 'separator': ' ' });
+
+                        if (_.includes(value.image_url, 'missing')) {
+                            value.image_url = "http://placehold.it/1560x800/757575";
+                        }
+                        if (_.includes(value.promo_image2_url_abs, 'missing')) {
+                            value.promo_image2_url_abs = "http://placehold.it/1560x800/757575";
+                        }
+                        
                         // current_promo.description_short = _.truncate(current_promo.description, {
                         //     'length': 70
                         // });
