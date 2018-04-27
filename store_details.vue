@@ -27,7 +27,7 @@
     				    <div v-html="currentStore.description"></div>
     				</div>
     			</div>
-    			<div v-if="currentStore.total_published_promos">
+    			<div class="store_promo_container" v-if="currentStore && currentStore.total_published_promos > 0">
     			    Promotions
     			</div>
 		    </div>
@@ -43,7 +43,8 @@
             data: function() {
                 return {
                     dataLoaded: false,
-                    currentStore: null
+                    currentStore: null,
+                    promotions: null
                 }
             },
             props:['id', 'locale'],
@@ -67,6 +68,17 @@
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a81f86a6e6f6404f6030000/image/png/1516652189884/ES_logo_red2.png";
                     }
+                    
+                    var vm = this;
+                    var temp_promo = [];
+                    _.forEach(this.currentStore.promotions, function(value, key) {
+                        var current_promo = vm.findPromoById(value);
+                        current_promo.description_short = _.truncate(current_promo.description, {
+                            'length': 70
+                        });
+                        temp_promo.push(current_promo);
+                    }); 
+                    this.promotions = temp_promo;
                 },
                 locale: function(val, oldVal) {
                     console.log("locale", this.locale);
