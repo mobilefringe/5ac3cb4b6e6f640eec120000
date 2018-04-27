@@ -99,6 +99,7 @@
                         temp_promo.push(current_promo);
                     }); 
                     this.promotions = temp_promo;
+                    console.log(this.promotions)
                 },
                 locale: function(val, oldVal) {
                     console.log("locale", this.locale);
