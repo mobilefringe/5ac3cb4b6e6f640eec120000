@@ -1,5 +1,5 @@
 <template>
-    <footer v-bind:style="{ backgroundImage: 'url(' + footerBanner.image_url + ')' }" >
+    <footer v-if="footerBanner" v-bind:style="{ backgroundImage: 'url(' + footerBanner.image_url + ')' }" >
         <div class="newsletter_subscription hidden_phone">
             <div class="newsletter_content_container">
                 <h3 class="caps hidden_phone">{{$t("footer.newsletter")}}</h3>
