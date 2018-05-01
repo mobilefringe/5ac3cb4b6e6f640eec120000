@@ -95,11 +95,6 @@
                     }
                     
                     this.dataLoaded = true;
-                    
-                    // var temp_repo = this.findRepoByName('Footer Banner');
-                    // if(temp_repo) {
-                    //     this.footerBanner = temp_repo.images[0];
-                    // }
                 });
             },
             computed: {
