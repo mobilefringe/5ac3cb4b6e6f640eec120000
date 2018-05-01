@@ -1,5 +1,5 @@
 <template>
-    <footer v-bind:style="{ backgroundImage: 'url(' + footerBanner.image_url + ')' }"  v-if="footerBanner">
+    <footer v-if="footerBanner" v-bind:style="{ backgroundImage: 'url(' + footerBanner.image_url + ')' }" >
         <div class="newsletter_subscription hidden_phone">
             <div class="newsletter_content_container">
                 <h3 class="caps hidden_phone">{{$t("footer.newsletter")}}</h3>
@@ -87,6 +87,13 @@
             props:['footer_menu_items', 'social_media'],
             created() {
                 this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Newsletter Banner').images;
+                    if(temp_repo != null) {
+                        this.footerBanner = temp_repo[0];
+                    } else {
+                        this.footerBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
+                    }
+                    
                     this.dataLoaded = true;
                     
                     // var temp_repo = this.findRepoByName('Footer Banner');
