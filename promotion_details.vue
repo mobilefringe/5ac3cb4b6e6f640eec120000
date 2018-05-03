@@ -34,6 +34,9 @@
                                         </network>
                                     </div>
                                 </social-sharing>
+                                <router-link :to="'/promotions/'+ promo.slug" >
+							        <div class="promo_details_store_phone animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
+					            </router-link>
             				</div>
     					</div>
         			</div>
@@ -71,6 +74,7 @@
             },
             watch: {
                 currentPromo : function (){
+                    console.log(this.currentPromo)
                     if (this.currentPromo != null && this.currentPromo != undefined) {
                         if(_.includes(this.currentPromo.image_url, 'missing')) {
                             this.currentPromo.image_url = "http://via.placeholder.com/1560x800/757575";
