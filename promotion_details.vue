@@ -30,10 +30,7 @@
                                             <i class="fa fa-facebook-square"></i>
                                         </network>
                                         <network network="twitter">
-                                            <i class="fa fa-twitter-square"></i>
-                                        </network>
-                                        <network network="pinterest">
-                                            <i class="fa fa-pinterest-square"></i>
+                                            <i class="fa fa-twitter"></i>
                                         </network>
                                     </div>
                                 </social-sharing>
