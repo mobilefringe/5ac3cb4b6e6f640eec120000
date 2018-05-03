@@ -30,9 +30,6 @@
         							    {{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}
                                     </p>
                                     <p class="promo_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
-                                    
-        					  <!--      <p class="promo_desc"  v-if="locale=='en-ca'" >{{ promo.description_short }}</p>-->
-        							<!--<p class="promo_desc" v-else>{{ promo.description_short_2 }}</p>-->
         							<router-link :to="'/events/'+ promo.slug" >
         								   <div class="promo_learn_more animated_btn swing_in">{{ $t("events_page.read_more") }}</div>
         						    </router-link>
