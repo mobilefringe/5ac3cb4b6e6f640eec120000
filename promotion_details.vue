@@ -34,9 +34,9 @@
                                         </network>
                                     </div>
                                 </social-sharing>
-                                <router-link :to="'/promotions/'+ promo.slug" >
-							        <div class="promo_details_store_phone animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
-					            </router-link>
+               <!--                 <router-link :to="'/promotions/'+ promo.slug" >-->
+							        <!--<div class="promo_details_store_phone animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>-->
+					          <!--  </router-link>-->
             				</div>
     					</div>
         			</div>
