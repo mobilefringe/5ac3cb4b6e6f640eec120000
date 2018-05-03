@@ -112,6 +112,14 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
+                },
+                shareURL(slug) {
+                    var share_url = "http://www.northparkcenter.com/posts/" + slug
+                    return share_url
+                },
+                truncate(val_body) {
+                    var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
+                    return truncate;
                 }
             }
         });
