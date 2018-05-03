@@ -23,7 +23,7 @@
             				    <div v-else v-html="currentPromo.rich_description_2"></div>
             				</div>
             				<div class="promo_details_share">
-            				    <social-sharing v-if="currentPost" :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.body)" twitter-user="NorthParkCenter" :media="currentPromo.image_url" inline-template>
+            				    <social-sharing v-if="currentPromo" :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.body)" twitter-user="NorthParkCenter" :media="currentPromo.image_url" inline-template>
                                     <div class="blog-social-share">
                                         <network network="facebook">
                                             <i class="fa fa-facebook-square"></i>
