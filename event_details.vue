@@ -22,7 +22,7 @@
             				    <div v-else v-html="currentEvent.rich_description_2"></div>
             				</div>
             				<div class="promo_details_share">
-            				    <social-sharing v-if="currentPromo" :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.body)" :media="currentPromo.image_url" inline-template>
+            				    <social-sharing v-if="currentEvent" :url="shareURL(currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="truncate(currentEvent.body)" :media="currentEvent.image_url" inline-template>
                                     <div class="margin_20 details_share_container">
                                         <span>Share On: </span>
                                         <network network="facebook">
@@ -33,11 +33,11 @@
                                         </network>
                                     </div>
                                 </social-sharing>
-                                <div v-if="currentPromo.promotionable_type == 'Store'">
-                                    <a v-if="currentPromo.store.phone" :href="'tel:' + currentPromo.store.phone" target="_blank">
-                				        <div class="promo_details_store_btn animated_btn swing_in">{{currentPromo.store.phone}}</div>
+                                <div v-if="currentEvent.promotionable_type == 'Store'">
+                                    <a v-if="currentEvent.store.phone" :href="'tel:' + currentEvent.store.phone" target="_blank">
+                				        <div class="promo_details_store_btn animated_btn swing_in">{{currentEvent.store.phone}}</div>
                 				    </a>
-                                    <router-link :to="'/stores/'+ currentPromo.store.slug" >
+                                    <router-link :to="'/stores/'+ currentEvent.store.slug" >
     							        <div class="promo_details_store_btn animated_btn swing_in">{{ $t("promos_page.visit_store") }}</div>
     					            </router-link>
 					            </div>
