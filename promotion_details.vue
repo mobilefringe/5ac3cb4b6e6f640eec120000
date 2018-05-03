@@ -24,7 +24,8 @@
             				</div>
             				<div class="promo_details_share">
             				    <social-sharing v-if="currentPromo" :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.body)" twitter-user="NorthParkCenter" :media="currentPromo.image_url" inline-template>
-                                    <div class="blog-social-share">
+                                    <div class="details_share_container">
+                                        <h5>Share</h5>
                                         <network network="facebook">
                                             <i class="fa fa-facebook-square"></i>
                                         </network>
@@ -34,7 +35,6 @@
                                         <network network="pinterest">
                                             <i class="fa fa-pinterest-square"></i>
                                         </network>
-                                        <h5>Share</h5>
                                     </div>
                                 </social-sharing>
             				</div>
