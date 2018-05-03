@@ -23,7 +23,20 @@
             				    <div v-else v-html="currentPromo.rich_description_2"></div>
             				</div>
             				<div class="promo_details_share">
-            				    
+            				    <social-sharing v-if="currentPost" :url="shareURL(currentPost.slug)" :title="currentPost.title" :description="currentPost.body" :quote="truncate(currentPost.body)" twitter-user="NorthParkCenter" :media="currentPost.image_url" inline-template>
+                                    <div class="blog-social-share">
+                                        <network network="facebook">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </network>
+                                        <network network="twitter">
+                                            <i class="fa fa-twitter-square"></i>
+                                        </network>
+                                        <network network="pinterest">
+                                            <i class="fa fa-pinterest-square"></i>
+                                        </network>
+                                        <h5>Share</h5>
+                                    </div>
+                                </social-sharing>
             				</div>
     					</div>
         			</div>
@@ -34,7 +47,7 @@
 </template>
 
 <script>
-    define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
+    define(['Vue', 'vuex', 'moment', 'vue-lazy-load', 'vue-social-sharing'], function(Vue, Vuex, moment, VueLazyload, SocialSharing) {
         Vue.use(VueLazyload);
         return Vue.component("promo-details-component", {
             template: template, // the variable template will be injected,
