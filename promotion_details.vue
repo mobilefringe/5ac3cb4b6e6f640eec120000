@@ -34,9 +34,17 @@
                                         </network>
                                     </div>
                                 </social-sharing>
-               <!--                 <router-link :to="'/promotions/'+ promo.slug" >-->
-							        <!--<div class="promo_details_store_phone animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>-->
-					          <!--  </router-link>-->
+                                <div v-if="currentPromo.promotionable_type == 'Store'">
+                                    <a v-if="currentPromo.store.phone" :href="'tel:' + currentPromo.store.phone" target="_blank">
+                				        <div class="promo_details_store_btn animated_btn swing_in">{{currentPromo.store.phone}}</div>
+                				    </a>
+                                    <router-link :to="'/stores/'+ currentPromo.store.slug" >
+    							        <div class="promo_details_store_btn animated_btn swing_in">{{ $t("promos_page.visit_store") }}</div>
+    					            </router-link>
+					            </div>
+					            <div v-else>
+					                
+					            </div>
             				</div>
     					</div>
         			</div>
