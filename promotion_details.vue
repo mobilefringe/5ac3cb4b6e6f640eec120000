@@ -94,12 +94,6 @@
                 ])
             },
             methods: {
-                updateCurrentPromo (id) {
-                    this.currentPromo = this.findPromoBySlug(id);
-                    if (this.currentPromo === null || this.currentPromo === undefined){
-                        this.$router.replace({ name: '404'});
-                    }
-                },
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
@@ -107,6 +101,16 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
+                },
+                updateCurrentPromo (id) {
+                    this.currentPromo = this.findPromoBySlug(id);
+                    if (this.currentPromo === null || this.currentPromo === undefined){
+                        this.$router.replace({ name: '404'});
+                    }
+                },
+                shareURL(slug) {
+                    var share_url = "http://www.northparkcenter.com/posts/" + slug
+                    return share_url
                 }
             }
         });
