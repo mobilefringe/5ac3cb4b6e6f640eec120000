@@ -12,11 +12,6 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-        		    <!--<div class="row hidden_phone">-->
-        		    <!--    <div class="col-md-12">-->
-        		    <!--        <h3 class="promo_page_title center">{{ $t("promos_page.promotions_title") }}</h3>-->
-        		    <!--    </div>-->
-        		    <!--</div>-->
         			<div id="promos_container" class="clearfix" v-if="promotions.length > 0">
         				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">
         					<div class="promo_container clearfix" v-for="(promo, index) in paginated('promos')">
@@ -31,9 +26,6 @@
         							    {{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}
                                     </p>
                                     <p class="promo_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
-        							  
-        					  <!--      <p class="promo_desc"  v-if="locale=='en-ca'" >{{ promo.description_short }}</p>-->
-        							<!--<p class="promo_desc" v-else>{{ promo.description_short_2 }}</p>-->
         							<router-link :to="'/promotions/'+ promo.slug" >
     								   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
         						    </router-link>
