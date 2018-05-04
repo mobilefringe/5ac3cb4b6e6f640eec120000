@@ -21,7 +21,7 @@
 			        <div class="col-md-3 center-block">
 			            <div class="property_logo">
 					        <router-link to="/">
-					            <img src="//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1522945678000/tplogo.png" alt="Property Logo"/>
+					            <img src="//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1522945678000/tplogo.png" alt="The Twin Pines Mall Logo"/>
 				            </router-link>
 				        </div>    
 			        </div>
