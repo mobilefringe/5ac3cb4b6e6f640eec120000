@@ -28,7 +28,7 @@
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                         	    <div class="feature_item_container">
                         	        <a class="tile" :href="feature.url">
-                            			<img :src="feature.image_url" :alt="feature.name">
+                            			<img :src="feature.image_url" :alt="feature.name + 'Desktop View'">
                         				<div class="details" v-if="feature.name && feature.description">
                         					<span class="title" v-if="locale=='en-ca'">
                         					    <h3>{{ feature.name }}</h3>
@@ -53,7 +53,7 @@
                             <div v-for="feature in mobile_feature_items" :class="'grid-item ' + feature.masonry_class ">
                             	<div class="feature_item_container">
                             	    <a class="tile" :href="feature.url">
-                            			<img :src="feature.image_url" :alt="feature.name">
+                            			<img :src="feature.image_url" :alt="feature.name + 'Mobile View'">
                         				<div class="details" v-if="feature.name && feature.description">
                         					<span class="title" v-if="locale=='en-ca'">
                         					    <h3>{{ feature.name }}</h3>
