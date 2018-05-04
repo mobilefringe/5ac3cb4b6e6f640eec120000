@@ -18,7 +18,7 @@
 					        <!--<p>{{ $t("contact_page.phone2") }}: {{ property.contact_fax }}</p>-->
 					        <div class="margin_40"></div>
 					        <h3 class="">{{ $t("contact_page.email") }}</h3>
-					        <p>{{ property.contact_email }}</p>
+					        <a :href="'mailto:' + property.contact_email "><p>{{ property.contact_email }}</p></a>
 					    </div>
 					    <div class="contact_form_container">
 					        <form id="contact_form" class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
