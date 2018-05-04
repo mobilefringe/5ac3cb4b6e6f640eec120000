@@ -79,7 +79,7 @@
         		    <div class="insta-feed-container">
                         <div class="insta-feed-image " v-for="(item, index) in instaFeed">
                             <a :href="item.link" target="_blank">
-                                <img :src="item.images.standard_resolution.url" alt="{{ item.name }}"/>
+                                <img :src="item.images.standard_resolution.url" alt="{{ item.id }}"/>
                                 <div class="insta_content">
                                     <!--<p class="insta_caption">{{ item.caption.text }}</p>-->
                                 </div>
@@ -128,7 +128,6 @@
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [8]);
                     this.instaFeed.map(insta => {
-                        console.log(insta)
                         if(insta.caption != null){
                             insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
                         }
