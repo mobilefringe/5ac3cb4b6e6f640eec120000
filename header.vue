@@ -11,7 +11,7 @@
 					<div class="col-xs-12 col-md-6 mobile_header">
 					    <div class="property_logo center-block">
 							<router-link to="/">
-							    <img src="//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1522945678000/tplogo.png" alt="Property Logo"/>
+							    <img src="//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1522945678000/tplogo.png" alt="The Twin Pines Mall Logo"/>
 						    </router-link>
 						</div>
 						<div class="mobile_menu_icon visible_phone" @click="showMenu = !showMenu">
