@@ -92,8 +92,8 @@
                     _.forEach(this.processedPromos, function(value, key) {
                         value.name_short = _.truncate(value.name, { 'length': 21, 'separator': ' ' });
                         value.name_short_2 = _.truncate(value.name_2, { 'length': 21, 'separator': ' ' });
-                        value.description_short = _.truncate(value.description, { 'length': 80, 'separator': ' ' });
-                        value.description_short_2 = _.truncate(value.description_2, { 'length': 80, 'separator': ' ' });
+                        value.description_short = _.truncate(value.description, { 'length': 120, 'separator': ' ' });
+                        value.description_short_2 = _.truncate(value.description_2, { 'length': 120, 'separator': ' ' });
 
                         if (_.includes(value.image_url, 'missing')) {
                             value.image_url = "http://placehold.it/1560x800/757575";
