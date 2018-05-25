@@ -98,6 +98,13 @@
         margin: 0;
         border: none !important;
     }
+    .store_logo_container:hover .store_img {
+        -webkit-filter: blur(2px);
+        -moz-filter: all .25s ease;
+        -o-filter: all .25s ease;
+        -ms-filter: all .25s ease;
+        filter: blur(2px);
+    }
     .listView {
         column-count: 2;
     }
