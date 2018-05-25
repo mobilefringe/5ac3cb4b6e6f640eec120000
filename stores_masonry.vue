@@ -45,57 +45,25 @@
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
         			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item">
-                        <!--<div v-masonry-tile class="item" >-->
-                            <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" tag="div">
-                                <div v-masonry-tile  v-for="store in filteredStores" :key="store" class="stores-grid-item"> <!-- class="item" -->
-                            	    <div class="store_logo_container">
-                            	        <router-link :to="'/stores/'+ store.slug">
-                                			<img :src="store.store_front_url_abs" alt="">
-                                			<div class="store_tag store_promotion" v-if="store.total_published_promos">-->
-            									<div class="store_tag_text">{{$t("stores_page.promotion")}}</div>
-            								</div>
-            								<div class="store_tag coming_soon" v-if="!store.total_published_promos && !store.is_new_store && store.is_coming_soon_store">
-            									<div class="store_tag_text">{{$t("stores_page.coming_soon")}}</div>
-            								</div>
-            								<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">
-            									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
-            								</div>
-                                		</router-link>
-                            	    </div>
-                                </div>
-                            </transition-group>
-                        <!--</div>-->
+                        <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" tag="div">
+                            <div v-masonry-tile  v-for="store in filteredStores" :key="store" class="stores-grid-item">
+                        	    <div class="store_logo_container">
+                        	        <router-link :to="'/stores/'+ store.slug">
+                            			<img :src="store.store_front_url_abs" alt="">
+                            			<div class="store_tag store_promotion" v-if="store.total_published_promos">-->
+        									<div class="store_tag_text">{{$t("stores_page.promotion")}}</div>
+        								</div>
+        								<div class="store_tag coming_soon" v-if="!store.total_published_promos && !store.is_new_store && store.is_coming_soon_store">
+        									<div class="store_tag_text">{{$t("stores_page.coming_soon")}}</div>
+        								</div>
+        								<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">
+        									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
+        								</div>
+                            		</router-link>
+                        	    </div>
+                            </div>
+                        </transition-group>
                     </div>
-        			<!--<div class="row">-->
-        			<!--	<div id="store_list_container">-->
-        			<!--		<div class="col-xs-6 col-sm-3 col-md-2 cats_row" v-for="store in filteredStores" :data-cat="store.cat_list">-->
-        			<!--			<div class="store_logo_container" :id="store.initial">-->
-        			<!--				<router-link :to="'/stores/'+ store.slug">-->
-        			<!--				    <span v-if="store.hover_img">-->
-           <!-- 							    <transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
-           <!-- 								    <img class="store_img" :src="store.store_front_url_abs"/>-->
-           <!-- 								</transition>-->
-           <!-- 								<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
-           <!-- 								    <img class="store_hover" :src="store.hover_img"/>-->
-           <!-- 								</transition>-->
-           <!-- 							</span>-->
-           <!-- 							<span v-else>-->
-           <!-- 							    <img class="store_no_hover_img" :src="store.store_front_url_abs"/>    -->
-           <!-- 							</span>-->
-           <!-- 							<div class="store_tag store_promotion" v-if="store.total_published_promos">-->
-        			<!--						<div class="store_tag_text">{{$t("stores_page.promotion")}}</div>-->
-        			<!--					</div>-->
-        			<!--					<div class="store_tag coming_soon" v-if="!store.total_published_promos && !store.is_new_store && store.is_coming_soon_store">-->
-        			<!--						<div class="store_tag_text">{{$t("stores_page.coming_soon")}}</div>-->
-        			<!--					</div>-->
-        			<!--					<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">-->
-        			<!--						<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>-->
-        			<!--					</div>-->
-        			<!--				</router-link>-->
-        			<!--			</div>-->
-        			<!--		</div>-->
-        			<!--	</div>-->
-        			<!--</div>-->
         		</div>
 	        </div>
 	    </transition>
