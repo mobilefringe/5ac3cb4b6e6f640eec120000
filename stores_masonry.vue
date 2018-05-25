@@ -64,7 +64,7 @@
             								<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">
             									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
             								</div>
-            								<div class="store_tag">
+            								<div class="store_tag store_phone">
             								    <div class="store_tag_text">{{ store.phone }}</div>    
             								</div>
                                 		</router-link>
