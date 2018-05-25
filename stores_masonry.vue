@@ -104,6 +104,7 @@
 <style>
     .store_logo_container {
         margin: 0;
+        border: none !important;
     }
 </style>
 <script>
