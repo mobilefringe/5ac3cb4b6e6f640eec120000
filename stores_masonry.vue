@@ -46,22 +46,24 @@
         			</div>
         			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" class="hidden_phone">
                         <div v-masonry-tile class="item" >
-                            <div v-for="store in filteredStores" class="stores-grid-item">
-                        	    <div class="store_logo_container">
-                        	        <router-link :to="'/stores/'+ store.slug">
-                            			<img :src="store.store_front_url_abs" alt="">
-                            			<div class="store_tag store_promotion" v-if="store.total_published_promos">-->
-        									<div class="store_tag_text">{{$t("stores_page.promotion")}}</div>
-        								</div>
-        								<div class="store_tag coming_soon" v-if="!store.total_published_promos && !store.is_new_store && store.is_coming_soon_store">
-        									<div class="store_tag_text">{{$t("stores_page.coming_soon")}}</div>
-        								</div>
-        								<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">
-        									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
-        								</div>
-                            		</router-link>
-                        	    </div>
-                            </div>
+                            <transition name="fade">
+                                <div v-for="store in filteredStores" class="stores-grid-item">
+                            	    <div class="store_logo_container">
+                            	        <router-link :to="'/stores/'+ store.slug">
+                                			<img :src="store.store_front_url_abs" alt="">
+                                			<div class="store_tag store_promotion" v-if="store.total_published_promos">-->
+            									<div class="store_tag_text">{{$t("stores_page.promotion")}}</div>
+            								</div>
+            								<div class="store_tag coming_soon" v-if="!store.total_published_promos && !store.is_new_store && store.is_coming_soon_store">
+            									<div class="store_tag_text">{{$t("stores_page.coming_soon")}}</div>
+            								</div>
+            								<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">
+            									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
+            								</div>
+                                		</router-link>
+                            	    </div>
+                                </div>
+                            </transition>
                         </div>
                     </div>
         			<!--<div class="row">-->
