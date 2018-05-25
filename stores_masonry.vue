@@ -242,9 +242,11 @@
                 },
                 toggleView() {
                     if (this.logoView) {
+                        this.toggleText = "List View"
                         this.listView = true;
                         this.logoView = false;
                     } else if (this.listView) {
+                        this.toggleText = "Logo View"
                         this.logoView = true;
                         this.listView = false;
                     } 
