@@ -118,6 +118,9 @@
         -ms-filter: all .25s ease;
         filter: blur(3px);
     }
+    .store_logo_container:hover .store_details {
+        display: block;
+    }
     .listView {
         column-count: 2;
     }
