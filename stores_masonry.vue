@@ -50,7 +50,7 @@
         			    </div>
         			</div>
         			<div v-if="logoView">
-        			    <transition name="fade">
+        			    <!--<transition name="fade">-->
                 			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item">
                                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                                     <div v-masonry-tile  v-for="(store, index) in filteredStores" :key="index" class="stores-grid-item">
@@ -71,7 +71,7 @@
                                     </div>
                                 </transition-group>
                             </div>
-                        </transition>
+                        <!--</transition>-->
                     </div>
                     <div v-if="listView">
                         <transition name="fade">
