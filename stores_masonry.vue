@@ -99,6 +99,7 @@
         border: none !important;
     }
     .store_logo_container:hover .store_img {
+        display: block;
         -webkit-filter: blur(2px);
         -moz-filter: all .25s ease;
         -o-filter: all .25s ease;
