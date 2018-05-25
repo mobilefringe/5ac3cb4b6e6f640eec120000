@@ -79,8 +79,8 @@
                         			<div>
                         			    {{ store.name }}
                         			    <span v-if="store.total_published_promos"><i class="fa fa-tag"></i></span>
-                                        <span v-if="store.is_coming_soon_store"><i class="fa fa-star"></i></span>
-                                        <span v-if="store.is_new_store"><i class="fa fa-clock"></i></span>
+                                        <span v-if="store.is_new_store"><i class="fa fa-star"></i></span>
+                                        <span v-if="store.is_coming_soon_store"><i class="fa fa-clock"></i></span>
                         			</div>
                         		</router-link>
                             </div>
