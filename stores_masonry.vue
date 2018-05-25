@@ -122,17 +122,13 @@
         display: none;
     }
     .store_logo_container:hover .store_details {
+        display: block;
+    }
+    .store_logo_container:hover .store_details .store_text {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 90px;
-        width: 130px;
-        background: #000;
-        color: red;
-        display: block;
-    }
-    .store_logo_container:hover .store_details .store_text {
         font-size: 0.75rem;
         color: #fff;
         line-height: 22px;
