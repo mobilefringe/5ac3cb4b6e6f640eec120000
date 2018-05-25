@@ -72,6 +72,8 @@
                         </div>
                     </div>
                     <div v-if="listView">
+                        <p>List View</p>
+                        
                     </div>
         		</div>
 	        </div>
