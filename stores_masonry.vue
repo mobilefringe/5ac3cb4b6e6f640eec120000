@@ -44,6 +44,11 @@
         				</div>
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
+        			<div class="row">
+        			    <div class="col-md-12">
+        			        <button @click="toggleView()">Toggle View</button>
+        			    </div>
+        			</div>
         			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item">
                         <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                             <div v-masonry-tile  v-for="store in filteredStores" :key="store" class="stores-grid-item">
