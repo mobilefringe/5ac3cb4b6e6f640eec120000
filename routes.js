@@ -20,6 +20,22 @@ define([], function() {
             ]
         },
         {
+            path: '/stores-masonry',
+            component: view('default'),
+            children: [{
+                    path: '',
+                    component: view('stores_masonry'),
+                    name: 'storeListMasonry'
+                },
+                {
+                    path: ':id',
+                    component: view('store_details'),
+                    name: 'storeDetails',
+                    props: true
+                }
+            ]
+        },
+        {
             path: '/promotions',
             component: view('default'),
             children: [{
