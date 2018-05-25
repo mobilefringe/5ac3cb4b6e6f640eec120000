@@ -78,7 +78,7 @@
                             <p>List View</p>
                             <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                                     <div v-masonry-tile  v-for="store in filteredStores" :key="store" class="stores-grid-item">
-                                	    <div class="store_logo_container">
+                                	    <!--<div class="store_logo_container">-->
                                 	        <router-link :to="'/stores/'+ store.slug">
                                     			<p>{{ store.name }}</p>
                         <!--            			<div class="store_tag store_promotion" v-if="store.total_published_promos">-->-->
@@ -91,7 +91,7 @@
                 								<!--	<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>-->
                 								<!--</div>-->
                                     		</router-link>
-                                	    </div>
+                                	    <!--</div>-->
                                     </div>
                                 </transition-group>
                         </transition>
