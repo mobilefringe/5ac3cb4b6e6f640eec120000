@@ -101,7 +101,11 @@
 	    </transition>
 	</div>
 </template>
-
+<style>
+    .store_logo_container {
+        margin: 0;
+    }
+</style>
 <script>
     define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "masonry" , "vue-masonry-plugin"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent, masonry, VueMasonryPlugin) {
         Vue.use(VueMasonryPlugin.default);
