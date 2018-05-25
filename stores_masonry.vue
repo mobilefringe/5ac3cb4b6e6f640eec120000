@@ -232,7 +232,13 @@
                     this.listMode = mode;
                 },
                 toggleView() {
-                    
+                    if (this.logoView) {
+                        this.listView = true;
+                        this.logoView = false;
+                    } else if (this.listView) {
+                        this.logoView = true;
+                        this.listView = false;
+                    } 
                 },
                 updateSVGMap(map) {
                     this.map = map;
