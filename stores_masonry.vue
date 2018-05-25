@@ -45,7 +45,7 @@
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
         			<div class="margin_40">
-    			        <button class="animated_btn swing_in" @click="toggleView()">{{ toggleText }}</button>
+    			        <button class="submit_btn animated_btn swing_in" @click="toggleView()">{{ toggleText }}</button>
         			</div>
         			<div v-if="logoView">
 
