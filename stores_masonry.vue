@@ -100,11 +100,11 @@
     }
     .store_logo_container:hover .store_img {
         display: block;
-        -webkit-filter: blur(2px);
+        -webkit-filter: blur(3px);
         -moz-filter: all .25s ease;
         -o-filter: all .25s ease;
         -ms-filter: all .25s ease;
-        filter: blur(2px);
+        filter: blur(3px);
     }
     .listView {
         column-count: 2;
