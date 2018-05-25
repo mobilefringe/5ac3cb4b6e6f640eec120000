@@ -45,9 +45,9 @@
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
         			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" class="hidden_phone">
-                        <div v-masonry-tile class="item" >
+                        <!--<div v-masonry-tile class="item" >-->
                             <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" tag="div">
-                                <div v-for="store in filteredStores" :key="store" class="stores-grid-item">
+                                <div v-masonry-tile class="item" v-for="store in filteredStores" :key="store" class="stores-grid-item">
                             	    <div class="store_logo_container">
                             	        <router-link :to="'/stores/'+ store.slug">
                                 			<img :src="store.store_front_url_abs" alt="">
@@ -64,7 +64,7 @@
                             	    </div>
                                 </div>
                             </transition-group>
-                        </div>
+                        <!--</div>-->
                     </div>
         			<!--<div class="row">-->
         			<!--	<div id="store_list_container">-->
