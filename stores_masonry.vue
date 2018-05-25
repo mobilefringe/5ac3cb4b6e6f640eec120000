@@ -73,8 +73,7 @@
                         </div>
                      
                     </div>
-
-                        
+                    <!-- List View -->
                     <div v-if="listView" class="listView">
                         <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                             <div v-for="(store, index) in filteredStores" :key="index">
