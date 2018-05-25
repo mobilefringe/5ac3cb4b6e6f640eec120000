@@ -77,7 +77,7 @@
                         <transition name="fade">
                             <div class="listView">
                                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
-                                    <div v-for="store in filteredStores">
+                                    <div v-for="store in filteredStores" :key="store">
                             	        <router-link :to="'/stores/'+ store.slug">
                                 			<p>{{ store.name }}</p>
                                 		</router-link>
