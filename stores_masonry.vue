@@ -44,7 +44,7 @@
         				</div>
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
-        			<div class="row">
+        			<div class="margin_40">
     			        <button @click="toggleView()">{{ toggleText }}</button>
         			</div>
         			<div v-if="logoView">
