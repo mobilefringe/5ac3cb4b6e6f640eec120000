@@ -75,8 +75,9 @@
                     </div>
                     <div v-if="listView">
                         <transition name="fade">
-                            <p>List View</p>
                             <div>
+                                <p>List View</p>
+                            
                                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                                     <div v-masonry-tile  v-for="store in filteredStores" :key="store" class="stores-grid-item">
                             	        <router-link :to="'/stores/'+ store.slug">
