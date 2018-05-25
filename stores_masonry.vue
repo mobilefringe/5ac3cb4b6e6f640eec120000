@@ -47,6 +47,7 @@
         			<div class="margin_40">
     			        <button class="submit_btn animated_btn swing_in" @click="toggleView()">{{ toggleText }}</button>
         			</div>
+        			<!-- Logo View -->
         			<div v-if="logoView">
 
             			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item">
