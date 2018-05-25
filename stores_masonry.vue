@@ -91,8 +91,8 @@
                     								<!--<div class="store_tag new_store" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">-->
                     								<!--	<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>-->
                     								<!--</div>-->
-                                    		</router-link>
-                                        </div>
+                                		</router-link>
+                                    </div>
                                 </transition-group>
                             </div>
                         </transition>
