@@ -91,6 +91,9 @@
         margin: 0;
         border: none !important;
     }
+    .listView {
+        column-count: 2;
+    }
 </style>
 <script>
     define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "masonry" , "vue-masonry-plugin"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent, masonry, VueMasonryPlugin) {
