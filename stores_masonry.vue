@@ -45,9 +45,7 @@
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
         			<div class="row">
-        			    <div class="col-md-12">
-        			        <button @click="toggleView()">{{ toggleText }}</button>
-        			    </div>
+    			        <button @click="toggleView()">{{ toggleText }}</button>
         			</div>
         			<div v-if="logoView">
 
