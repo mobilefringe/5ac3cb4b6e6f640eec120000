@@ -49,8 +49,7 @@
                             <div v-for="store in filteredStores" class="grid-item">
                         	    <div class="feature_item_container">
                         	        <router-link :to="'/stores/'+ store.slug">
-                            			<img :src="store.store_front_url_abs" :alt="">
-                        				
+                            			<img :src="store.store_front_url_abs" alt="">
                             		</router-link>
                         	    </div>
                             </div>
