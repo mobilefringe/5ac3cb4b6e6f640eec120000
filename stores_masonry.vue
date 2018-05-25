@@ -65,7 +65,7 @@
             									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
             								</div>
             								<div class="store_details">
-            								    <div class="store_tag_text">{{ store.name }}</div>    
+            								    <div class="store_text">{{ store.name }}</div>    
             								</div>
                                 		</router-link>
                             	    </div>
@@ -131,6 +131,14 @@
         background: #000;
         color: red;
         display: block;
+    }
+    .store_logo_container:hover .store_details .store_text {
+        font-size: 0.75rem;
+        color: #fff;
+        line-height: 22px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        text-align: center;
     }
     .listView {
         column-count: 2;
