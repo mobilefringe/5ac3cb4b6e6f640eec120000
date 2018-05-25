@@ -106,7 +106,9 @@
         left: 0;
         width: 100%;
         height: 100%;
+        display: none;
         background-color: rgba(255, 255, 255, 0.4);
+        transition: all 0.3s ease;
     }
     .store_logo_container:hover .store_img {
         display: block;
