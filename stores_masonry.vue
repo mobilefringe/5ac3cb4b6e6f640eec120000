@@ -93,7 +93,9 @@
                     selectedCat: null,
                     filteredStores: null,
                     search_result : null,
-                    query: ""
+                    query: "",
+                    logoView: true,
+                    listView: false
                 }
             },
             created (){
@@ -222,6 +224,9 @@
                 },
                 changeMode(mode) {
                     this.listMode = mode;
+                },
+                toggleView() {
+                    
                 },
                 updateSVGMap(map) {
                     this.map = map;
