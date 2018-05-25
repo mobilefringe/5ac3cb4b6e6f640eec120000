@@ -78,9 +78,9 @@
                     	        <router-link :to="'/stores/'+ store.slug">
                         			<div>
                         			    {{ store.name }}
-                        			    <span class="pull-right" v-if="store.total_published_promos"><i class="fa fa-tag"></i></span>
-                                        <span class="pull-right" v-if="store.is_coming_soon_store"><i class="fa fa-star"></i></span>
-                                        <span class="pull-right" v-if="store.is_new_store"><i class="fa fa-clock"></i></span>
+                        			    <span v-if="store.total_published_promos"><i class="fa fa-tag"></i></span>
+                                        <span v-if="store.is_coming_soon_store"><i class="fa fa-star"></i></span>
+                                        <span v-if="store.is_new_store"><i class="fa fa-clock"></i></span>
                         			</div>
                         		</router-link>
                             </div>
