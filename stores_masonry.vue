@@ -46,7 +46,7 @@
         			</div>
         			<div class="row">
         			    <div class="col-md-12">
-        			        <button @click="toggleView()">Toggle View</button>
+        			        <button @click="toggleView()">{{ toggleText }}</button>
         			    </div>
         			</div>
         			<div v-if="logoView">
