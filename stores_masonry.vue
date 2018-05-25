@@ -108,6 +108,7 @@
                     filteredStores: null,
                     search_result : null,
                     query: "",
+                    toggleText: "List View",
                     logoView: true,
                     listView: false
                 }
