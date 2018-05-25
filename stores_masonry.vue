@@ -44,7 +44,7 @@
         				</div>
         				<div class="stores_header_line hidden_phone"></div>
         			</div>
-        			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" class="hidden_phone">
+        			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item">
                         <!--<div v-masonry-tile class="item" >-->
                             <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" tag="div">
                                 <div v-masonry-tile  v-for="store in filteredStores" :key="store" class="stores-grid-item"> <!-- class="item" -->
