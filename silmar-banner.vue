@@ -48,13 +48,15 @@ html {
     overflow: hidden;
 }
  #silmar_banner .slider {
-        width: 100vw;
-        height: 100vw;
-        z-index: 2;
+    width: 100vw;
+    height: 100vw;
+    z-index: 2;
         
     
     
-    .item {
+    
+}
+.item {
       height: 100vh;
       width: 100vw;
       position: relative;
@@ -73,7 +75,6 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-}
   .slick-dots {
     position: fixed;
     z-index: 100;
