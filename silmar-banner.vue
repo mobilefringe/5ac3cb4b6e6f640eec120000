@@ -16,7 +16,7 @@
                 <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg" />
               </div>
             </div>
-          </div>
+            </div>
             <div class="slideshow-text">
                 <div class="item">Canyon</div>
                 <div class="item">Desert</div>
