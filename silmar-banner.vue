@@ -166,10 +166,7 @@ html {
                 }  
             },
             mounted() {
-                this.slides = $('.slide');
-                this.interval = setInterval(function () {
-                    this.nextSlide();
-                }.bind(this), this.autoPlaySpeed); 
+                
             },
             methods: {
                 prevSlide() {
