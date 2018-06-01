@@ -169,48 +169,7 @@ html {
                 
             },
             methods: {
-                prevSlide() {
-                    // If on first slide, loop to last
-                    if (this.currentSlideIndex <= 0) {
-                        this.currentSlideIndex = this.numSlides;
-                    }
-                    this.currentSlideIndex--;
-
-                    this.showSlide();
-                },
-                nextSlide() {
-                    this.currentSlideIndex++;
-
-                    // If on last slide, loop to first
-                    if (this.currentSlideIndex >= this.numSlides) {
-                        this.currentSlideIndex = 0;
-                    }
-
-                    this.showSlide();
-                },
-                showSlide() {
-                    var vm = this;
-                    // reset
-                    this.delta = 0;
-                    // Bail if we're already sliding
-                    if ($('#slide_container').hasClass('is-sliding')) {
-                        return;
-                    }
-                    // Loop through our slides
-                    this.slides.each(function(i, slide) {
-                        // Toggle the is-active class to show slide
-                        $(slide).toggleClass('is-active', (i === vm.currentSlideIndex));
-                        $(slide).toggleClass('is-prev', (i === vm.currentSlideIndex - 1));
-                        $(slide).toggleClass('is-next', (i === vm.currentSlideIndex + 1));
-                        
-                        // Add and remove is-sliding class
-                        $('#slide_container').addClass('is-sliding');
-
-                        setTimeout(function() {
-                            $('#slide_container').removeClass('is-sliding');
-                        }, 1000);
-                    });
-                }
+                
             }
         })
     });
