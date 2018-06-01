@@ -1,7 +1,6 @@
 <template>
 	<div class="row page_content" id="slide_container">
-
-    <div class="split-slideshow">
+        <div class="split-slideshow">
       <div class="slideshow">
         <div class="slider">
           <div class="item">
