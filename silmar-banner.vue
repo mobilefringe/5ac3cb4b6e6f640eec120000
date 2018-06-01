@@ -1,5 +1,5 @@
 <template>
-	<div class="row page_content" id="slide_container">
+	<div class="row page_content" id="silmar_banner">
         <div class="split-slideshow">
             <div class="slideshow">
                 <div class="slider">
