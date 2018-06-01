@@ -30,10 +30,10 @@
 <style>
 body,
 html {
-  height: 100%;
-  background: #110101;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+    height: 100%;
+    background: #110101;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 .slideshow {
