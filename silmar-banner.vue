@@ -1,4 +1,3 @@
-
 <template>
 	<div class="row page_content" id="slide_container">
 	    <main>
