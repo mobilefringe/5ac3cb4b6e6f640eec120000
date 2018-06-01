@@ -45,11 +45,11 @@ html {
     height: 100vh;
     overflow: hidden;
   
-  #silmar_banner .slider {
-    width: 100vw;
-    height: 100vw;
-    z-index: 2;
-    
+    #silmar_banner .slider {
+        width: 100vw;
+        height: 100vw;
+        z-index: 2;
+        
     * {
       outline: none;
     }
