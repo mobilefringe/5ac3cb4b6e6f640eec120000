@@ -151,7 +151,7 @@ html {
 
 </style>
 <script>
-    define(["Vue", "jquery"], function(Vue, $) {
+    define(["Vue", "jquery", 'slick'], function(Vue, $) {
         return Vue.component("silmar-banner", {
             template: template, // the variable template will be injected
             props: {
