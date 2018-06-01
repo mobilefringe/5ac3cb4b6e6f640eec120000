@@ -45,7 +45,7 @@ html {
     height: 100vh;
     overflow: hidden;
   
-  .slider {
+  #silmar_banner .slider {
     width: 100vw;
     height: 100vw;
     z-index: 2;
