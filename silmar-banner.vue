@@ -125,7 +125,7 @@ html {
   position: absolute;
 }
 
-.slideshow-text {
+#silmar_banner .slideshow-text {
   position: absolute;
   top: 50%;
   left: 50%;
