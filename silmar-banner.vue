@@ -162,10 +162,7 @@ html {
             },
             data () {
                 return {
-                    currentSlideIndex: 0,
-                    scrollThreshold: 40,
-                    slides: [],
-                    numSlides: this.banners.length
+                    
                 }  
             },
             mounted() {
