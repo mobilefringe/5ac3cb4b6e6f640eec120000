@@ -46,8 +46,34 @@ html {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
-  
+}
+ #silmar_banner .slider {
+        width: 100vw;
+        height: 100vw;
+        z-index: 2;
+        
+    
+    
+    .item {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      
+      .text {
+        display: none;
+      }
+      
+      img {
+        min-width: 101%;
+        min-height: 101%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+}
   .slick-dots {
     position: fixed;
     z-index: 100;
