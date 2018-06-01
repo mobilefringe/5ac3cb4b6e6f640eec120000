@@ -17,12 +17,12 @@
               </div>
             </div>
           </div>
-          <div class="slideshow-text">
-            <div class="item">Canyon</div>
-            <div class="item">Desert</div>
-            <div class="item">Erosion</div>
-            <div class="item">Shape</div>
-          </div>
+            <div class="slideshow-text">
+                <div class="item">Canyon</div>
+                <div class="item">Desert</div>
+                <div class="item">Erosion</div>
+                <div class="item">Shape</div>
+            </div>
         </div>
     </div>
 </template>
