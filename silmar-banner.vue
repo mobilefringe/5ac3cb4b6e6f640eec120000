@@ -30,115 +30,99 @@
 <style lang="scss">
 body,
 html {
-    height: 100%;
-    background: #110101;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+  height: 100%;
+  background: #110101;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 #silmar_banner .slideshow {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  
-  .slider {
-    width: 100vw;
-    height: 100vw;
-    z-index: 2;
-    
-    * {
-      outline: none;
-    }
-    
-    .item {
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-      overflow: hidden;
-      border: none;
-      
-      .text {
-        display: none;
-      }
-      
-      img {
-        min-width: 101%;
-        min-height: 101%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-  }
-  
-  .slick-dots {
-    position: fixed;
-    z-index: 100;
-    width: 40px;
-    height: auto;
-    bottom: auto;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    left: auto;
-    color: #fff;
-    display: block;
-    
-    li {
-      display: block;
-      width: 100%;
-      height: auto;
-      
-      & button {
-        position: relative;
-        width: 20px;
-        height: 15px;
-        text-align: center;
-        
-        &:before {
-          content: '';
-          background: #fff;
-          color: #fff;
-          height: 2px;
-          width: 20px;
-          border-radius: 0;
-          position: absolute;
-          top: 50%;
-          right: 0;
-          left: auto;
-          transform: translateY(-50%);
-          transition: all .3s ease-in-out;
-          opacity: 0.6;
-        }
-      }
-      
-      &.slick-active {
-        button {
-          &:before {
-            width: 40px;
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-  
-  &.slideshow-right {
-    left: 0;
-    z-index: 1;
-    width: 50vw;
-    pointer-events: none;
-    
-    .slider {
-      left: 0;
-      position: absolute;
-    }
-  }
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#silmar_banner .slideshow .slider {
+  width: 100vw;
+  height: 100vw;
+  z-index: 2;
+}
+#silmar_banner .slideshow .slider * {
+  outline: none;
+}
+#silmar_banner .slideshow .slider .item {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+#silmar_banner .slideshow .slider .item .text {
+  display: none;
+}
+#silmar_banner .slideshow .slider .item img {
+  min-width: 101%;
+  min-height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#silmar_banner .slideshow .slick-dots {
+  position: fixed;
+  z-index: 100;
+  width: 40px;
+  height: auto;
+  bottom: auto;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  left: auto;
+  color: #fff;
+  display: block;
+}
+#silmar_banner .slideshow .slick-dots li {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#silmar_banner .slideshow .slick-dots li button {
+  position: relative;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+}
+#silmar_banner .slideshow .slick-dots li button:before {
+  content: '';
+  background: #fff;
+  color: #fff;
+  height: 2px;
+  width: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%);
+  transition: all .3s ease-in-out;
+  opacity: 0.6;
+}
+#silmar_banner .slideshow .slick-dots li.slick-active button:before {
+  width: 40px;
+  opacity: 1;
+}
+#silmar_banner .slideshow.slideshow-right {
+  left: 0;
+  z-index: 1;
+  width: 50vw;
+  pointer-events: none;
+}
+#silmar_banner .slideshow.slideshow-right .slider {
+  left: 0;
+  position: absolute;
 }
 
 .slideshow-text {
@@ -157,12 +141,13 @@ html {
   text-transform: uppercase;
   letter-spacing: 20px;
   line-height: 0.8;
-  
-  @media (max-width: 767px) {
+}
+@media (max-width: 767px) {
+  .slideshow-text {
     font-size: 40px;
   }
-  
 }
+
 
 </style>
 <script>
