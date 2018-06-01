@@ -28,40 +28,140 @@
 </template>
 
 <style>
-    /******* SLICE SLIDER STYLE *********/
-.slide__title{
-    font-size: 3.75em;
-    color: #fff;
-    line-height: normal;
-    color: #eee;
-    text-shadow: #000 0px -1px;
+body,
+html {
+  height: 100%;
+  background: #110101;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
-.slides-nav button{
-    font-family: $font_family;  
-}
-.slides-nav button:after {
-    height:2px;
-    top:auto;
-    bottom:0;
-}
-.slides-nav {
-    z-index: 99;
-    position: absolute;
-    right: auto;
-    display: block;
-    /* align-items: center; */
+
+.slideshow {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+  .slider {
+    width: 100vw;
+    height: 100vw;
+    z-index: 2;
+    
+    * {
+      outline: none;
+    }
+    
+    .item {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      
+      .text {
+        display: none;
+      }
+      
+      img {
+        min-width: 101%;
+        min-height: 101%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  
+  .slick-dots {
+    position: fixed;
+    z-index: 100;
+    width: 40px;
     height: auto;
-    width: 100%;
-    bottom: 25px;
-}
-.slides-nav__nav {
-    position: relative;
+    bottom: auto;
+    top: 50%;
     right: 0;
+    transform: translateY(-50%);
+    left: auto;
+    color: #fff;
     display: block;
-    font-size: 1em;
-    transform: initial;
-    transform-origin: unset;
-    text-align: center;
+    
+    li {
+      display: block;
+      width: 100%;
+      height: auto;
+      
+      & button {
+        position: relative;
+        width: 20px;
+        height: 15px;
+        text-align: center;
+        
+        &:before {
+          content: '';
+          background: #fff;
+          color: #fff;
+          height: 2px;
+          width: 20px;
+          border-radius: 0;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: auto;
+          transform: translateY(-50%);
+          transition: all .3s ease-in-out;
+          opacity: 0.6;
+        }
+      }
+      
+      &.slick-active {
+        button {
+          &:before {
+            width: 40px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  
+  &.slideshow-right {
+    left: 0;
+    z-index: 1;
+    width: 50vw;
+    pointer-events: none;
+    
+    .slider {
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+
+.slideshow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 80px;
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  line-height: 0.8;
+  
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
+  
 }
 
 </style>
