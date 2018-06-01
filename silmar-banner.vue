@@ -167,7 +167,7 @@ html {
 </style>
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
-        return Vue.component("keele-banner", {
+        return Vue.component("silmar-banner", {
             template: template, // the variable template will be injected
             props: {
                 banners: {
