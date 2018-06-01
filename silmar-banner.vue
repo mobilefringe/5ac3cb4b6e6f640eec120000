@@ -36,7 +36,7 @@ html {
     overflow: hidden;
 }
 
-.slideshow {
+#silmar_banner .slideshow {
     position: absolute;
     z-index: 1;
     top: 0;
