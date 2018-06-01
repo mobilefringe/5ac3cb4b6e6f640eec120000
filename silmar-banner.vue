@@ -1,5 +1,6 @@
 <template>
-	<!--
+	<div class="row page_content" id="slide_container">
+	    <!--
 
 Follow me on
 Dribbble: https://dribbble.com/supahfunk
@@ -31,6 +32,7 @@ Codepen: https://codepen.io/supah/
     <div class="item">Shape</div>
   </div>
 </div>
+    </div>
 </template>
 
 <style>
