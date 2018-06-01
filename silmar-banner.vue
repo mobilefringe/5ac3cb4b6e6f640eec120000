@@ -162,7 +162,7 @@ html {
             },
             data () {
                 return {
-                    
+                    const $slick = $(this.$el);
                 }  
             },
             mounted() {
