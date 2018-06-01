@@ -35,9 +35,9 @@ html {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
-* {
-      outline: none;
-    }
+#silmar_banner * {
+  outline: none;
+}
 #silmar_banner .slideshow {
     position: absolute;
     z-index: 1;
