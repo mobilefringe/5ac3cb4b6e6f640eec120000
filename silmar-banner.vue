@@ -56,7 +56,7 @@ html {
     
     
 }
- #silmar_banner.item {
+#silmar_banner.item {
       height: 100vh;
       width: 100vw;
       position: relative;
