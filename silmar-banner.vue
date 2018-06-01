@@ -3,9 +3,9 @@
         <div class="split-slideshow">
             <div class="slideshow">
                 <div class="slider">
-              <div class="item">
-                <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg" />
-              </div>
+                    <div class="item">
+                    <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg" />
+                    </div>
               <div class="item">
                 <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" />
               </div>
