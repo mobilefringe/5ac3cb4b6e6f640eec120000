@@ -143,7 +143,7 @@ html {
   line-height: 0.8;
 }
 @media (max-width: 767px) {
-  .slideshow-text {
+  #silmar_banner .slideshow-text {
     font-size: 40px;
   }
 }
@@ -158,14 +158,6 @@ html {
                 banners: {
                     type: Array,
                     required: true
-                },
-                delta: {
-                    type: Number,
-                    default: 0
-                },
-                autoPlaySpeed: {
-                    type:Number,
-                    default: 10000
                 }
             },
             data () {
