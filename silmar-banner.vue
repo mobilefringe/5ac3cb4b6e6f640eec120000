@@ -1,28 +1,6 @@
 <template>
 	<div class="row page_content" id="slide_container">
-	    <main>
-            <section class="slides"> 
-              
-              <section class="slides-nav">
-                <nav class="slides-nav__nav">
-                  <button class="slides-nav__prev js-prev" ref="js_prev" @click="prevSlide">Prev</button>
-                  <button class="slides-nav__next js-next" ref="js_next" @click="nextSlide">Next</button>
-                </nav>
-              </section>
-            
-              <section class="slide" v-for = "(banner,index) in banners" :class="{'is-active': (index==0)}">
-                <div class="slide__content">
-                  <figure class="slide__figure"><div class="slide__img" :style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div></figure>
-                  <header class="slide__header">
-                    <h2 class="slide__title">
-                      <span class="title-line"><span>{{banner.name}}</span></span>
-                      <span class="title-line"><span>{{banner.description}}</span></span>
-                    </h2>
-                  </header>
-                </div>
-              </section>
-            </section>
-        </main>
+	    
     </div>
 </template>
 
