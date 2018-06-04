@@ -145,7 +145,7 @@
                     clearInterval(myTimer);
                     this.interval = setInterval(function () {
                     this.nextSlide();
-                }.bind(this), this.autoPlayInterval); 
+                    }.bind(this), this.autoPlayInterval); 
                 }
             }
         })
