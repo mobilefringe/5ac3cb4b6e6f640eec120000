@@ -89,7 +89,8 @@
                     currentSlideIndex: 0,
                     scrollThreshold: 40,
                     slides: [],
-                    numSlides: this.banners.length
+                    numSlides: this.banners.length,
+                    autoPlayInterval: 0,
                 }  
             },
             mounted() {
