@@ -142,7 +142,7 @@
                             $('#slide_container').removeClass('is-sliding');
                         }, 1000);
                     });
-                    clearInterval(myTimer);
+                    clearInterval(this.interval);
                     this.interval = setInterval(function () {
                         this.nextSlide();
                     }.bind(this), this.autoPlayInterval); 
