@@ -30,40 +30,40 @@
 <style>
     /******* SLICE SLIDER STYLE *********/
     @import "/slice.css";
-#slide_container .slide__title{
-    font-size: 3.75em;
-    color: #fff;
-    line-height: normal;
-    color: #eee;
-    text-shadow: #000 0px -1px;
-}
-#slide_container .slides-nav button{
-    font-family: $font_family;  
-}
-#slide_container .slides-nav button:after {
-    height:2px;
-    top:auto;
-    bottom:0;
-}
-#slide_container .slides-nav {
-    z-index: 99;
-    position: absolute;
-    right: auto;
-    display: block;
-    /* align-items: center; */
-    height: auto;
-    width: 100%;
-    bottom: 25px;
-}
-#slide_container .slides-nav__nav {
-    position: relative;
-    right: 0;
-    display: block;
-    font-size: 1em;
-    transform: initial;
-    transform-origin: unset;
-    text-align: center;
-}
+    #slide_container .slide__title{
+        font-size: 3.75em;
+        color: #fff;
+        line-height: normal;
+        color: #eee;
+        text-shadow: #000 0px -1px;
+    }
+    #slide_container .slides-nav button{
+        font-family: $font_family;  
+    }
+    #slide_container .slides-nav button:after {
+        height:2px;
+        top:auto;
+        bottom:0;
+    }
+    #slide_container .slides-nav {
+        z-index: 99;
+        position: absolute;
+        right: auto;
+        display: block;
+        /* align-items: center; */
+        height: auto;
+        width: 100%;
+        bottom: 25px;
+    }
+    #slide_container .slides-nav__nav {
+        position: relative;
+        right: 0;
+        display: block;
+        font-size: 1em;
+        transform: initial;
+        transform-origin: unset;
+        text-align: center;
+    }
 
 </style>
 <script>
