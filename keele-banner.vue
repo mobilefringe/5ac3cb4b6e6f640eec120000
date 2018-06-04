@@ -95,10 +95,10 @@
             },
             mounted() {
                 this.slides = $('.slide');
-                this.autoPlayInterval = this.autoPlaySpeed
+                this.autoPlayInterval = this.autoPlaySpeed;
                 this.interval = setInterval(function () {
                     this.nextSlide();
-                }.bind(this), this.autoPlaySpeed); 
+                }.bind(this), this.autoPlayInterval); 
             },
             methods: {
                 prevSlide() {
