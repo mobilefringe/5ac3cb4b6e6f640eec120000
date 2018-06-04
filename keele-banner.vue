@@ -142,6 +142,10 @@
                             $('#slide_container').removeClass('is-sliding');
                         }, 1000);
                     });
+                    clearInterval(myTimer);
+                    this.interval = setInterval(function () {
+                    this.nextSlide();
+                }.bind(this), this.autoPlayInterval); 
                 }
             }
         })
