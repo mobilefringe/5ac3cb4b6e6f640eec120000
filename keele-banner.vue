@@ -95,6 +95,7 @@
             },
             mounted() {
                 this.slides = $('.slide');
+                this.autoPlayInterval =
                 this.interval = setInterval(function () {
                     this.nextSlide();
                 }.bind(this), this.autoPlaySpeed); 
