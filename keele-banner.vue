@@ -29,6 +29,7 @@
 
 <style>
     /******* SLICE SLIDER STYLE *********/
+    @import "//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/008/178/original/sweet-alert.css";
 .slide__title{
     font-size: 3.75em;
     color: #fff;
