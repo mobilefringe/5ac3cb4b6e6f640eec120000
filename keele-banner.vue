@@ -144,7 +144,7 @@
                     });
                     clearInterval(myTimer);
                     this.interval = setInterval(function () {
-                    this.nextSlide();
+                        this.nextSlide();
                     }.bind(this), this.autoPlayInterval); 
                 }
             }
