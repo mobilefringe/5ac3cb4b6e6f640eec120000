@@ -57,9 +57,9 @@
                     this.dataLoaded = true;
                     var temp_repo = this.findRepoByName('Directory Banner').images;
                     if(temp_repo != null) {
-                        this.storeBanner = temp_repo[0];
+                        this.pageBanner = temp_repo[0];
                     } else {
-                        this.storeBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
+                        this.pageBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
                     }
                 });
             },
