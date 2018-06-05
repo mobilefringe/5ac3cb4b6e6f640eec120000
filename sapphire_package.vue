@@ -8,10 +8,6 @@
         		    <h3 class="home_page_title caps">Banners</h3>
         		    
         		    <div class="margin_60 hidden_phone"></div>
-    		        <h3 class="home_page_title caps">Edgeley Banner</h3>
-    		        <edgeley-banner :banners="banners"></edgeley-banner>
-
-        		    <div class="margin_60 hidden_phone"></div>
     		        <h3 class="home_page_title caps">Chrislea Banner</h3>
     		        <chrislea-banner :banners="banners"></chrislea-banner>
     		        
@@ -19,26 +15,6 @@
     		        <h3 class="home_page_title caps">Weston Banner</h3>
     		        <weston-banner :banners="banners"></weston-banner>
     		        
-    		        <div class="margin_60 hidden_phone"></div>
-    		        <h3 class="home_page_title caps">Keele Banner</h3>
-    		        <keele-banner :banners="banners"></keele-banner>
-    		        
-    		        <div class="margin_60 hidden_phone"></div>
-    		        <h3 class="home_page_title caps">Silmar Banner</h3>
-    		        <silmar-banner :bannerList="banners"></silmar-banner>
-    		        
-        		    <div class="margin_60 hidden_phone"></div>
-    		        <h3 class="home_page_title caps">Store Logo Scroll</h3>
-        		    <div class="banners banner_option_3">
-        		        <slick ref="slick" :options="slickOptions3" key="banners3">
-        					<div class="" v-for="store in allStores" v-if="allStores">
-        					    <div class="slide">
-        					        <img :src="store.store_front_url_abs" alt="" />
-    					            <p>{{ store.name }}</p>    
-        					    </div>
-        					</div>
-        				</slick>
-        		    </div>
                 </div>
             </div>
         </transition>
