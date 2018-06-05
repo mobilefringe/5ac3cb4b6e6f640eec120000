@@ -3,6 +3,14 @@
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
+                <div class="page_header" v-if="storeBanner" v-bind:style="{ backgroundImage: 'url(' + storeBanner.image_url + ')' }">
+        			<div class="site_container">
+        				<div class="header_content caps">
+        				    <p>{{ $t("stores_page.header_desc") }} {{ property.name }}</p>
+        					<h1>{{ $t("stores_page.directory") }}</h1>
+        				</div>
+        			</div>
+        		</div>
         		<div class="site_container">
         		    <h1 class="home_page_title caps">Banners</h1>
         		    
