@@ -189,7 +189,7 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('ruby_package'),
-                name: 'sapphire'
+                name: 'ruby'
             }]
         },
         // {
