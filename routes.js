@@ -199,19 +199,9 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('diamond_package'),
-                name: 'ruby'
+                name: 'diamond'
             }]
         },
-        // {
-        //     path: '/photos',
-        //     component: view('default'),
-        //     redirect: '/404',
-        //     children: [{
-        //         path: '',
-        //         component: view('photos'),
-        //         name: 'photos'
-        //     }]
-        // },
         {
             path: '/thank_you',
             component: view('default'),
