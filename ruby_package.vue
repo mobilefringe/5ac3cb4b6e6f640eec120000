@@ -30,7 +30,7 @@
 <script>
     // silver
     define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
-        return Vue.component("sapphire-component", {
+        return Vue.component("ruby-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
