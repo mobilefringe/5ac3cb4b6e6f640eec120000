@@ -18,7 +18,7 @@
     		        <chrislea-banner :banners="banners" :key="1"></chrislea-banner>
     		        
         		    <div class="margin_60 hidden_phone"></div>
-    		        <h3 class="home_page_title caps">Weston Banner</h3>
+    		        <h3 class="home_page_title caps text-left">Weston Banner</h3>
     		        <weston-banner :banners="banners" :key="2"></weston-banner>
     		        
                 </div>
