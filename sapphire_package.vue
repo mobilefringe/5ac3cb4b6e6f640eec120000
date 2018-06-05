@@ -64,7 +64,8 @@
             },
             computed: {
                 ...Vuex.mapGetters([
-                    'processedStores'
+                    'processedStores',
+                    'findRepoByName'
                 ]),
                 allStores() {
                     var store_list = this.processedStores;
