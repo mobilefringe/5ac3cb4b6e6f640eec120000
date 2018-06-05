@@ -178,7 +178,7 @@ define([], function() {
             redirect: '/404',
             children: [{
                 path: '',
-                component: view('sapphire'),
+                component: view('sapphire_package'),
                 name: 'sapphire'
             }]
         },
