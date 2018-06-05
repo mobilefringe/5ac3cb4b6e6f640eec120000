@@ -14,12 +14,13 @@
         		<div class="site_container">
         		    <h1 class="home_page_title caps">Banners</h1>
         		    
-    		        <h3 class="home_page_title caps">Keele Banner</h3>
-    		        <keele-banner :banners="banners"></keele-banner>
     		        
-    		        <div class="margin_60 hidden_phone"></div>
     		        <h3 class="home_page_title caps">Silmar Banner</h3>
     		        <silmar-banner :bannerList="banners"></silmar-banner>
+    		        
+    		        <div class="margin_60 hidden_phone"></div>
+    		        <h3 class="home_page_title caps">Keele Banner</h3>
+    		        <keele-banner :banners="banners"></keele-banner>
     		        
                 </div>
             </div>
