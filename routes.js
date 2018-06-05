@@ -172,16 +172,16 @@ define([], function() {
                 name: 'Buttons'
             }]
         },
-        // {
-        //     path: '/community',
-        //     component: view('default'),
-        //     redirect: '/404',
-        //     children: [{
-        //         path: '',
-        //         component: view('community'),
-        //         name: 'community'
-        //     }]
-        // },
+        {
+            path: '/sapphire',
+            component: view('default'),
+            redirect: '/404',
+            children: [{
+                path: '',
+                component: view('sapphire'),
+                name: 'sapphire'
+            }]
+        },
         // {
         //     path: '/photos',
         //     component: view('default'),
