@@ -183,7 +183,7 @@ define([], function() {
             }]
         },
         {
-            path: '/sapphire_package',
+            path: '/ruby_package',
             component: view('default'),
             redirect: '/404',
             children: [{
