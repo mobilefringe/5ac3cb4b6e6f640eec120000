@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
         		<div class="site_container">
         		    <div class="margin_60 hidden_phone"></div>
-        		    
+        		    <h3 class="home_page_title caps">Edgeley Banner</h3>
         		    
         		    <div class="margin_60 hidden_phone"></div>
     		        <h3 class="home_page_title caps">Edgeley Banner</h3>
