@@ -188,7 +188,7 @@ define([], function() {
             redirect: '/404',
             children: [{
                 path: '',
-                component: view('sapphire_package'),
+                component: view('ruby_package'),
                 name: 'sapphire'
             }]
         },
