@@ -1,4 +1,3 @@
-//bronze
 <template>
     <div> <!-- without an outer container div this component template will not render -->
         <loader v-if="!dataLoaded"></loader>
