@@ -182,6 +182,16 @@ define([], function() {
                 name: 'sapphire'
             }]
         },
+        {
+            path: '/sapphire_package',
+            component: view('default'),
+            redirect: '/404',
+            children: [{
+                path: '',
+                component: view('sapphire_package'),
+                name: 'sapphire'
+            }]
+        },
         // {
         //     path: '/photos',
         //     component: view('default'),
