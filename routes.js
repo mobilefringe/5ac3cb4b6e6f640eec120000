@@ -193,12 +193,12 @@ define([], function() {
             }]
         },
         {
-            path: '/ruby_package',
+            path: '/diamond_package',
             component: view('default'),
             redirect: '/404',
             children: [{
                 path: '',
-                component: view('ruby_package'),
+                component: view('diamond_package'),
                 name: 'ruby'
             }]
         },
