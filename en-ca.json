@@ -122,6 +122,7 @@
         "find_store" : "Find Store"
     },
     "packages" : {
-        "sapphire": "Sapphire Package"
+        "sapphire": "Sapphire Package",
+        "ruby": "Ruby Package"
     }
 }
