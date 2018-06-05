@@ -43,6 +43,7 @@
 </template>
 
 <script>
+// bronze
     define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
         return Vue.component("banners-component", {
             template: template, // the variable template will be injected
