@@ -173,7 +173,7 @@ define([], function() {
             }]
         },
         {
-            path: '/sapphire',
+            path: '/sapphire_package',
             component: view('default'),
             redirect: '/404',
             children: [{
