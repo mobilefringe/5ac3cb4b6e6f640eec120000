@@ -7,7 +7,7 @@
         		    <h1 class="home_page_title caps">Banners</h1>
         		    
     		        <h3 class="home_page_title caps">Chrislea Banner</h3>
-    		        <chrislea-banner :banners="banners"></chrislea-banner>
+    		        <chrislea-banner :banners="banners" :key="1"></chrislea-banner>
     		        
         		    <div class="margin_60 hidden_phone"></div>
     		        <h3 class="home_page_title caps">Weston Banner</h3>
