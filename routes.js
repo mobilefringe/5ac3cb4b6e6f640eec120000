@@ -192,6 +192,16 @@ define([], function() {
                 name: 'ruby'
             }]
         },
+        {
+            path: '/ruby_package',
+            component: view('default'),
+            redirect: '/404',
+            children: [{
+                path: '',
+                component: view('ruby_package'),
+                name: 'ruby'
+            }]
+        },
         // {
         //     path: '/photos',
         //     component: view('default'),
