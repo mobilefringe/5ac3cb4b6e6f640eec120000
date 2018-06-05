@@ -48,7 +48,8 @@
                         centerPadding: '5%',
                         cssEase:'ease-in-out',
                         slidesToShow: 5,
-                    }
+                    },
+                    pageBanner:null
                 }
             },
             created(){
