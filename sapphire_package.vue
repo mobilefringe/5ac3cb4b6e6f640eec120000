@@ -7,7 +7,7 @@
         			<div class="site_container">
         				<div class="header_content caps">
         				    <p>{{ $t("stores_page.header_desc") }}</p>
-        					<h1>{{ $t("Packages.directory") }}</h1>
+        					<h1>{{ $t("packages.sapphire") }}</h1>
         				</div>
         			</div>
         		</div>
