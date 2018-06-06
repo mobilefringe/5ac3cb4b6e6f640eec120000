@@ -100,9 +100,11 @@
             mounted() {
                 this.slides = $('.slide');
                 this.autoPlayInterval = this.autoPlaySpeed;
-                this.interval = setInterval(function () {
-                    this.nextSlide();
-                }.bind(this), this.autoPlayInterval); 
+                if(this.autoPlay) {
+                    this.interval = setInterval(function () {
+                        this.nextSlide();
+                    }.bind(this), this.autoPlayInterval); 
+                }
             },
             methods: {
                 prevSlide() {
