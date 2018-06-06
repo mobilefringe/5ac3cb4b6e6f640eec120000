@@ -21,7 +21,7 @@
 </template>
 
 <style>
-@import "/silton_banner.css";
+    @import "/silton_banner.css";
 </style>
 
 <script>
