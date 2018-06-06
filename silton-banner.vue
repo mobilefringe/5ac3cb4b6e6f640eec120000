@@ -1,5 +1,6 @@
 <template>
-    <div class="Modern-Slider">
+    <div class="banners edgeley">
+        <div class="Modern-Slider">
   <!-- Item -->
   <div class="item">
     <div class="img-fill">
@@ -53,6 +54,7 @@
   </div>
   <!-- // Item -->
 </div>
+    </div>
 </template>
 
 <style>
