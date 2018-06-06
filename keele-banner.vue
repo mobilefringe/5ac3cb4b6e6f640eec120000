@@ -148,10 +148,12 @@
                             $('#slide_container').removeClass('is-sliding');
                         }, 1000);
                     });
-                    clearInterval(this.interval);
-                    this.interval = setInterval(function () {
-                        this.nextSlide();
-                    }.bind(this), this.autoPlayInterval); 
+                    if(this.autoPlay) {
+                        clearInterval(this.interval);
+                        this.interval = setInterval(function () {
+                            this.nextSlide();
+                        }.bind(this), this.autoPlayInterval); 
+                    }
                 }
             }
         })
