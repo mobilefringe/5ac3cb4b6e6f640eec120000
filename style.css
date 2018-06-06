@@ -1091,7 +1091,7 @@ strong, .bold {
     .home_page_title.sub_title {
         text-align: left;
     }
-    .home_page_title:after {
+    .sub_title.home_page_title:after {
         left: 0%;
     }
 }
