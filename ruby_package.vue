@@ -25,7 +25,7 @@
 
 <script>
     // silver
-    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!silton-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
+    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!silton-banner"], function(Vue, Vuex, slick, edgeleyBanner, siltonBanner) {
         return Vue.component("ruby-component", {
             template: template, // the variable template will be injected
             data: function() {
