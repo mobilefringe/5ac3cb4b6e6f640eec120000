@@ -123,6 +123,7 @@
     },
     "packages" : {
         "sapphire": "Sapphire Package",
-        "ruby": "Ruby Package"
+        "ruby": "Ruby Package",
+        "diamond" : "Diamond Package"
     }
 }
