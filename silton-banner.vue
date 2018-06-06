@@ -32,14 +32,19 @@
             data: function() {
                 return {
                     siltonOptions: {
-                        autoplay: true,
-                        autoplaySpeed: 8000,
-                        centerMode: true,
-                        centerPadding: '12%',
-                        slidesToShow: 1,
-                        speed: 1000,
-                        nextArrow: '.next',
-                        prevArrow: '.prev',
+                        autoplay:true,
+    autoplaySpeed:10000,
+    speed:600,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    dots:true,
+    pauseOnDotsHover:true,
+    cssEase:'linear',
+   // fade:true,
+    draggable:false,
+    prevArrow:'<button class="PrevArrow"></button>',
+    nextArrow:'<button class="NextArrow"></button>', 
                     }
                 }
             }
