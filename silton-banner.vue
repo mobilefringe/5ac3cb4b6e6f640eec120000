@@ -7,7 +7,7 @@
 					<img :src="banner.image_url" alt="">
 					<div class="info">
 						<div>
-							<h3>Full Width Slider With Layers</h3>
+							<h3>{{banner.name}}</h3>
 							<h5>You can easily add image, html formatted texts and video layers over each slide and each layer accepts unique animation.</h5>
 						</div>
 					</div>
