@@ -1,5 +1,5 @@
 <template>
-	<div class="banners edgeley">
+	<div class="silton_banner">
 		<div class="Modern-Slider">
 			<!-- Item -->
 			<div class="item">
