@@ -29,7 +29,7 @@
             props:['banners'],
             data: function() {
                 return {
-                    edgeleyOptions: {
+                    siltonOptions: {
                         autoplay: true,
                         autoplaySpeed: 8000,
                         centerMode: true,
