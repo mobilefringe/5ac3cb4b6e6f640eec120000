@@ -136,7 +136,7 @@
 #silton_banner .Modern-Slider .item h5{
   margin:0;
   padding:0;
-  font:15px/30px RalewayR;
+  font:15px/30px;
   color:#FFF;
   max-width:600px;
   overflow:hidden;
