@@ -64,7 +64,13 @@
         transform-origin: unset;
         text-align: center;
     }
-
+    @media (min-width: 54em) {
+    #slide_container .slide__content {
+        height: 100%;
+        width: 100%;
+        top: 0%;
+    }
+}
 </style>
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
