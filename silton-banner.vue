@@ -38,16 +38,6 @@
   max-width: none;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
-}
-
 .Grid1k {
   padding: 0 15px;
   max-width: 1200px;
