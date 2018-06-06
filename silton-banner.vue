@@ -4,7 +4,7 @@
 			<!-- Item -->
 			<div class="item">
 				<div class="img-fill">
-					<img src="https://i.imgur.com/JNKiMHU.jpg" alt="">
+					<img :src="https://i.imgur.com/JNKiMHU.jpg" alt="">
 					<div class="info">
 						<div>
 							<h3>Full Width Slider With Layers</h3>
