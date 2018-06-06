@@ -65,7 +65,8 @@
         text-align: center;
     }
     #slide_container .slides {
-        height:700px;}
+        height:700px;
+    }
     
     #slide_container .slide {
         height:700px;
