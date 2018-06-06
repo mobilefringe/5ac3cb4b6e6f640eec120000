@@ -13,7 +13,7 @@
         		</div>
         		<div class="site_container">
         		    <h1 class="home_page_title caps">Banners</h1>
-        		    <i class="fas fa-arrow-right"></i>
+        		    
     		        <h3 class="home_page_title caps sub_title">Edgeley Banner</h3>
     		        <edgeley-banner :banners="banners"></edgeley-banner>
     		        
