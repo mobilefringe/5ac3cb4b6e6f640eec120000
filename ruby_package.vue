@@ -12,7 +12,7 @@
         			</div>
         		</div>
         		<div class="site_container">
-        		    <h1 class="home_page_title caps">Banners</h1>
+        		    <h1 class="home_page_title caps sub_title">Banners</h1>
         		    
     		        <h3 class="home_page_title caps">Edgeley Banner</h3>
     		        <edgeley-banner :banners="banners"></edgeley-banner>
