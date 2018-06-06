@@ -15,6 +15,7 @@
 				</div>
 			</div>
 			<!-- // Item -->
+		</slick>
 		</div>
 	</div>
 </template>
