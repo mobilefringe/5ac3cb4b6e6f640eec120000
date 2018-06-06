@@ -79,6 +79,9 @@
                     type: Number,
                     default: 0
                 },
+                autoPlay: {
+                    
+                },
                 autoPlaySpeed: {
                     type:Number,
                     default: 10000
