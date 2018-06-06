@@ -14,9 +14,9 @@
         		<div class="site_container">
         		    <h1 class="home_page_title caps">Banners</h1>
         		    
-    		        <h3 class="home_page_title caps sub_title">Edgeley Banner</h3>
+    		        <h3 class="home_page_title sub_title">Edgeley Banner</h3>
     		        <edgeley-banner :banners="banners"></edgeley-banner>
-    		        <h3 class="home_page_title caps sub_title">Silton Banner</h3>
+    		        <h3 class="home_page_title sub_title">Silton Banner</h3>
     		        <silton-banner :banners="banners"></silton-banner>
                 </div>
             </div>
