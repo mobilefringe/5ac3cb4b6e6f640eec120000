@@ -22,7 +22,7 @@
 
 <style>
     /* ==== Main CSS === */
-.img-fill{
+#silton_banner .img-fill{
   width: 100%;
   display: block;
   overflow: hidden;
