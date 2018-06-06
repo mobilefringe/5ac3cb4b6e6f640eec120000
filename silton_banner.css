@@ -72,7 +72,7 @@
   color:#FFF;
   z-index:5;
   font-family: Font Awesome\ 5 Free;
-            font-weight: 900;
+    font-weight: 900;
 }
 
 #silton_banner .Modern-Slider .NextArrow:before{content:'\f105';}
