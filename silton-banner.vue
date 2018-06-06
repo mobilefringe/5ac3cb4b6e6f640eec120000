@@ -30,7 +30,7 @@
   text-align: center
 }
 
-.img-fill img {
+#silton_banner .img-fill img {
   min-height: 100%;
   min-width: 100%;
   position: relative;
