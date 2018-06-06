@@ -2,7 +2,7 @@
     <div> <!-- without an outer container div this component template will not render -->
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
-            <div v-if="dataLoaded" v-cloak class=".gem_packages">
+            <div v-if="dataLoaded" v-cloak class="gem_packages">
                 <div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
         			<div class="site_container">
         				<div class="header_content caps">
@@ -14,7 +14,7 @@
         		<div class="site_container">
         		    <h1 class="home_page_title caps">Banners</h1>
         		    
-    		        <h3 class="home_page_title caps text-left">Chrislea Banner</h3>
+    		        <h3 class="home_page_title caps text-left sub_title">Chrislea Banner</h3>
     		        <chrislea-banner :banners="banners" :key="1"></chrislea-banner>
     		        
         		    <div class="margin_60 hidden_phone"></div>
