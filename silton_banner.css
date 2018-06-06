@@ -125,7 +125,7 @@
 }
 
 #silton_banner .Modern-Slider .item h3{
-  font:30px/50px RalewayB;
+  font:30px/50px;
   text-transform:uppercase;
   color:#FFF;
   animation:fadeOutRight 1s both;
