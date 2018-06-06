@@ -53,7 +53,7 @@
         /* align-items: center; */
         height: auto;
         width: 100%;
-        bottom: 25px;
+        bottom: -50px;
     }
     #slide_container .slides-nav__nav {
         position: relative;
