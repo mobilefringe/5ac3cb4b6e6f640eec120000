@@ -80,7 +80,8 @@
                     default: 0
                 },
                 autoPlay: {
-                    
+                    type: Boolean,
+                    default: false
                 },
                 autoPlaySpeed: {
                     type:Number,
