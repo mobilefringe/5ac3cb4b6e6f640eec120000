@@ -2,7 +2,7 @@
 	<div id="silton_banner">
 		<div class="Modern-Slider">
 			<!-- Item -->
-			<div class="item">
+			<div class="item" v-for="banner in banners">
 				<div class="img-fill">
 					<img :src="https://i.imgur.com/JNKiMHU.jpg" alt="">
 					<div class="info">
