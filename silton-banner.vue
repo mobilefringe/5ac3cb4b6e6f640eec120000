@@ -4,7 +4,7 @@
 			<!-- Item -->
 			<div class="item" v-for="banner in banners">
 				<div class="img-fill">
-					<img :src="https://i.imgur.com/JNKiMHU.jpg" alt="">
+					<img :src="banner.image_url" alt="">
 					<div class="info">
 						<div>
 							<h3>Full Width Slider With Layers</h3>
