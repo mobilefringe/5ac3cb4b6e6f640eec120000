@@ -1,7 +1,7 @@
 <template>
 	<div id="silton_banner">
 		<div class="Modern-Slider">
-		    <slick ref="slick" :options="edgeleyOptions">
+		    <slick ref="slick" :options="siltonOptions">
     			<!-- Item -->
     			<div class="item" v-for="banner in banners">
     				<div class="img-fill">
