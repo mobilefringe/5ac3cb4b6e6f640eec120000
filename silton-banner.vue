@@ -38,30 +38,30 @@
   max-width: none;
 }
 
-.Grid1k {
+#silton_banner .Grid1k {
   padding: 0 15px;
   max-width: 1200px;
   margin: auto;
 }
 
-.blocks-box,
-.slick-slider {
+#silton_banner .blocks-box,
+#silton_banner .slick-slider {
   margin: 0;
   padding: 0!important;
 }
 
-.slick-slide {
+#silton_banner .slick-slide {
   float: left /* If RTL Make This Right */ ;
   padding: 0;
 }
 
 /* ==== Slider Style === */
-.Modern-Slider .item .img-fill{
+#silton_banner .Modern-Slider .item .img-fill{
   height:100vh;
   background:#000;
 }
 
-.Modern-Slider .item .img-fill .info{
+#silton_banner .Modern-Slider .item .img-fill .info{
   position:absolute;
   width:100%;
   height:100%;
@@ -72,16 +72,16 @@
   text-align:center;
 }
 
-.Modern-Slider .item .img-fill img{
+#silton_banner .Modern-Slider .item .img-fill img{
   filter:blur(5px);
 }
 
-.Modern-Slider .item .info > div{
+#silton_banner .Modern-Slider .item .info > div{
   display:inline-block!important;
   vertical-align:middle;
 }
 
-.Modern-Slider .NextArrow{
+#silton_banner .Modern-Slider .NextArrow{
   position:absolute;
   top:50%;
   right:0px;
@@ -96,9 +96,9 @@
   z-index:5;
 }
 
-.Modern-Slider .NextArrow:before{content:'\f105';}
+#silton_banner .Modern-Slider .NextArrow:before{content:'\f105';}
 
-.Modern-Slider .PrevArrow{
+#silton_banner .Modern-Slider .PrevArrow{
   position:absolute;
   top:50%;
   left:0px;
@@ -113,9 +113,9 @@
   z-index:5;
 }
 
-.Modern-Slider .PrevArrow:before{content:'\f104';}
+#silton_banner .Modern-Slider .PrevArrow:before{content:'\f104';}
 
-.Modern-Slider .slick-dots{
+#silton_banner .Modern-Slider .slick-dots{
   position:absolute;
   height:5px;
   background:rgba(255,255,255,.20);
@@ -126,8 +126,8 @@
   margin:0px;
   list-style-type:none;
 }
-.Modern-Slider .slick-dots li button{display:none;}
-.Modern-Slider .slick-dots li{
+#silton_banner .Modern-Slider .slick-dots li button{display:none;}
+#silton_banner .Modern-Slider .slick-dots li{
   float:left;
   width:0px;
   height:5px;
@@ -137,12 +137,12 @@
   bottom:0px;
 }
 
-.Modern-Slider .slick-dots li.slick-active{
+#silton_banner .Modern-Slider .slick-dots li.slick-active{
   width:100%;
   animation:ProgressDots 11s both;
 }
 
-.Modern-Slider .item h3{
+#silton_banner .Modern-Slider .item h3{
   font:30px/50px RalewayB;
   text-transform:uppercase;
   color:#FFF;
@@ -151,7 +151,7 @@
   padding:0;
 }
 
-.Modern-Slider .item h5{
+#silton_banner .Modern-Slider .item h5{
   margin:0;
   padding:0;
   font:15px/30px RalewayR;
@@ -162,19 +162,19 @@
   animation:fadeOutLeft 1s both;
 }
 
-.Modern-Slider .item.slick-active h3{
+#silton_banner .Modern-Slider .item.slick-active h3{
   animation:fadeInDown 1s both 1s;
 }
 
-.Modern-Slider .item.slick-active h5{
+#silton_banner .Modern-Slider .item.slick-active h5{
   animation:fadeInLeft 1s both 1.5s;
 }
 
-.Modern-Slider .item.slick-active{
+#silton_banner .Modern-Slider .item.slick-active{
   animation:Slick-FastSwipeIn 1s both;
 }
 
-.Modern-Slider {background:#000;}
+#silton_banner .Modern-Slider {background:#000;}
 
 /* ==== Slider Image Transition === */
 @keyframes Slick-FastSwipeIn{
@@ -186,18 +186,18 @@
 @keyframes ProgressDots{from{width:0px;}to{width:100%;}}
 
 /* ==== Slick Slider Css Ruls === */
-.slick-slider{position:relative;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
-.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
-.slick-list:focus{outline:none}.slick-list.dragging{cursor:hand}
-.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.slick-track{position:relative;top:0;left:0;display:block}
-.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}
-.slick-loading .slick-track{visibility:hidden}
-.slick-slide{display:none;float:left /* If RTL Make This Right */ ;height:100%;min-height:1px}
-.slick-slide.dragging img{pointer-events:none}
-.slick-initialized .slick-slide{display:block}
-.slick-loading .slick-slide{visibility:hidden}
-.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+#silton_banner .slick-slider{position:relative;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+#silton_banner .slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+#silton_banner .slick-list:focus{outline:none}.slick-list.dragging{cursor:hand}
+#silton_banner .slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+#silton_banner .slick-track{position:relative;top:0;left:0;display:block}
+#silton_banner .slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}
+#silton_banner .slick-loading .slick-track{visibility:hidden}
+#silton_banner .slick-slide{display:none;float:left /* If RTL Make This Right */ ;height:100%;min-height:1px}
+#silton_banner .slick-slide.dragging img{pointer-events:none}
+#silton_banner .slick-initialized .slick-slide{display:block}
+#silton_banner .slick-loading .slick-slide{visibility:hidden}
+#silton_banner .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
 </style>
 
 <script>
