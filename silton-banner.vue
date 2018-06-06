@@ -1,5 +1,5 @@
 <template>
-	<div class="silton_banner">
+	<div id="silton_banner">
 		<div class="Modern-Slider">
 			<!-- Item -->
 			<div class="item">
