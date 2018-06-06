@@ -1092,6 +1092,7 @@ strong, .bold {
         text-align: left;
     }
     .home_page_title:after {
+        left: 0%;
     }
 }
 // /* --- MASONRY GRID --- */
