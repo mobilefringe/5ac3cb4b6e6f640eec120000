@@ -1088,7 +1088,7 @@ strong, .bold {
 }
 
 .gem_packages {
-    .home_page_title {
+    .home_page_title.sub_title {
         text-align: left;
     }
     .home_page_title:after {
