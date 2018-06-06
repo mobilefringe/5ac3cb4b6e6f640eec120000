@@ -2,20 +2,20 @@
 	<div id="silton_banner">
 		<div class="Modern-Slider">
 		    <slick ref="slick" :options="edgeleyOptions">
-			<!-- Item -->
-			<div class="item" v-for="banner in banners">
-				<div class="img-fill">
-					<img :src="banner.image_url" alt="">
-					<div class="info">
-						<div>
-							<h3>{{banner.name}}</h3>
-							<h5>{{banner.description}}</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- // Item -->
-		</slick>
+    			<!-- Item -->
+    			<div class="item" v-for="banner in banners">
+    				<div class="img-fill">
+    					<img :src="banner.image_url" alt="">
+    					<div class="info">
+    						<div>
+    							<h3>{{banner.name}}</h3>
+    							<h5>{{banner.description}}</h5>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<!-- // Item -->
+		    </slick>
 		</div>
 	</div>
 </template>
