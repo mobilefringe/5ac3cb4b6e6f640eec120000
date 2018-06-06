@@ -64,6 +64,9 @@
         transform-origin: unset;
         text-align: center;
     }
+    #slide_container .slide {
+        height:700px;
+    }
     @media (min-width: 54em) {
     #slide_container .slide__content {
         height: 100%;
