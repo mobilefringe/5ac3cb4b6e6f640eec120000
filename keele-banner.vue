@@ -34,7 +34,7 @@
         font-size: 3.75em;
         color: #fff;
         line-height: normal;
-        color: #eee;
+        /*color: #eee;*/
         text-shadow: #000 0px -1px;
     }
     #slide_container .slides-nav button{
