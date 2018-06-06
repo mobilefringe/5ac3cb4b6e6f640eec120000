@@ -1088,7 +1088,10 @@ strong, .bold {
 }
 
 .gem_packages {
-    
+    .home_page_title {
+    }
+    .home_page_title:after {
+    }
 }
 // /* --- MASONRY GRID --- */
 
