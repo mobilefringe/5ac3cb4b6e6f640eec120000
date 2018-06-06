@@ -1086,6 +1086,10 @@ strong, .bold {
     -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 }
+
+.gem_packages {
+    
+}
 // /* --- MASONRY GRID --- */
 
 // .grid {
