@@ -19,7 +19,7 @@
     		        <silmar-banner :bannerList="banners"></silmar-banner>
     		        
     		        <div class="margin_60 hidden_phone"></div>
-    		        <h3 class="home_page_title caps">Keele Banner</h3>
+    		        <h3 class="home_page_title caps sub_title">Keele Banner</h3>
     		        <keele-banner :banners="banners"></keele-banner>
     		        
                 </div>
