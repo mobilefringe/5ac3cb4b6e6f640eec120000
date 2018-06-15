@@ -25,7 +25,7 @@
         		    <div class="margin_40"></div>
         		    <h3 class="home_page_title caps">Ball Beat Loader</h3>
         		    <div class="text-center loaders_container">
-        		        <div class="loader-inner ball-beat">
+        		        <div class="loader-inner ball-pulse">
             		        <div></div>
             		        <div></div>
             		        <div></div>
@@ -35,7 +35,7 @@
             </div>
         </transition>
     </div>
-</template>ball-pulse
+</template>
 <style>
     @import "https://mmvue.codecloudapp.com/loaders.css";
     .loaders_container {
