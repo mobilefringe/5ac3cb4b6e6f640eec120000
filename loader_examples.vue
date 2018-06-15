@@ -64,6 +64,9 @@
         margin:auto;
         text-align: center;
     }
+    .square-spin > div {
+        margin:autp;
+    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
