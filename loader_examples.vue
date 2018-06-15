@@ -6,7 +6,7 @@
         		<div class="site_container">
         		<div class="margin_40"></div>
         		    <h3 class="home_page_title caps">2D Transitions</h3>
-        		    
+        		    <ball-pulse-loader color="#000000" size="20px"></ball-pulse-loader>
                 </div>
             </div>
         </transition>
