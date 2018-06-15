@@ -43,7 +43,7 @@
             		    </div>
         		    </div>
         		    <div class="margin_40"></div>
-        		    <h3 class="home_page_title caps">Ball Pulse Loader</h3>
+        		    <h3 class="home_page_title caps">Square Spin Loader</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner line-scale-pulse-out-rapid">
             		        <div></div>
