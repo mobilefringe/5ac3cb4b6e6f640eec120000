@@ -47,10 +47,6 @@
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner line-scale-pulse-out-rapid">
             		        <div></div>
-            		        <div></div>
-            		        <div></div>
-            		        <div></div>
-            		        <div></div>
             		    </div>
         		    </div>
                 </div>
