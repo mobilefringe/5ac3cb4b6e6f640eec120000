@@ -75,6 +75,10 @@
     .square-spin > div {
         margin:auto;
     }
+    .ball-clip-rotate-multiple.clearfix.loader-inner {
+    position: absolute;
+    left: 50%;
+}
 </style>
 <script>
     define(["Vue"], function(Vue) {
