@@ -52,7 +52,7 @@
         		    <div class="margin_40"></div>
         		    <h3 class="home_page_title caps">Ball Clip Rotate Loader</h3>
         		    <div class="text-center loaders_container">
-        		        <div class="loader-inner line-scale-pulse-out-rapid">
+        		        <div class="loader-inner ball-clip-rotate-multiple">
             		        <div></div>
             		        <div></div>
             		        <div></div>
