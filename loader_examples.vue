@@ -34,7 +34,7 @@
         padding: 50px;
     }
     .loader-inner  {
-        
+        margin:auto;
     }
 </style>
 <script>
