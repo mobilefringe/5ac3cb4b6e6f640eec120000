@@ -173,7 +173,7 @@ define([], function() {
             }]
         },
         {
-            path: '/button_examples',
+            path: '/loader_examples',
             component: view('default'),
             redirect: '/',
             children: [{
