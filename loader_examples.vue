@@ -82,6 +82,9 @@
     .square-spin > div {
         margin:auto;
     }
+    .square-spin logo_example {
+        
+    }
     .ball-clip-rotate-multiple.clearfix.loader-inner {
         position: absolute;
         left: 50%;
