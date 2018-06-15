@@ -13,7 +13,7 @@
     </div>
 </template>
 <style>
-    @import "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/text/css/1522155272000/hover.css";
+    @import "https://unpkg.com/vue-loaders/dist/vue-loaders.css";
     
 </style>
 <script>
