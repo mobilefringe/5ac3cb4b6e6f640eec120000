@@ -20,7 +20,9 @@
 </template>
 <style>
     @import "https://mmvue.codecloudapp.com/loaders.css";
-    
+    .loaders_container {
+        4f6726
+    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
