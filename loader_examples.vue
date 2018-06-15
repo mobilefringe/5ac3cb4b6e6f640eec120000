@@ -22,11 +22,20 @@
             		        <div></div><div></div><div></div>
             		    </div>
         		    </div>
+        		    <div class="margin_40"></div>
+        		    <h3 class="home_page_title caps">Ball Beat Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner ball-beat">
+            		        <div></div>
+            		        <div></div>
+            		        <div></div>
+            		    </div>
+        		    </div>
                 </div>
             </div>
         </transition>
     </div>
-</template>
+</template>ball-pulse
 <style>
     @import "https://mmvue.codecloudapp.com/loaders.css";
     .loaders_container {
