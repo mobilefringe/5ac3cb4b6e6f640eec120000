@@ -33,6 +33,9 @@
         background-color: #4f6726;
         padding: 50px;
     }
+    .loader-inner  {
+        
+    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
