@@ -5,12 +5,8 @@
             <div v-if="dataLoaded" v-cloak>
         		<div class="site_container">
         		<div class="margin_40"></div>
-        		    <h3 class="home_page_title caps">2D Transitions</h3>
-        		    <div class="loader-inner ball-beat">
-        		        <div></div>
-        		        <div></div>
-        		        <div></div>
-        		    </div>
+        		    <h3 class="home_page_title caps">Loaders</h3>
+        		    
                 </div>
             </div>
         </transition>
