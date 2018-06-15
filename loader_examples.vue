@@ -6,7 +6,7 @@
         		<div class="site_container">
         		<div class="margin_40"></div>
         		    <h3 class="home_page_title caps">2D Transitions</h3>
-        		    <ball-pulse-loader color="#000000" size="20px"></ball-pulse-loader>
+        		    
                 </div>
             </div>
         </transition>
@@ -17,8 +17,7 @@
     
 </style>
 <script>
-    define(["Vue", 'vue-loaders'], function(Vue, VueLoaders) {
-        Vue.use(VueLoaders);
+    define(["Vue"], function(Vue) {
         return Vue.component("loader-example-component", {
             template: template, // the variable template will be injected
             data: function() {
