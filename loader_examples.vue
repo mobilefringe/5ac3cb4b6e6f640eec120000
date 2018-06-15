@@ -82,7 +82,7 @@
     .square-spin > div {
         margin:auto;
     }
-    .square-spin.logo_example {
+    .square-spin.logo_example > div {
         
     }
     .ball-clip-rotate-multiple.clearfix.loader-inner {
