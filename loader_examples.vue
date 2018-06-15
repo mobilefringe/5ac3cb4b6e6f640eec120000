@@ -13,7 +13,7 @@
     </div>
 </template>
 <style>
-    @import "https://unpkg.com/vue-loaders/dist/vue-loaders.css";
+    @import "http://mmvue.codecloudapp.com/loaders.css";
     
 </style>
 <script>
