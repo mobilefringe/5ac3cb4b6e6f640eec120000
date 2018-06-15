@@ -8,6 +8,8 @@
         		    <h3 class="home_page_title caps">2D Transitions</h3>
         		    <div class="loader-inner ball-beat">
         		        <div></div>
+        		        <div></div>
+        		        <div></div>
         		    </div>
                 </div>
             </div>
