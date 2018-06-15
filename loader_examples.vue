@@ -17,7 +17,7 @@
     
 </style>
 <script>
-    define(["Vue", 'vue-loaders'], function(Vue) {
+    define(["Vue", 'vue-loaders'], function(Vue, VueLoaders) {
         return Vue.component("loader-example-component", {
             template: template, // the variable template will be injected
             data: function() {
