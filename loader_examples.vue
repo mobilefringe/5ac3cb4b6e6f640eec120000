@@ -83,7 +83,7 @@
         margin:auto;
     }
     .square-spin.logo_example > div {
-        
+        background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1522945678000/tplogo.png");
     }
     .ball-clip-rotate-multiple.clearfix.loader-inner {
         position: absolute;
