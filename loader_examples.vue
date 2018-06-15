@@ -21,7 +21,7 @@
 <style>
     @import "https://mmvue.codecloudapp.com/loaders.css";
     .loaders_container {
-        4f6726
+        background-color: #4f6726;
     }
 </style>
 <script>
