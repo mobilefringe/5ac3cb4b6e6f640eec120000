@@ -13,7 +13,7 @@
     </div>
 </template>
 <style>
-    @import "http://mmvue.codecloudapp.com/loaders.css";
+    @import "https://mmvue.codecloudapp.com/loaders.css";
     
 </style>
 <script>
