@@ -203,51 +203,6 @@
 <style>
     @import "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/text/css/1522155272000/hover.css";
     
-    button[class*="hvr-sweep-to"]:before, button[class*="hvr-shutter-out"]:before, button[class*="hvr-bounce-to-"]:before{
-        background:#4f6726;
-    }
-    button.hvr-radial-out:before, button.hvr-rectangle-out:before {
-        background:#4f6726;
-    }
-    button.hvr-radial-in, button[class*="hvr-shutter-in"], .hvr-rectangle-in {
-        background:#4f6726;
-    }
-    .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
-        background:#4f6726;
-    }
-    @keyframes hvr-back-pulse {
-      50% {
-        background-color: rgba(79, 103, 38, 0.75);
-      }
-    }
-    .animated-btn.no_border {
-        border: none;
-    }
-    .hvr-reveal:before{
-        border-color
-    }
-    .hvr-border-fade, .hvr-hollow, .hvr-trim, .hvr-round-corners, .hvr-underline-from-center, .hvr-underline-from-left, .hvr-underline-reveal, .hvr-overline-reveal{
-        background: #e1e1e1;
-    }
-    button {
-        padding: 12px 50px;
-        min-width: 200px;
-        height: 60px;
-        position: relative;
-        /* overflow: hidden; */
-        outline: none;
-        /* border: 3px solid #4f6726; */
-        background: #e1e1e1;
-        color: #4f6726;
-        text-transform: uppercase;
-        border: none;
-    }
-    .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
-        box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px rgba(0, 0, 0, 0);
-    }
-    .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-         background:#4f6726;
-    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
