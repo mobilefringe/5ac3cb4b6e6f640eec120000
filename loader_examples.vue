@@ -251,7 +251,7 @@
 </style>
 <script>
     define(["Vue"], function(Vue) {
-        return Vue.component("buttons-component", {
+        return Vue.component("loader-example-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
