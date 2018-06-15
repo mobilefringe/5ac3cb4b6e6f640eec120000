@@ -178,7 +178,7 @@ define([], function() {
             redirect: '/',
             children: [{
                 path: '',
-                component: view('button_examples'),
+                component: view('loader_examples'),
                 name: 'Buttons'
             }]
         },
