@@ -8,10 +8,10 @@
         		    <h3 class="home_page_title caps">Loaders</h3>
         		    <div>
         		        <div class="loader-inner ball-beat">
-        		        <div></div>
-        		        <div></div>
-        		        <div></div>
-        		    </div>
+            		        <div></div>
+            		        <div></div>
+            		        <div></div>
+            		    </div>
         		    </div>
                 </div>
             </div>
