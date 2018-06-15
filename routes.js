@@ -173,6 +173,16 @@ define([], function() {
             }]
         },
         {
+            path: '/button_examples',
+            component: view('default'),
+            redirect: '/',
+            children: [{
+                path: '',
+                component: view('button_examples'),
+                name: 'Buttons'
+            }]
+        },
+        {
             path: '/sapphire_package',
             component: view('default'),
             redirect: '/404',
