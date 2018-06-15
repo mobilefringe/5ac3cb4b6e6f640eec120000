@@ -35,6 +35,7 @@
     }
     .loader-inner  {
         margin:auto;
+        text-align: center;
     }
 </style>
 <script>
