@@ -50,7 +50,7 @@
         		            <button class="animated-btn hvr-wobble-horizontal"> Click Here </button>
         		        </div>
         		    </div>
-        		    <h1 class="home_page_title caps">Banners</h1>
+        		    <h1 class="home_page_title caps">Loaders</h1>
         		    <h3 class="home_page_title caps">Ball Beat Loader</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner ball-beat">
