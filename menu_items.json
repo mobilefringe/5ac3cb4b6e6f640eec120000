@@ -32,7 +32,6 @@
     },
     {
         "name" : "nav.packages",
-        "id" : "",
         "href": "#",
         "sub_menu" : [
             {
