@@ -17,7 +17,11 @@
         "leasing": "Leasing",
         "jobs" : "Jobs",
         "privacy" : "Privacy Policy",
-        "terms" : "Terms & Conditions"
+        "terms" : "Terms & Conditions",
+        "packages" : "Packages",
+        "sapphire" : "Sapphire",
+        "ruby" : "Ruby",
+        "diamond": "Diamond
     },
     "footer": {
         "newsletter" : "Newsletter",
