@@ -179,39 +179,39 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('loader_examples'),
-                name: 'Buttons'
+                name: 'Loaders'
             }]
         },
-        {
-            path: '/sapphire_package',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('sapphire_package'),
-                name: 'sapphire'
-            }]
-        },
-        {
-            path: '/ruby_package',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('ruby_package'),
-                name: 'ruby'
-            }]
-        },
-        {
-            path: '/diamond_package',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('diamond_package'),
-                name: 'diamond'
-            }]
-        },
+        // {
+        //     path: '/sapphire_package',
+        //     component: view('default'),
+        //     redirect: '/404',
+        //     children: [{
+        //         path: '',
+        //         component: view('sapphire_package'),
+        //         name: 'sapphire'
+        //     }]
+        // },
+        // {
+        //     path: '/ruby_package',
+        //     component: view('default'),
+        //     redirect: '/404',
+        //     children: [{
+        //         path: '',
+        //         component: view('ruby_package'),
+        //         name: 'ruby'
+        //     }]
+        // },
+        // {
+        //     path: '/diamond_package',
+        //     component: view('default'),
+        //     redirect: '/404',
+        //     children: [{
+        //         path: '',
+        //         component: view('diamond_package'),
+        //         name: 'diamond'
+        //     }]
+        // },
         {
             path: '/thank_you',
             component: view('default'),
