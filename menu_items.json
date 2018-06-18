@@ -32,7 +32,7 @@
     },
     {
         "name" : "nav.packages",
-        "id" : "menu2",
+        "id" : "",
         "href": "#",
         "sub_menu" : [
             {
