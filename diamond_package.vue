@@ -21,13 +21,44 @@
     		        <div class="margin_60 hidden_phone"></div>
     		        <h3 class="home_page_title caps sub_title">Keele Banner</h3>
     		        <keele-banner :banners="banners"></keele-banner>
-    		        
+    		        <h1 class="home_page_title caps">Loaders</h1>
+        		    <div class="margin_40"></div>
+        		    <h3 class="home_page_title caps">Ball Grid Beat Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner clearfix ball-grid-beat">
+            		        <div></div><div></div><div></div>
+            		        <div></div><div></div><div></div>
+            		        <div></div><div></div><div></div>
+            		    </div>
+        		    </div>
+        		    <div class="margin_40"></div>
+        		    <h3 class="home_page_title caps">Ball Clip Rotate Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner clearfix ball-clip-rotate-multiple">
+            		        <div></div>
+            		        <div></div>
+            		    </div>
+        		    </div>
                 </div>
             </div>
         </transition>
     </div>
 </template>
-
+<style>
+    @import "https://mmvue.codecloudapp.com/loaders.css";
+    .loaders_container {
+        background-color: #4f6726;
+        padding: 50px;
+    }
+    .loader-inner  {
+        margin:auto;
+        text-align: center;
+    }
+    .ball-clip-rotate-multiple.clearfix.loader-inner {
+        position: absolute;
+        left: 50%;
+    }
+</style>
 <script>
     // gold
     define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
