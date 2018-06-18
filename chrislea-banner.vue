@@ -1,6 +1,6 @@
 <template>
     <div class="banners chrislea">
-        <div class="prev_chris"></div>
+        <div class="prev"></div>
         <slick ref="slick" :options="chrisleaOptions">
 			<div class="" v-for="banner in banners" v-if="banners">
 				<div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</slick>
-		<div class="next_chris"></div>
+		<div class="next next_chris"></div>
     </div>
 </template>
 
