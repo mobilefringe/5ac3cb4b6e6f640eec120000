@@ -35,7 +35,7 @@
         		    </div>
         		    <div class="margin_40"></div>
         		    <h3 class="home_page_title caps">Square Spin Loader</h3>
-        		    <div class="text-center loaders_container transparent_bg">
+        		    <div class="text-center loaders_container">
         		        <div class="loader-inner clearfix square-spin">
             		        <div></div>
             		    </div>
@@ -49,7 +49,7 @@
         		    </div>
         		    <div class="margin_40"></div>
         		    <h3 class="home_page_title caps">Square Spin Loader (Logo Example 2)</h3>
-        		    <div class="text-center loaders_container">
+        		    <div class="text-center loaders_container transparent_bg">
         		        <div class="loader-inner clearfix square-spin logo_example_2">
             		        <div></div>
             		    </div>
@@ -65,6 +65,9 @@
     .loaders_container {
         background-color: #4f6726;
         padding: 50px;
+    }
+    .transparent_bg {
+        
     }
     .loader-inner  {
         margin:auto;
