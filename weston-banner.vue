@@ -122,7 +122,7 @@
                         dots: true,
                         infinite: true,
                         nextArrow: '.next_weston',
-                        prevArrow: '.prev',
+                        prevArrow: '.prev_weston',
                         speed: 500
                     }
                 }
