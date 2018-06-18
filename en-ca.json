@@ -21,7 +21,7 @@
         "packages" : "Packages",
         "sapphire" : "Sapphire",
         "ruby" : "Ruby",
-        
+        "diamond": "Diamond",
     },
     "footer": {
         "newsletter" : "Newsletter",
