@@ -1,6 +1,6 @@
 <template>
     <div class="weston banners">
-        <div class="prev"></div>
+        <div class="prev prev_weston"></div>
         <slick ref="slick" :options="westonOptions">
 			<div v-for="banner in banners" v-if="banners">
 			    <div class="banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
