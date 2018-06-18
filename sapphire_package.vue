@@ -57,6 +57,25 @@
 </template>
 <style>
     @import "/hover.css";
+    .animated-btn.no_border {
+        border: none;
+    }
+    .hvr-border-fade, .hvr-hollow, .hvr-trim, .hvr-round-corners, .hvr-underline-from-center, .hvr-underline-from-left, .hvr-underline-reveal, .hvr-overline-reveal{
+        background: #e1e1e1;
+    }
+    button {
+        padding: 12px 50px;
+        min-width: 200px;
+        height: 60px;
+        position: relative;
+        /* overflow: hidden; */
+        outline: none;
+        /* border: 3px solid #4f6726; */
+        background: #e1e1e1;
+        color: #4f6726;
+        text-transform: uppercase;
+        border: none;
+    }
 </style>
 <script>
     // bronze
