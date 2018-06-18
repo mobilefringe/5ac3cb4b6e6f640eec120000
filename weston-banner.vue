@@ -121,7 +121,7 @@
                         cssEase: 'ease',
                         dots: true,
                         infinite: true,
-                        nextArrow: '.next',
+                        nextArrow: '.next_weston',
                         prevArrow: '.prev',
                         speed: 500
                     }
