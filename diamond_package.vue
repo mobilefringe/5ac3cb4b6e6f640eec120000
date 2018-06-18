@@ -35,7 +35,7 @@
         		    </div>
         		    <div class="margin_40"></div>
         		    <h3 class="home_page_title caps">Square Spin Loader</h3>
-        		    <div class="text-center loaders_container">
+        		    <div class="text-center loaders_container transparent_bg">
         		        <div class="loader-inner clearfix square-spin">
             		        <div></div>
             		    </div>
