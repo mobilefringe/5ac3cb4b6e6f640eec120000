@@ -14,7 +14,7 @@
                 </div> 
 			</div>
 		</slick>
-		<div class="next"></div>
+		<div class="next next_weston"></div>
     </div>      
 </template>
 
