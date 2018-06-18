@@ -98,7 +98,7 @@
     .square-spin.logo_example_2 > div {
         background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1529338220797/tplogo_small.png");
         background-color: transparent;
-        width: 60px;
+        width: 120px;
         height: 60px;
     }
     .ball-clip-rotate-multiple.clearfix.loader-inner {
