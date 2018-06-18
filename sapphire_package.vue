@@ -94,7 +94,36 @@
         text-transform: uppercase;
         border: none;
     }
+    @import "https://mmvue.codecloudapp.com/loaders.css";
+    .loaders_container {
+        background-color: #4f6726;
+        padding: 50px;
+    }
+    .loader-inner  {
+        margin:auto;
+        text-align: center;
+    }
+    .square-spin > div {
+        margin:auto;
+    }
+    .square-spin.logo_example_1 > div {
+        background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1529333770000/twinpineslogo-Square.png");
+        background-color: transparent;
+        width: 60px;
+        height: 60px;
+    }
+    .square-spin.logo_example_2 > div {
+        background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1529338460509/tplogo_small.png");
+        background-color: transparent;
+        width: 120px;
+        height: 15px;
+    }
+    .ball-clip-rotate-multiple.clearfix.loader-inner {
+        position: absolute;
+        left: 50%;
+    }
 </style>
+
 <script>
     // bronze
     define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
