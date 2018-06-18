@@ -96,7 +96,7 @@
         height: 60px;
     }
     .square-spin.logo_example_2 > div {
-        background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1522945678000/tplogo.png");
+        background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1529338220797/tplogo_small.png");
         background-color: transparent;
         width: 60px;
         height: 60px;
