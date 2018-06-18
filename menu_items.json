@@ -38,7 +38,15 @@
             {
                 "name": "nav.sapphire",
                 "href": "/sapphire_package"
-            }    
+            },
+            {
+                "name": "nav.sapphire",
+                "href": "/sapphire_package"
+            },
+            {
+                "name": "nav.sapphire",
+                "href": "/sapphire_package"
+            } 
         ]
     }
 ]
