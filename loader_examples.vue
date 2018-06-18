@@ -85,6 +85,8 @@
     .square-spin.logo_example_1 > div {
         background-image: url("//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1529333770000/twinpineslogo-Square.png");
         background-color: transparent;
+            width: 60px;
+    height: 60px;
     }
     .ball-clip-rotate-multiple.clearfix.loader-inner {
         position: absolute;
