@@ -7,6 +7,7 @@
 
  * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
  */
+ $hover_colour: #43432;
 /* 2D TRANSITIONS */
 /* Grow */
 .hvr-grow {
