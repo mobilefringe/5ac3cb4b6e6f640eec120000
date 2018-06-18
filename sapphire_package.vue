@@ -22,6 +22,34 @@
     		        <weston-banner :banners="banners" :key="2"></weston-banner>
     		        
     		        <h1 class="home_page_title caps">Button Transitions</h1>
+    		        <div class="row margin_30">
+                        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-grow"> Click Here </button>    
+        		        </div>
+        		        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-shrink"> Click Here </button>
+        		        </div>
+        		        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-float"> Click Here </button>    
+        		        </div>
+        		        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-bob"> Click Here </button>
+        		        </div>
+        		    </div>
+        		    <div class="row margin_30">
+                        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-forward"> Click Here </button>    
+        		        </div>
+        		        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-backward"> Click Here </button>
+        		        </div>
+        		        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-rotate"> Click Here </button>    
+        		        </div>
+        		        <div class="col-md-3 center">
+        		            <button class="animated-btn hvr-wobble-horizontal"> Click Here </button>
+        		        </div>
+        		    </div>
                 </div>
             </div>
         </transition>
