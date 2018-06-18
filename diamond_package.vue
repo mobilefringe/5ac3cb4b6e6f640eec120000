@@ -67,7 +67,7 @@
         padding: 50px;
     }
     .loaders_container.transparent_bg {
-        
+        background-color: transparent;
     }
     .loader-inner  {
         margin:auto;
