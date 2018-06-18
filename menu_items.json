@@ -1,1 +1,34 @@
 _package
+[
+    {
+        "name": "nav.directory",
+        "id": "menu1",
+        "href": "#",
+        "sub_menu": [
+            {
+                "name": "nav.stores",
+                "href": "/stores"
+            },
+            {
+                "name": "nav.centre_map",
+                "href": "/map"
+            }
+        ]
+    },
+    {
+        "name": "nav.promos",
+        "href": "/promotions"
+    },
+    {
+        "name": "nav.events",
+        "href": "/events"
+    },
+    {
+        "name": "nav.hours",
+        "href": "/hours"
+    },
+    {
+        "name": "nav.contact",
+        "href": "/contact_us"
+    }
+]
