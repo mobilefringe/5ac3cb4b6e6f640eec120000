@@ -21,6 +21,7 @@
     		        <h3 class="home_page_title caps sub_title">Weston Banner</h3>
     		        <weston-banner :banners="banners" :key="2"></weston-banner>
     		        
+    		        <h1 class="home_page_title caps">Banners</h1>
                 </div>
             </div>
         </transition>
