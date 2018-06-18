@@ -51,7 +51,7 @@
         		        </div>
         		    </div>
         		    <h1 class="home_page_title caps">Loaders</h1>
-        		    <h3 class="home_page_title caps">Ball Beat Loader</h3>
+        		    <h3 class="home_page_title caps text-left sub_title">Ball Beat Loader</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner ball-beat">
             		        <div></div>
@@ -60,7 +60,7 @@
             		    </div>
         		    </div>
         		    <div class="margin_40"></div>
-        		    <h3 class="home_page_title caps">Ball Grid Beat Loader</h3>
+        		    <h3 class="home_page_title caps text-left sub_title">Ball Grid Beat Loader</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner clearfix ball-grid-beat">
             		        <div></div><div></div><div></div>
