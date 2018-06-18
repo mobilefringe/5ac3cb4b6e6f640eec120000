@@ -75,6 +75,7 @@
 </template>
 <style>
     @import "/hover.css";
+     @import "https://mmvue.codecloudapp.com/loaders.css";
     .animated-btn.no_border {
         border: none;
     }
@@ -94,7 +95,7 @@
         text-transform: uppercase;
         border: none;
     }
-    @import "https://mmvue.codecloudapp.com/loaders.css";
+   
     .loaders_container {
         background-color: #4f6726;
         padding: 50px;
