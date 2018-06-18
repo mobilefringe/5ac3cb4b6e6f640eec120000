@@ -66,7 +66,7 @@
         background-color: #4f6726;
         padding: 50px;
     }
-    .transparent_bg {
+    .loaders_container.transparent_bg {
         
     }
     .loader-inner  {
