@@ -96,8 +96,8 @@
                         cssEase: 'ease',
                         dots: true,
                         infinite: true,
-                        nextArrow: '.next',
-                        prevArrow: '.prev'
+                        nextArrow: '.next_chris',
+                        prevArrow: '.prev_chris'
                     }
                 }
             }
