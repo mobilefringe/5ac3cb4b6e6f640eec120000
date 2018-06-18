@@ -59,7 +59,7 @@
         		    <div class="margin_40"></div>
         		    <h3 class="home_page_title caps">Square Spin Loader (Logo Example 2)</h3>
         		    <div class="text-center loaders_container">
-        		        <div class="loader-inner clearfix square-spin logo_example_1">
+        		        <div class="loader-inner clearfix square-spin logo_example_2">
             		        <div></div>
             		    </div>
         		    </div>
