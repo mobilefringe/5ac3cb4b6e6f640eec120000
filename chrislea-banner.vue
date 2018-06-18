@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</slick>
-		<div class="next"></div>
+		<div class="next_chris"></div>
     </div>
 </template>
 
