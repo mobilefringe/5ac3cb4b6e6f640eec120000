@@ -29,5 +29,16 @@
     {
         "name": "nav.contact",
         "href": "/contact_us"
+    },
+    {
+        "name" : "nav.packages",
+        "id" : "menu2",
+        "href": "#",
+        "sub_menu" : [
+            {
+                "name": "nav.sapphire",
+                "href": "/sapphire_package"
+            }    
+        ]
     }
 ]
