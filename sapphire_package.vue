@@ -50,6 +50,33 @@
         		            <button class="animated-btn hvr-wobble-horizontal"> Click Here </button>
         		        </div>
         		    </div>
+        		    <h1 class="home_page_title caps">Banners</h1>
+        		    <h3 class="home_page_title caps">Ball Beat Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner ball-beat">
+            		        <div></div>
+            		        <div></div>
+            		        <div></div>
+            		    </div>
+        		    </div>
+        		    <div class="margin_40"></div>
+        		    <h3 class="home_page_title caps">Ball Grid Beat Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner clearfix ball-grid-beat">
+            		        <div></div><div></div><div></div>
+            		        <div></div><div></div><div></div>
+            		        <div></div><div></div><div></div>
+            		    </div>
+        		    </div>
+        		    <div class="margin_40"></div>
+        		    <h3 class="home_page_title caps">Ball Pulse Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner ball-pulse">
+            		        <div></div>
+            		        <div></div>
+            		        <div></div>
+            		    </div>
+        		    </div>
                 </div>
             </div>
         </transition>
