@@ -63,7 +63,7 @@
     .hvr-border-fade, .hvr-hollow, .hvr-trim, .hvr-round-corners, .hvr-underline-from-center, .hvr-underline-from-left, .hvr-underline-reveal, .hvr-overline-reveal{
         background: #e1e1e1;
     }
-    .animated-btnbutton {
+    button.animated-btn {
         padding: 12px 50px;
         min-width: 200px;
         height: 60px;
