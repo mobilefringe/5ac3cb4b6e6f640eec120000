@@ -74,6 +74,7 @@
 </template>
 <style>
     @import "https://mmvue.codecloudapp.com/loaders.css";
+    @import "https://twinpines.codecloudapp.com/animate.css";
     .loaders_container {
         background-color: #4f6726;
         padding: 50px;
@@ -86,7 +87,7 @@
         position: absolute;
         left: 50%;
     }
-    @import "https://twinpines.codecloudapp.com/animate.css";
+    
    
     .button_examples .animated-btn.no_border {
         border: none;
