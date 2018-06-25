@@ -40,7 +40,7 @@
         		    <h1 class="home_page_title caps">Buttons</h1>
         		    <div class="row margin_30 button_examples">
         		        <div class="col-md-3 center">
-    		               <button class="animated-btn no_border hvr-border-fade">Click Here</button>
+    		               <button class="animated-btn no_border hvr-border-fade">Full Border</button>
         		        </div>
         		        <div class="col-md-3 center">
     		               <button class=" hvr-outline-out">Click Here</button>
