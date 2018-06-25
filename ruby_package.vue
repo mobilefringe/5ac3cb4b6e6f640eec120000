@@ -70,16 +70,15 @@
         		    <h1 class="home_page_title caps">Feature Items</h1>
         		    <div class="row margin_30 button_examples">
         		        <div class="col-md-3 center">
-                            <div class="post-module">
-                                <div class="thumbnail">
-                                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg' />
-                                    <div class="post-content">
-                                        <h1 class="title">City Lights in New York</h1>
-                                        <h2 class="sub_title">The city that never sleeps.</h2>
-                                        <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                                    </div>  
-                                </div> 
-                            </div>
+                            <li class="card">
+                        		<a class="card-image" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg">
+                        			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg" alt="Psychopomp" />
+                        		</a>
+                        		<a class="card-description" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
+                        			<h2>Psychopomp</h2>
+                        			<p>Japanese Breakfast</p>
+                        		</a>
+                        	</li>
         		        </div>
         		    </div>
                 </div>
