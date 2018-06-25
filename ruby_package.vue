@@ -77,8 +77,6 @@
                         		        <h2>Psychopomp</h2>
                         			    <p>Japanese Breakfast</p>    
                         		    </span>
-                        			
-                        		
                         	    </div>
                             </a>
         		        </div>
