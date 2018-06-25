@@ -90,15 +90,15 @@
     }
     
    
-    /*.button_examples .animated-btn.no_border {*/
-    /*    border: none;*/
-    /*}*/
-    /*.button_examples .hvr-border-fade,.button_examples .hvr-hollow,.button_examples .hvr-trim,.button_examples .hvr-round-corners,.button_examples .hvr-underline-from-center,.button_examples .hvr-underline-from-left,.button_examples .hvr-underline-reveal,.button_examples .hvr-overline-reveal{*/
-    /*    background: #e1e1e1;*/
-    /*}*/
-    /*.button_examples .hvr-hollow:hover,.button_examples .hvr-hollow:focus,.button_examples .hvr-hollow:active {*/
-    /*    background: none;*/
-    /*}*/
+    .button_examples .animated-btn.no_border {
+        border: none;
+    }
+    .button_examples .hvr-border-fade,.button_examples .hvr-hollow,.button_examples .hvr-trim,.button_examples .hvr-round-corners,.button_examples .hvr-underline-from-center,.button_examples .hvr-underline-from-left,.button_examples .hvr-underline-reveal,.button_examples .hvr-overline-reveal{
+        background: #e1e1e1;
+    }
+    .button_examples .hvr-hollow:hover,.button_examples .hvr-hollow:focus,.button_examples .hvr-hollow:active {
+        background: none;
+    }
     .button_examples button {
         padding: 12px 50px;
         min-width: 200px;
