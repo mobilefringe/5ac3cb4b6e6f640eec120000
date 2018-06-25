@@ -69,7 +69,7 @@
         		    <div class="margin_40"></div>
         		    <h1 class="home_page_title caps">Feature Items</h1>
         		    <div class="row margin_30 button_examples">
-        		        <div class="col-md-3 center">
+        		        <div class="col-md-4 center">
                             <li class="card">
                         		<a class="card-image" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg">
                         			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg" alt="Psychopomp" />
