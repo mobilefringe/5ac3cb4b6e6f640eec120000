@@ -39,7 +39,7 @@
         		    </div>
         		    <!--<div class="margin_40"></div>-->
         		    <h1 class="home_page_title caps">Buttons</h1>
-        		    <div class="row margin_30">
+        		    <div class="row margin_30 button_examples">
         		        <div class="col-md-3 center">
     		               <button class="animated-btn no_border hvr-border-fade">Click Here</button>
         		        </div>
@@ -53,7 +53,7 @@
 		                    <button class="animated-btn no_border hvr-hollow"> Click Here  </button> 
         		        </div>
         		    </div>
-        		    <div class="row margin_30">
+        		    <div class="row margin_30 button_examples">
         		        <div class="col-md-3 center">
         		            <button class="animated-btn no_border hvr-overline-reveal"> Click Here </button> 
         		        </div>
