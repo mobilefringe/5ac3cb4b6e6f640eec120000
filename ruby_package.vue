@@ -66,7 +66,13 @@
 		                    <button class="animated-btn no_border hvr-underline-from-center">Border Center</button> 
         		        </div>
         		    </div>
-        		    
+        		    <div class="margin_40"></div>
+        		    <h1 class="home_page_title caps">Feature Items</h1>
+        		    <div class="row margin_30 button_examples">
+        		        <div class="col-md-3 center">
+        		        
+        		        </div>
+        		    </div>
                 </div>
             </div>
         </transition>
