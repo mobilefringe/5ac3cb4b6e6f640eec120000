@@ -72,7 +72,7 @@
         		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
         		            <a href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
                                 <div class="card">
-                        		    <div class="card-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);"></div>
+                        		    <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
                         		    <span class="card-description">
                         		        <h3>{{ item.name }}</h3>
                         			    <p>{{ item.description }}</p>    
