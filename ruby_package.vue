@@ -61,10 +61,10 @@
 		                    <button class="animated-btn no_border hvr-underline-reveal"> Click Here</button> 
         		        </div>
         		        <div class="col-md-3 center">
-		                    <button class="animated-btn no_border  hvr-underline-from-left">Left Underline</button> 
+		                    <button class="animated-btn no_border  hvr-underline-from-left"> Click Here</button> 
         		        </div>
         		        <div class="col-md-3 center">
-		                    <button class="animated-btn no_border hvr-underline-from-center">Centre Underline</button> 
+		                    <button class="animated-btn no_border hvr-underline-from-center"> Click Here  </button> 
         		        </div>
         		    </div>
         		    
