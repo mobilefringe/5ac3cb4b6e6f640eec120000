@@ -13,7 +13,6 @@
         		</div>
         		<div class="site_container">
         		    <h1 class="home_page_title caps">Banners</h1>
-        		    
     		        <h3 class="home_page_title caps sub_title">Edgeley Banner</h3>
     		        <edgeley-banner :banners="banners"></edgeley-banner>
     		        <h3 class="home_page_title caps sub_title">Silton Banner</h3>
@@ -21,7 +20,7 @@
     		        
     		        <h1 class="home_page_title caps">Loaders</h1>
         		    <div class="margin_40"></div>
-        		    <h3 class="home_page_title caps">Ball Grid Beat Loader</h3>
+        		    <h3 class="home_page_title caps sub_title">Ball Grid Beat Loader</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner clearfix ball-grid-beat">
             		        <div></div><div></div><div></div>
@@ -30,14 +29,14 @@
             		    </div>
         		    </div>
         		    <div class="margin_40"></div>
-        		    <h3 class="home_page_title caps">Ball Clip Rotate Loader</h3>
+        		    <h3 class="home_page_title caps sub_title">Ball Clip Rotate Loader</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner clearfix ball-clip-rotate-multiple">
             		        <div></div>
             		        <div></div>
             		    </div>
         		    </div>
-        		    <!--<div class="margin_40"></div>-->
+        		    <div class="margin_40"></div>
         		    <h1 class="home_page_title caps">Buttons</h1>
         		    <div class="row margin_30 button_examples">
         		        <div class="col-md-3 center">
