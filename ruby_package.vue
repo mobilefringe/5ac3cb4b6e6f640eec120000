@@ -101,7 +101,7 @@
     }
     .button_examples button {
         padding: 12px 50px;
-        min-width: 200px;
+        min-width: 100%;
         height: 60px;
         position: relative;
          overflow: hidden; 
