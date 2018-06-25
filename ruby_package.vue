@@ -54,16 +54,16 @@
         		    </div>
         		    <div class="row margin_30 button_examples">
         		        <div class="col-md-3 center">
-        		            <button class="animated-btn no_border hvr-overline-reveal"> Click Here </button> 
+        		            <button class="animated-btn no_border hvr-overline-reveal">Border Top</button> 
         		        </div>
         		        <div class="col-md-3 center">
-		                    <button class="animated-btn no_border hvr-underline-reveal"> Click Here</button> 
+		                    <button class="animated-btn no_border hvr-underline-reveal">Border Bottom</button> 
         		        </div>
         		        <div class="col-md-3 center">
-		                    <button class="animated-btn no_border  hvr-underline-from-left"> Click Here</button> 
+		                    <button class="animated-btn no_border  hvr-underline-from-left">Border Left</button> 
         		        </div>
         		        <div class="col-md-3 center">
-		                    <button class="animated-btn no_border hvr-underline-from-center"> Click Here  </button> 
+		                    <button class="animated-btn no_border hvr-underline-from-center">Border Center</button> 
         		        </div>
         		    </div>
         		    
