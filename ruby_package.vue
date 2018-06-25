@@ -74,7 +74,7 @@
                                 <div class="card">
                         		    <div class="card-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);"></div>
                         		    <span class="card-description">
-                        		        <h2>{{ item.name }}</h2>
+                        		        <h3>{{ item.name }}</h3>
                         			    <p>{{ item.description }}</p>    
                         		    </span>
                         	    </div>
