@@ -37,6 +37,7 @@
             		        <div></div>
             		    </div>
         		    </div>
+        		    <div class="margin_40"></div>
         		    <h1 class="home_page_title caps">Buttons</h1>
         		    <div class="row margin_30">
         		        <div class="col-md-3 center">
