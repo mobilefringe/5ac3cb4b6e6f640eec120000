@@ -71,9 +71,8 @@
         		    <div class="row margin_30 button_examples">
         		        <div class="col-md-4 center">
                             <li class="card">
-                        		<a class="card-image" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg">
-                        			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg" alt="Psychopomp" />
-                        		</a>
+                        		<div class="card-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);">
+                        		</div>
                         		<a class="card-description" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
                         			<h2>Psychopomp</h2>
                         			<p>Japanese Breakfast</p>
