@@ -70,7 +70,7 @@
         		    <h1 class="home_page_title caps">Feature Items</h1>
         		    <div class="row margin_30 button_examples">
         		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
-        		            <a href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
+        		            <a :href="item.url" target="_blank">
                                 <div class="card">
                         		    <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
                         		    <span class="card-description">
