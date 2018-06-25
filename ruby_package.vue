@@ -70,7 +70,7 @@
         		    <h1 class="home_page_title caps">Feature Items</h1>
         		    <div class="row margin_30 button_examples">
         		        <div class="col-md-4 center">
-        		            <a  href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
+        		            <a href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
                                 <div class="card">
                         		    <div class="card-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-100.jpg);"></div>
                         		    <span class="card-description">
@@ -150,7 +150,12 @@
                         cssEase:'ease-in-out',
                         slidesToShow: 5,
                     },
-                    pageBanner:null
+                    pageBanner:null,
+                    feature_items: [
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Item One", "description": "Description One" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Item Two", "description": "Description Two" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Item Three", "description": "Description Three" }
+                    ],
                 }
             },
             created(){
