@@ -90,6 +90,7 @@
     @import "https://mmvue.codecloudapp.com/loaders.css";
     @import "https://twinpines.codecloudapp.com/animate.css";
     @import "/hover.css";
+    @import "/card.css";
     .loaders_container {
         background-color: #4f6726;
         padding: 50px;
