@@ -86,7 +86,7 @@
         position: absolute;
         left: 50%;
     }
-    @import "/hover.css";
+    @import "https://twinpines.codecloudapp.com/animate.css";
    
     .button_examples .animated-btn.no_border {
         border: none;
