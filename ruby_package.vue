@@ -85,7 +85,7 @@
         		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
         		            <a href="#">
             		            <figure class="snip1581">
-            		                <img src="item.image_url" alt="profile-sample2"/>
+            		                <img :src="item.image_url" alt="profile-sample2"/>
                                     <figcaption>
                                         <h3 class="title1">The</h3>
                                         <h3 class="title2">Winter</h3>
