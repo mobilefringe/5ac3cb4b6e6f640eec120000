@@ -83,15 +83,16 @@
         		    </div>
         		    <div class="row margin_30 button_examples">
         		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
-        		            <figure class="snip1581">
-        		                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample4.jpg" alt="profile-sample2"/>
-                                <figcaption>
-                                    <h3 class="title1">The</h3>
-                                    <h3 class="title2">Winter</h3>
-                                    <h3 class="title3">Collection</h3>
-                                </figcaption>
-                                <a href="#"></a>
-                            </figure>
+        		            <a href="#">
+            		            <figure class="snip1581">
+            		                <img src="item.image_url" alt="profile-sample2"/>
+                                    <figcaption>
+                                        <h3 class="title1">The</h3>
+                                        <h3 class="title2">Winter</h3>
+                                        <h3 class="title3">Collection</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
                     </div>
                 </div>
