@@ -94,9 +94,8 @@
             		            <figure class="snip1581">
             		                <img :src="item.image_url" alt="profile-sample2"/>
                                     <figcaption>
-                                        <h3 class="title1">The</h3>
-                                        <h3 class="title2">Winter</h3>
-                                        <h3 class="title3">Collection</h3>
+                                        <h3 class="title1">{{ item.name }}</h3>
+                                        <p class="title2">{{ item.description }}</p>
                                     </figcaption>
                                 </figure>
                             </a>
