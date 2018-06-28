@@ -73,8 +73,11 @@
         		    </div>
         		    <div class="margin_40"></div>
         		    <h1 class="home_page_title caps">Feature Items</h1>
-        		    <h3 class="home_page_title caps sub_title">Animate with Drop Shadow</h3>
+        		   
         		    <div class="row margin_30 button_examples">
+        		        <div class="col-md-12">
+        		             <h3 class="home_page_title caps sub_title">Animate with Drop Shadow</h3>
+        		        </div>
         		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
         		            <a :href="item.url" target="_blank">
                                 <div class="card">
@@ -87,8 +90,11 @@
                             </a>
         		        </div>
         		    </div>
-        		    <h3 class="home_page_title caps sub_title">Rotate & Scale Image</h3>
+        		    
         		    <div class="row margin_30 button_examples">
+        		        <div class="col-md-12">
+        		            <h3 class="home_page_title caps sub_title">Rotate & Scale Image</h3>
+        		        </div>
         		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
         		            <a href="#">
             		            <figure class="snip1581">
