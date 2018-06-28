@@ -173,9 +173,9 @@
                     },
                     pageBanner:null,
                     feature_items: [
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Item One", "description": "Description One" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Item Two", "description": "Description Two" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Item Three", "description": "Description Three" }
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Promotions", "description": "Description One" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Events", "description": "Description Two" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Contest", "description": "Enter to Win!" }
                     ],
                 }
             },
