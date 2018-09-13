@@ -75,7 +75,7 @@
 </template>
 <style>
     @import "/hover.css";
-     @import "https://mmvue.codecloudapp.com/loaders.css";
+    @import "https://mmvue.codecloudapp.com/loaders.css";
     .animated-btn.no_border {
         border: none;
     }
@@ -112,7 +112,7 @@
 
 <script>
     // bronze
-    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
+    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner", "vue!trancking-image-hover"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
         return Vue.component("sapphire-component", {
             template: template, // the variable template will be injected
             data: function() {
