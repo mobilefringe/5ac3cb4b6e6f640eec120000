@@ -74,7 +74,7 @@
             props: {
                 bannerList: {
                     type: Array,
-                    required: true
+                    // required: true
                 }
             },
             data () {
