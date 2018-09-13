@@ -68,7 +68,7 @@
 }
 </style>
 <script>
-    define(["Vue", "jquery", "vue!vue-slick"], function(Vue, $, vueSlick) {
+    define(["Vue", "jquery"], function(Vue, $) {
         return Vue.component("tracking-image-hover", {
             template: template, // the variable template will be injected
             props: {
