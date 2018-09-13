@@ -68,6 +68,16 @@
             		        <div></div>
             		    </div>
         		    </div>
+        		    <h1 class="home_page_title caps">Feature Items</h1>
+        		    <h3 class="home_page_title caps text-left sub_title">Ball Beat Loader</h3>
+        		    <div class="text-center loaders_container">
+        		        <div class="loader-inner ball-beat">
+            		        <div></div>
+            		        <div></div>
+            		        <div></div>
+            		    </div>
+        		    </div>
+        		    tracking-image-hover
                 </div>
             </div>
         </transition>
