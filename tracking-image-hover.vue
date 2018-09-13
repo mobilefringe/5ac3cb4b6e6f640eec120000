@@ -72,7 +72,7 @@
         return Vue.component("tracking-image-hover", {
             template: template, // the variable template will be injected
             props: {
-                bannerList: {
+                FeatureList: {
                     type: Array,
                     // required: true
                 }
