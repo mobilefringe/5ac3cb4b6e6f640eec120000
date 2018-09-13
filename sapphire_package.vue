@@ -69,7 +69,7 @@
             		    </div>
         		    </div>
         		    <h1 class="home_page_title caps">Feature Items</h1>
-        		    <h3 class="home_page_title caps text-left sub_title">Ball Beat Loader</h3>
+        		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div class="text-center loaders_container">
         		        <div class="loader-inner ball-beat">
             		        <div></div>
