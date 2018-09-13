@@ -105,12 +105,6 @@
                 $(".img").mouseout(function(){
                   $(this).css("transform", "translate(0px,0px)");
                 });
-            },
-            computed: {
-               
-            },
-            methods: {
-                
             }
         })
     });
