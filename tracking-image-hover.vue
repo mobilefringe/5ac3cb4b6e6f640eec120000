@@ -173,7 +173,7 @@
 </style>
 <script>
     define(["Vue", "jquery", "vue!vue-slick"], function(Vue, $, vueSlick) {
-        return Vue.component("silmar-banner", {
+        return Vue.component("tracking-image-hiver", {
             template: template, // the variable template will be injected
             props: {
                 bannerList: {
