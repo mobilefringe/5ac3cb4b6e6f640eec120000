@@ -79,84 +79,17 @@
             },
             data () {
                 return {
-                    maxItems: this.bannerList.length,
-                    slideLeftOptions: {
-                        vertical: true,
-                        verticalSwiping: true,
-                        arrows: false,
-                        infinite: true,
-                        dots: true,
-                        speed: 1000,
-                        cssEase: "cubic-bezier(0.7, 0, 0.3, 1)"
-                    },
-                    slideRightOptions: { 
-                        swipe: false,
-                        vertical: true,
-                        arrows: false,
-                        infinite: true,
-                        speed: 950,
-                        cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
-                        initialSlide: (this.maxItems-1)
-                    },
-                    slidetextOptions: {
-                        swipe: false,
-                        vertical: true,
-                        arrows: false,
-                        infinite: true,
-                        speed: 900,
-                        cssEase: "cubic-bezier(0.7, 0, 0.3, 1)"
-                    },
+                    
                 }  
             },
             mounted() {
-                console.log(this.$refs.sliderRight, this.$refs.sliderLeft);
-                var left_slider= $(".slider.slideshow-left");
-                console.log("left_slider",left_slider.width());
-                var left_slider_width= left_slider.width();
-                var right_slider = document.querySelector('#silmar_banner .slideshow.slideshow-right .slider');//[0];
-                right_slider.setAttribute("style", "width: "+left_slider_width+"px;")
-                console.log(right_slider);
                 
             },
             computed: {
-                allBanners () {
-                    var banners = this.bannerList;
-                    // banners_image = ["https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg","https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg","https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg", "https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"];
-                    // _.forEach(banners, function (val, key){
-                    //     val.image_url = banners_image[key];
-                    // });
-                    return banners;
-                },
-                allBannersReverse() {
-                    return _.reverse(this.allBanners);
-                }
+               
             },
             methods: {
-                beforeChange (event, slick, currentSlide, nextSlide) {
-                    var rightEL = this.$refs.sliderRight.$el;
-                    var textEL = this.$refs.textSlider.$el;
-                    if (
-                      currentSlide > nextSlide &&
-                      nextSlide == 0 &&
-                      currentSlide == this.maxItems - 1
-                    ) {
-                      $(rightEL).slick("slickGoTo", -1);
-                      $(textEL).slick("slickGoTo", this.maxItems);
-                    } else if (
-                      currentSlide < nextSlide &&
-                      currentSlide == 0 &&
-                      nextSlide == this.maxItems - 1
-                    ) {
-                      $(rightEL).slick("slickGoTo", this.maxItems);
-                      $(textEL).slick("slickGoTo", -1);
-                    } else {
-                      $(rightEL).slick(
-                        "slickGoTo",
-                        this.maxItems - 1 - nextSlide
-                      );
-                      $(textEL).slick("slickGoTo", nextSlide);
-                    }
-                }
+                
             }
         })
     });
