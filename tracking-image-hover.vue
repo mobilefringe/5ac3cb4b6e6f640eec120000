@@ -74,7 +74,7 @@
             props: {
                 featureItems: {
                     type: Array,
-                    // required: true
+                    required: true
                 }
             },
             data () {
