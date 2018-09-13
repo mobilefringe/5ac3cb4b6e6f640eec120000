@@ -43,7 +43,7 @@
   */
 }
 
-.img-container {
+#feature_container_one .img-container {
   transition: transform .1s ease;
 }
 
