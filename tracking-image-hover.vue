@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.card {
+#feature_container_one .card {
   overflow: hidden;
   position: relative;
   display: inline-block;
