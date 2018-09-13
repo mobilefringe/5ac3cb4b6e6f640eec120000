@@ -71,7 +71,7 @@
         		    <h1 class="home_page_title caps">Feature Items</h1>
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div class="text-center ">
-        		        <tracking-image-hover></tracking-image-hover>
+        		        <tracking-image-hover :featureItems=""></tracking-image-hover>
         		    </div>
         		    
                 </div>
@@ -129,6 +129,11 @@
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Slide Two", "description": "Description Two" },
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Slide Three", "description": "Description Three" },
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg", "name": "Slide Four", "description": "Description Four" }
+                    ],
+                    feature_items: [
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Promotions", "description": "Description One" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Events", "description": "Description Two" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Contest", "description": "Enter to Win!" }
                     ],
                     slickOptions3: {
                         arrows: false,
