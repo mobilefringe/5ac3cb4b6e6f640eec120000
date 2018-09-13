@@ -8,18 +8,6 @@
                 <img id="street" class="img" src="http://themenectar.com/demo/salient-frostwave/wp-content/uploads/2013/06/night-to-remember1-600x400.jpg" alt="street" />
             </div>
         </div>
-  
-        <div class="card">
-            <div class="img-container">
-                <img id="hill" class="img" src="http://themenectar.com/demo/salient-frostwave/wp-content/uploads/2013/06/great-valley1-600x400.jpg" alt="hill" />
-            </div>
-        </div>
-  
-        <div class="card">
-            <div class="img-container">
-                <img id="lake" class="img" src="http://themenectar.com/demo/salient-frostwave/wp-content/uploads/2013/06/on-the-lake1-600x400.jpg" alt="lake" />
-            </div>
-        </div>
     </div>
 </template>
 
