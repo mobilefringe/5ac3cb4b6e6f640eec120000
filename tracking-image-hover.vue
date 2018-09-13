@@ -24,9 +24,6 @@
 </template>
 
 <style>
-body {
-  background-color: #4C4C4C;
-}
 
 .container {
   font-size: 0;
