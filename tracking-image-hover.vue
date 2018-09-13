@@ -63,7 +63,7 @@
   transition: opacity .25s ease-in-out;
 }
 
-.card img:hover {
+#feature_container_one .card img:hover {
   opacity: 1;
 }
 </style>
