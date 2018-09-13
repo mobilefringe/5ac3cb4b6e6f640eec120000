@@ -25,7 +25,7 @@
 
 <style>
 
-.container {
+#feature_container_one.container {
   font-size: 0;
   width: 100%;
   margin-top: 50px;
