@@ -24,150 +24,51 @@
 </template>
 
 <style>
-#silmar_banner {
-    position:relative;
-    height: 100%;
-    background: #110101;
-    font-family: 'Roboto', sans-serif;
-    /*overflow: hidden;*/
+body {
+  background-color: #4C4C4C;
 }
-#silmar_banner.split-slideshow{
-    height: 700px;
-}
-#silmar_banner .slideshow {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
+
+.container {
+  font-size: 0;
   width: 100%;
-  height: 700px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card {
   overflow: hidden;
-}
-
-#silmar_banner .slideshow .slider {
-    width: 100%;
-    height: 700px;
-    z-index: 2;
-}
-
-#silmar_banner .slideshow .slider .item {
-  height: 700px;
-  width: 100%;
   position: relative;
-  overflow: hidden;
-  border: none;
+  display: inline-block;
+  height: 400px;
+  width: 600px;
+  /*
+  Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+  */
 }
 
-#silmar_banner .slideshow .slider .item .text {
-  display: none;
+.img-container {
+  transition: transform .1s ease;
 }
 
-#silmar_banner .slideshow .slider .item img {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.img-container:hover {
+  transform: scale(1.1);
+  /*
+  Change the scale value as much as you want to change the amount of zoom on hover.
+  */
 }
 
-#silmar_banner .slideshow .slick-dots {
-  position: absolute;
-  z-index: 100;
-  width: 40px;
-  height: auto;
-  bottom: auto;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: auto;
-  color: #fff;
-  display: block;
+.card img {
+  opacity: .5;
+  transform: translate(0,0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  transition: opacity .25s ease-in-out;
 }
 
-#silmar_banner .slideshow .slick-dots li {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-#silmar_banner .slideshow .slick-dots li button {
-    position: relative;
-    width: 20px;
-    height: 15px;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-}
-
-#silmar_banner .slideshow .slick-dots li button:before {
-  content: "";
-  background: #fff;
-  color: #fff;
-  height: 2px;
-  width: 20px;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: auto;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  opacity: 0.6;
-}
-
-#silmar_banner .slideshow .slick-dots li.slick-active button:before {
-  width: 40px;
+.card img:hover {
   opacity: 1;
 }
-
-#silmar_banner .slideshow.slideshow-right {
-  left: 0;
-  z-index: 1;
-  width: 50%;
-  pointer-events: none;
-}
-
-#silmar_banner .slideshow.slideshow-right .slider {
-  left: 0;
-  position: absolute;
-}
-
-#silmar_banner .slideshow-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 100;
-  font-size: 80px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 100;
-  pointer-events: none;
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  line-height: 0.8;
-}
-
-@media (max-width: 767px) {
-    #silmar_banner .slideshow-text {
-      font-size: 40px;
-    }
-}
-
 </style>
 <script>
     define(["Vue", "jquery", "vue!vue-slick"], function(Vue, $, vueSlick) {
