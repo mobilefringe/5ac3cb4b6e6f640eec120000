@@ -47,14 +47,14 @@
   transition: transform .1s ease;
 }
 
-.img-container:hover {
+#feature_container_one .img-container:hover {
   transform: scale(1.1);
   /*
   Change the scale value as much as you want to change the amount of zoom on hover.
   */
 }
 
-.card img {
+#feature_container_one .card img {
   opacity: .5;
   transform: translate(0,0);
   /*
