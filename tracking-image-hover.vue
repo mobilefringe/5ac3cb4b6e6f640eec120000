@@ -1,28 +1,32 @@
 <template>
-	<!--<div class="slider_wrapper">-->
-	    <!--<div class="row page_content" >-->
-            <div class="split-slideshow" id="silmar_banner">
-                <div class="slideshow">
-                    <slick :options="slideLeftOptions" ref="sliderLeft" class="slider slideshow-left" key="sliderLeft" @beforeChange="beforeChange">
-                        <div class="item" v-for="banner in allBanners">
-                            <img :src="banner.image_url" />
-                        </div>
-                    </slick>
-                </div>
-                <slick :options="slidetextOptions" ref="textSlider" class="slideshow-text"  key="sliderText">
-                    <div class="item"  v-for="banner in allBanners">{{banner.name}}</div>
-                </slick>
-                <div class="slideshow slideshow-right">
-                    <slick :options="slideRightOptions" ref="sliderRight"   class="slider" key="sliderRight" >
-                        <div class="item" v-for="banner in allBannersReverse">
-                            <img :src="banner.image_url" />
-                        </div>
-                    </slick>
-                </div>
-                
-            </div>
-        <!--</div>-->
-	<!--</div>-->
+	<!-- 
+  Container for the images.
+-->
+<div class="container">
+  <!-- 
+    The markup for each image is a div with the class of card. 
+  -->
+  <div class="card">
+    <!-- 
+      Each "card" has an image container, this is because you need the image to scale and move, we want the scaling to have a smooth transition. However if you add a transition for transform the transform property it will apply to both the scaling and the translation, causeing the translation to "lag" because as it updates where the mouse position is. 
+    -->
+    <div class="img-container">
+      <img id="street" class="img" src="http://themenectar.com/demo/salient-frostwave/wp-content/uploads/2013/06/night-to-remember1-600x400.jpg" alt="street" />
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="img-container">
+      <img id="hill" class="img" src="http://themenectar.com/demo/salient-frostwave/wp-content/uploads/2013/06/great-valley1-600x400.jpg" alt="hill" />
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="img-container">
+      <img id="lake" class="img" src="http://themenectar.com/demo/salient-frostwave/wp-content/uploads/2013/06/on-the-lake1-600x400.jpg" alt="lake" />
+    </div>
+  </div>
+</div>
 </template>
 
 <style>
@@ -173,7 +177,7 @@
 </style>
 <script>
     define(["Vue", "jquery", "vue!vue-slick"], function(Vue, $, vueSlick) {
-        return Vue.component("tracking-image-hiver", {
+        return Vue.component("tracking-image-hover", {
             template: template, // the variable template will be injected
             props: {
                 bannerList: {
