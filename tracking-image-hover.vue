@@ -5,7 +5,7 @@
         <div class="card" v-for="item in featureItems">
             <!--   Each "card" has an image container, this is because you need the image to scale and move, we want the scaling to have a smooth transition. However if you add a transition for transform the transform property it will apply to both the scaling and the translation, causeing the translation to "lag" because as it updates where the mouse position is.   -->
             <div class="img-container">
-                <img :id="item.name" class="img" :src="item.image_url" alt="street" />
+                <img :id="item.name" class="img" :src="item.image_url" alt="item.name" />
             </div>
         </div>
     </div>
