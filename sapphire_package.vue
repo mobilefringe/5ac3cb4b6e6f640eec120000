@@ -109,7 +109,6 @@
     </div>
 </template>
 <style>
-@import "/hover.css";
     @import "/card.css";
     @import "/hover.css";
     @import "https://mmvue.codecloudapp.com/loaders.css";
