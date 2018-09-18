@@ -14,9 +14,9 @@
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
-			<a class='gallery-link' href='https://unsplash.it/1600/1260?image=267'>
+			<a class='gallery-link' href='https://unsplash.it/1600/1270?image=267'>
 				<figure class='gallery-image'>
-					<img height='1260' src='https://unsplash.it/1600/1260?image=267' width='1600'>
+					<img height='1270' src='https://unsplash.it/1600/1270?image=267' width='1600'>
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
