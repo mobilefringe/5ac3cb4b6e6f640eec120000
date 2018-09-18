@@ -2,7 +2,7 @@
 	<!-- Container for the images.-->
 	<div id="feature_container_two" class="container">
 		<article class='gallery'>
-			<a v-for="feature in feature_items" class='gallery-link' href='https://unsplash.it/1600/1000?image=1081' >
+			<a v-for="feature in feature_items" class='gallery-link' :href='feature.image_url' >
 				<figure class='gallery-image'>
 					<img height='1000' src='https://unsplash.it/1600/1000?image=1081' width='1600'>
 					<figcaption>Photo caption</figcaption>
