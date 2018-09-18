@@ -109,7 +109,7 @@
                     feature_items: [
                         { "image_url": "https://unsplash.it/1600/1000?image=1081", "name": "Promotions", "description": "Description One" },
                         { "image_url": "https://unsplash.it/1000/1600?image=1014", "name": "Events", "description": "Description Two" },
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/3.jpg", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1600/1280?image=267", "name": "Contest", "description": "Enter to Win!" }
                     ],
                     slickOptions3: {
                         arrows: false,
