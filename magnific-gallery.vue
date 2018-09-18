@@ -165,13 +165,13 @@ html #feature_container_two {
   max-width: 100%;
   height: auto;
 }
-#feature_container_two html:not(.touch) .gallery-image {
+html:not(.touch) #feature_container_two .gallery-image {
   overflow: hidden;
 }
-#feature_container_two html:not(.touch) .gallery-image:hover:before {
+html:not(.touch) #feature_container_two .gallery-image:hover:before {
   border-width: 16px;
 }
-#feature_container_two html:not(.touch) .gallery-image:hover:after {
+html:not(.touch) #feature_container_two .gallery-image:hover:after {
   border-width: 32px;
 }
 #feature_container_two .touch .gallery-image figcaption {
