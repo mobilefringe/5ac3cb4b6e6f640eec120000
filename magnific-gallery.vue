@@ -63,7 +63,7 @@
 </style>
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
-        return Vue.component("tracking-image-hover", {
+        return Vue.component("magnific-gallery", {
             template: template, // the variable template will be injected
             props: {
                 featureItems: {
