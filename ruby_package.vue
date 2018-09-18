@@ -81,9 +81,7 @@
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div id="feature_item_three">
         		        <div class="col-sm-4" v-for="feature in feature_items">
-        		            
-        		        </div>
-            		    <div class="wrapper" >
+        		               <div class="wrapper" >
                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample91.jpg" />
                             <div id="title">
                                 <h3>LOREM</h3>
@@ -95,6 +93,8 @@
                                 <p>Excepteur sint occaecat cupidatat non proident , sunt in culpa qui officia.</p>
                             </div>
                         </div>
+        		        </div>
+            		    
                     </div>
                 </div>
             </div>
