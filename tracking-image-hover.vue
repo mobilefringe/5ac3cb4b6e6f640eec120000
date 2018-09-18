@@ -37,7 +37,7 @@
 }
 
 #feature_container_one .img-container:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   /*
   Change the scale value as much as you want to change the amount of zoom on hover.
   */
