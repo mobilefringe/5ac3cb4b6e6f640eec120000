@@ -8,9 +8,9 @@
                 <img :id="item.name" class="img" :src="item.image_url" alt="item.name" />
             </div>
             <span class="card-description">
-                        		        <h3>{{ item.name }}</h3>
-                        			    <p>{{ item.description }}</p>    
-                        		    </span>
+		        <h3>{{ item.name }}</h3>
+			    <p>{{ item.description }}</p>    
+		    </span>
         </div>
     </div>
 </template>
