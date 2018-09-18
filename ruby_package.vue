@@ -136,6 +136,112 @@
         text-transform: uppercase;
         border: none;
     }
+    #feature_item_three #wrapper {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  margin-left: -175px;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#feature_item_three #wrapper img {
+  width: 100%;
+  height: 250px;
+  opacity: 0.75;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#feature_item_three #title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 3px;
+  margin-left: -125px;
+}
+#feature_item_three #title h3 {
+  font-size: 22px;
+  text-align: center;
+  line-height: 100%;
+  color: #fff;
+  letter-spacing: 1.1px;
+}
+#feature_item_three #title h2 {
+  font-size: 18px;
+  padding: 4px;
+  text-align: center;
+  line-height: 100%;
+  background: #fff;
+  color: #1a1a1a;
+  margin-top: -20px;
+  letter-spacing: 1.1px;
+}
+#feature_item_three #border-left {
+  width: 3px;
+  height: 0px;
+  background: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 45px;
+  top: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#feature_item_three #border-bottom {
+  width: 0px;
+  height: 3px;
+  background: #fff;
+  z-index: 2;
+  position: absolute;
+  bottom: 45px;
+  left: 0px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#feature_item_three #content {
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  overflow: hidden;
+  vertical-align: middle;
+  display: table;
+  text-align: center;
+  height: 50px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#feature_item_three #content p {
+  vertical-align: middle;
+  line-height: 100%;
+  display: table-cell;
+  overflow: hidden;
+  width: 305px;
+  padding-left: 2px;
+  padding-right: 2px;
+  box-sizing: border-box;
+  font-size: 14px;
+  letter-spacing: 1.1px;
+}
+#feature_item_three #wrapper:hover > img {
+  opacity: 0.25;
+}
+#feature_item_three #wrapper:hover > #border-left {
+  height: 400px;
+}
+#feature_item_three #wrapper:hover > #border-bottom {
+  width: 400px;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+#feature_item_three #wrapper:hover > #content {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
 </style>
 <script>
     // silver
