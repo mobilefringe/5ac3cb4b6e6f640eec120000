@@ -54,7 +54,7 @@
             		        <div></div>
             		    </div>
         		    </div>
-        		     <h1 class="home_page_title caps">Loaders</h1>
+        		     <h1 class="home_page_title caps">Feature Items</h1>
         		    <div>
         		        <magnific-gallery></magnific-gallery>
         		    </div>
