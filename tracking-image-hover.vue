@@ -14,10 +14,10 @@
 <style>
 
 #feature_container_one.container {
-  font-size: 0;
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
+    font-size: 0;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
 }
 
 #feature_container_one .card {
@@ -33,27 +33,27 @@
 }
 
 #feature_container_one .img-container {
-  transition: transform .1s ease;
+    transition: transform .1s ease;
 }
 
 #feature_container_one .img-container:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
   /*
   Change the scale value as much as you want to change the amount of zoom on hover.
   */
 }
 
 #feature_container_one .card img {
-  opacity: .5;
-  transform: translate(0,0);
+    opacity: .5;
+    transform: translate(0,0);
   /*
   Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
   */
-  transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
 }
 
 #feature_container_one .card img:hover {
-  opacity: 1;
+    opacity: 1;
 }
 </style>
 <script>
