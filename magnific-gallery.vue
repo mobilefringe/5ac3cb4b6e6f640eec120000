@@ -32,9 +32,9 @@
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
-			<a class='gallery-link' href='https://unsplash.it/1600/1300?image=923'>
+			<a class='gallery-link' href='https://unsplash.it/1600/1000?image=923'>
 				<figure class='gallery-image'>
-					<img height='1300' src='https://unsplash.it/1600/1300?image=923' width='1600'>
+					<img height='1000' src='https://unsplash.it/1600/1000?image=923' width='1600'>
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
