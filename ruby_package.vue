@@ -81,18 +81,18 @@
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div id="feature_item_three">
         		        <div class="col-sm-4" v-for="feature in feature_items">
-        		               <div class="wrapper" >
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample91.jpg" />
-                            <div id="title">
-                                <h3>LOREM</h3>
-                                <h2>IPSUM</h2>
+    		               <div class="wrapper" >
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample91.jpg" />
+                                <div id="title">
+                                    <h3>LOREM</h3>
+                                    <h2>IPSUM</h2>
+                                </div>
+                                <div id="border-left"></div>
+                                <div id="border-bottom"></div>
+                                <div id="content">
+                                    <p>Excepteur sint occaecat cupidatat non proident , sunt in culpa qui officia.</p>
+                                </div>
                             </div>
-                            <div id="border-left"></div>
-                            <div id="border-bottom"></div>
-                            <div id="content">
-                                <p>Excepteur sint occaecat cupidatat non proident , sunt in culpa qui officia.</p>
-                            </div>
-                        </div>
         		        </div>
             		    
                     </div>
