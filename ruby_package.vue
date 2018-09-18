@@ -73,10 +73,12 @@
         		    </div>
         		    <div class="margin_40"></div>
         		    <h1 class="home_page_title caps">Feature Items</h1>
+        		    
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div class="text-center ">
         		        <tracking-image-hover :featureItems="feature_items"></tracking-image-hover>
         		    </div>
+        		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    
                 </div>
             </div>
