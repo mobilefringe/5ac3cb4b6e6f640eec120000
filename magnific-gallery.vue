@@ -1,17 +1,69 @@
 <template>
 	<!-- Container for the images.-->
     <div id="feature_container_two" class="container">
-        <!--   The markup for each image is a div with the class of card.  -->
-        <div class="card " v-for="item in featureItems">
-            <!--   Each "card" has an image container, this is because you need the image to scale and move, we want the scaling to have a smooth transition. However if you add a transition for transform the transform property it will apply to both the scaling and the translation, causeing the translation to "lag" because as it updates where the mouse position is.   -->
-            <div class="img-container">
-                <img :id="item.name" class="img" :src="item.image_url" alt="item.name" />
-            </div>
-            <span class="card-description">
-		        <h3>{{ item.name }}</h3>
-			    <p>{{ item.description }}</p>    
-		    </span>
-        </div>
+        <article class='gallery'>
+  <a class='gallery-link' href='https://unsplash.it/1600/1000?image=1081'>
+    <figure class='gallery-image'>
+      <img height='1000' src='https://unsplash.it/1600/1000?image=1081' width='1600'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1000/1600?image=1014'>
+    <figure class='gallery-image'>
+      <img height='1600' src='https://unsplash.it/1000/1600?image=1014' width='1000'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1600/1000?image=267'>
+    <figure class='gallery-image'>
+      <img height='1000' src='https://unsplash.it/1600/1000?image=267' width='1600'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1400/1400?image=266'>
+    <figure class='gallery-image'>
+      <img height='1400' src='https://unsplash.it/1400/1400?image=266' width='1400'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1000/1000?image=634'>
+    <figure class='gallery-image'>
+      <img height='1000' src='https://unsplash.it/1000/1000?image=634' width='1000'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1600/1000?image=923'>
+    <figure class='gallery-image'>
+      <img height='1000' src='https://unsplash.it/1600/1000?image=923' width='1600'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1200/1600?image=682'>
+    <figure class='gallery-image'>
+      <img height='1600' src='https://unsplash.it/1200/1600?image=682' width='1200'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1400/1000?image=173'>
+    <figure class='gallery-image'>
+      <img height='1000' src='https://unsplash.it/1400/1000?image=173' width='1400'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1000/1000?image=943'>
+    <figure class='gallery-image'>
+      <img height='1000' src='https://unsplash.it/1000/1000?image=943' width='1000'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+</article>
+<footer id='footer' role='contentinfo'>
+  <div class='container'>
+    <a class='logo' href='https://codepen.io/collection/XRoxGR' rel='home'>Calibration theme</a>
+    <a class='copy' href='https://mobilemarkup.com' target='_blank'>&copy; mobileMarkup.com</a>
+  </div>
+</footer>
+
     </div>
 </template>
 
