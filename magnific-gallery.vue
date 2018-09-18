@@ -327,47 +327,8 @@ html:not(.touch) #feature_container_two .gallery-image:hover:after {
   text-decoration: none;
   color: inherit;
 }
-/*#feature_container_two [id=footer] {*/
-/*  margin-top: 10vh;*/
-/*  padding: 10vh 0;*/
-/*  text-align: center;*/
-/*}*/
-/*#feature_container_two [id=footer] .container {*/
-/*  position: relative;*/
-/*}*/
-/*#feature_container_two [id=footer] .container:before, #feature_container_two [id=footer] .container:after {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  bottom: 100%;*/
-/*  left: 20px;*/
-/*  z-index: 10;*/
-/*  border-top: 2px solid;*/
-/*  width: 10%;*/
-/*  margin-bottom: 10vh;*/
-/*}*/
-/*#feature_container_two [id=footer] .container:after {*/
-/*  left: auto;*/
-/*  right: 20px;*/
-/*}*/
-/*#feature_container_two [id=footer] * {*/
-/*  display: block;*/
-/*}*/
-/*#feature_container_two [id=footer] * + * {*/
-/*  margin-top: 5vh;*/
-/*}*/
-/*#feature_container_two [id=footer] .logo {*/
-/*  font-weight: 600;*/
-/*  font-size: 1.5em;*/
-/*}*/
-/*#feature_container_two [id=footer] .copy {*/
-/*  text-transform: uppercase;*/
-/*  font-size: 0.75em;*/
-/*  font-weight: 600;*/
-/*}*/
-
-
-
 </style>
+
 <script>
     define(["Vue", "jquery", "magnific-popup"], function(Vue, $, MagnigicPopup) {
         return Vue.component("magnific-gallery", {
