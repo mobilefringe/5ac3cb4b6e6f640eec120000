@@ -80,7 +80,10 @@
         		    </div>
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div id="feature_item_three">
-            		    <div class="wrapper" v-for="feature in feature_items">
+        		        <div class="" v-for="feature in feature_items">
+        		            
+        		        </div>
+            		    <div class="wrapper" >
                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample91.jpg" />
                             <div id="title">
                                 <h3>LOREM</h3>
