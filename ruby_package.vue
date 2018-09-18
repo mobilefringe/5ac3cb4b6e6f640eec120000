@@ -79,7 +79,7 @@
         		        <tracking-image-hover :featureItems="feature_items"></tracking-image-hover>
         		    </div>
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
-        		    <div class="wrapper">
+        		    <div class="wrapper" v-for="feature in feature_items">
                       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample91.jpg" />
                       <div id="title">
                         <h3>LOREM</h3>
