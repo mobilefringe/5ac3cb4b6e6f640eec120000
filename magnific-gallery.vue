@@ -4,7 +4,7 @@
 		<article class='gallery'>
 			<a v-for="feature in feature_items" class='gallery-link' :href='feature.image_url' >
 				<figure class='gallery-image'>
-					<img height='1000' src='https://unsplash.it/1600/1000?image=1081' width='1600'>
+					<img :src='feature.image_url'>
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
