@@ -80,7 +80,7 @@
         		    </div>
         		    <h3 class="home_page_title caps text-left sub_title">Mouse tracking hover</h3>
         		    <div id="feature_item_three">
-        		        <div class="" v-for="feature in feature_items">
+        		        <div class="col-sm-4" v-for="feature in feature_items">
         		            
         		        </div>
             		    <div class="wrapper" >
