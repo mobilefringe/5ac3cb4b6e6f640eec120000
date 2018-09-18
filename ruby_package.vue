@@ -142,15 +142,15 @@
         position: relative;
     }
     #feature_item_three .wrapper {
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  margin-left: -175px;
-  width: 350px;
-  height: 250px;
-  overflow: hidden;
-  cursor: pointer;
-}
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        margin-left: -175px;
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        cursor: pointer;
+    }
 #feature_item_three .wrapper img {
   width: 100%;
   height: 250px;
