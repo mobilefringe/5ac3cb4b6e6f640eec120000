@@ -32,9 +32,9 @@
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
-			<a class='gallery-link' href='https://unsplash.it/1600/1000?image=923'>
+			<a class='gallery-link' href='https://unsplash.it/1000/1000?image=943'>
 				<figure class='gallery-image'>
-					<img height='1000' src='https://unsplash.it/1600/1000?image=923' width='1600'>
+					<img height='1000' src='https://unsplash.it/1000/1000?image=943' width='1000'>
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
@@ -50,9 +50,10 @@
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
-			<a class='gallery-link' href='https://unsplash.it/1000/1000?image=943'>
+			
+			<a class='gallery-link' href='https://unsplash.it/1600/1000?image=923'>
 				<figure class='gallery-image'>
-					<img height='1000' src='https://unsplash.it/1000/1000?image=943' width='1000'>
+					<img height='1000' src='https://unsplash.it/1600/1000?image=923' width='1600'>
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
