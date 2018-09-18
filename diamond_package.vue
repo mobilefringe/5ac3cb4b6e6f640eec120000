@@ -54,9 +54,9 @@
             		        <div></div>
             		    </div>
         		    </div>
-        		     <h1 class="home_page_title caps" :featureItems="feature_items">Feature Items</h1>
+        		     <h1 class="home_page_title caps" >Feature Items</h1>
         		    <div>
-        		        <magnific-gallery></magnific-gallery>
+        		        <magnific-gallery :featureItems="feature_items"></magnific-gallery>
         		    </div>
                 </div>
             </div>
