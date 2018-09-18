@@ -131,9 +131,9 @@
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg", "name": "Slide Four", "description": "Description Four" }
                     ],
                     feature_items: [
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Promotions", "description": "Description One" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Events", "description": "Description Two" },
-                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1537283626601/rsz_-nwf9500.png", "name": "Promotions", "description": "Description One" },
+                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1537283737756/rsz_-nwf9449.png", "name": "Events", "description": "Description Two" },
+                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1537283700166/rsz_-nwf9506.png", "name": "Contest", "description": "Enter to Win!" }
                     ],
                     slickOptions3: {
                         arrows: false,
