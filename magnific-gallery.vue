@@ -68,7 +68,7 @@
     margin-top: 50px;
     text-align: center;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption, #feature_container_two .touch .gallery-image figcaption, #feature_container_two .mfp-with-zoom .mfp-title {
+html:not(.touch) #feature_container_two .gallery-image figcaption, #feature_container_two .touch .gallery-image figcaption, #feature_container_two .mfp-with-zoom .mfp-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,7 +84,7 @@
   text-align: center;
   box-sizing: border-box;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
+html:not(.touch) #feature_container_two .gallery-image figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
@@ -95,38 +95,36 @@
   opacity: 0;
   z-index: -1;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
+html:not(.touch) #feature_container_two .gallery-image figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
   right: 100%;
   bottom: 100%;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
+html:not(.touch) #feature_container_two .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
   left: 100%;
   top: 100%;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption.visible, #feature_container_two html:not(.touch) .gallery-image:hover figcaption, #feature_container_two .touch .gallery-image figcaption, #feature_container_two .mfp-with-zoom .visible.mfp-title, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title {
+html:not(.touch) #feature_container_two .gallery-image figcaption.visible,html:not(.touch)  #feature_container_two .gallery-image:hover figcaption, #feature_container_two .touch .gallery-image figcaption, #feature_container_two .mfp-with-zoom .visible.mfp-title, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title {
   color: white;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease 0.3s;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption.visible:before, #feature_container_two html:not(.touch) .gallery-image:hover figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .visible.mfp-title:before, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption.visible:after, #feature_container_two html:not(.touch) .gallery-image:hover figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .visible.mfp-title:after, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:after {
+html:not(.touch) #feature_container_two .gallery-image figcaption.visible:before,html:not(.touch)  #feature_container_two .gallery-image:hover figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .visible.mfp-title:before, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption.visible:after, #feature_container_two html:not(.touch) .gallery-image:hover figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .visible.mfp-title:after, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:after {
   opacity: 1;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption.visible:before, #feature_container_two html:not(.touch) .gallery-image:hover figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .visible.mfp-title:before, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:before {
+html:not(.touch) #feature_container_two .gallery-image figcaption.visible:before,html:not(.touch)  #feature_container_two .gallery-image:hover figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .visible.mfp-title:before, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:before {
   right: -1.5em;
   bottom: -1.5em;
 }
-#feature_container_two html:not(.touch) .gallery-image figcaption.visible:after, #feature_container_two html:not(.touch) .gallery-image:hover figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .visible.mfp-title:after, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:after {
+html:not(.touch) #feature_container_two .gallery-image figcaption.visible:after,html:not(.touch) #feature_container_two .gallery-image:hover figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .visible.mfp-title:after, #feature_container_two .mfp-with-zoom.mfp-ready .mfp-title:after {
   left: -1.5em;
   top: -1.5em;
 }
-#feature_container_two html {
+html #feature_container_two {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
-#feature_container_two body {
-  font-family: "Montserrat", sans-serif;
-}
+
 #feature_container_two .gallery {
   -webkit-column-gap: 0;
   column-gap: 0;
