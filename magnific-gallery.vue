@@ -8,7 +8,7 @@
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
-		<a class='gallery-link' href='https://unsplash.it/1000/1000?image=634'>
+	        <a class='gallery-link' href='https://unsplash.it/1000/1000?image=634'>
 				<figure class='gallery-image'>
 					<img height='1000' src='https://unsplash.it/1000/1000?image=634' width='1000'>
 					<figcaption>Photo caption</figcaption>
@@ -46,12 +46,7 @@
 					<figcaption>Photo caption</figcaption>
 				</figure>
 			</a>
-				<a class='gallery-link' href='https://unsplash.it/1000/1000?image=943'>
-				<figure class='gallery-image'>
-					<img height='1000' src='https://unsplash.it/1000/1000?image=943' width='1000'>
-					<figcaption>Photo caption</figcaption>
-				</figure>
-			</a>
+			
 			
 			<a class='gallery-link' href='https://unsplash.it/1600/1000?image=923'>
 				<figure class='gallery-image'>
