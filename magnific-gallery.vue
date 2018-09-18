@@ -17,49 +17,14 @@
 
 <style>
 
-#feature_container_one.container {
+#feature_container_two {
     font-size: 0;
     width: 100%;
     margin-top: 50px;
     text-align: center;
 }
 
-#feature_container_one .card {
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 400px;
-    width: 300px;
-    margin: 15px;
-  /*
-  Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
-  */
-}
 
-#feature_container_one .img-container {
-    transition: transform .1s ease;
-    /*max-width:300px;*/
-}
-
-#feature_container_one .img-container:hover {
-    transform: scale(1.2);
-  /*
-  Change the scale value as much as you want to change the amount of zoom on hover.
-  */
-}
-
-#feature_container_one .card img {
-    opacity: .5;
-    transform: translate(0,0);
-  /*
-  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
-  */
-    transition: opacity .25s ease-in-out;
-}
-
-#feature_container_one .card img:hover {
-    opacity: 1;
-}
 </style>
 <script>
     define(["Vue", "jquery"], function(Vue, $) {
