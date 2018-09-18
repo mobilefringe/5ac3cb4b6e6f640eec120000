@@ -366,7 +366,7 @@ html:not(.touch) #feature_container_two .gallery-image:hover:after {
 
 </style>
 <script>
-    define(["Vue", "jquery"], function(Vue, $) {
+    define(["Vue", "jquery", "magnific-popup"], function(Vue, $, MagnigicPopup) {
         return Vue.component("magnific-gallery", {
             template: template, // the variable template will be injected
             props: {
