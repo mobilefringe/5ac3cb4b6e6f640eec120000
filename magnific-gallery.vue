@@ -2,7 +2,7 @@
 	<!-- Container for the images.-->
 	<div id="feature_container_two" class="container">
 		<article class='gallery'>
-			<a v-for="feature in featureItems" target="href" class='gallery-link' :href='feature.image_url' >
+			<a v-for="feature in featureItems" class='gallery-link' :href='feature.image_url' >
 				<figure class='gallery-image'>
 					<img :src='feature.image_url'>
 					<figcaption>{{feature.name}}</figcaption>
