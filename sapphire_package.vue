@@ -147,7 +147,7 @@
 
 <script>
     // bronze
-    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner,) {
+    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner) {
         return Vue.component("sapphire-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -160,9 +160,9 @@
                         { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9541.jpg", "name": "Slide Four", "description": "Description Four" }
                     ],
                     feature_items: [
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/1.jpg", "name": "Promotions", "description": "Description One" },
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/2.jpg", "name": "Events", "description": "Description Two" },
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/3.jpg", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9500.jpg", "name": "Promotions", "description": "Description One" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9506.jpg", "name": "Events", "description": "Description Two" },
+                        { "image_url": "http://nikolaywerner.ru/files/2017-02/-nwf9449.jpg", "name": "Contest", "description": "Enter to Win!" }
                     ],
                     slickOptions3: {
                         arrows: false,
