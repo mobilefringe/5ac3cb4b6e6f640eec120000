@@ -138,7 +138,8 @@
         text-transform: uppercase;
         border: none;
     }
-    #feature_item_three{position: relative;
+    #feature_item_three{
+        position: relative;
     }
     #feature_item_three .wrapper {
   position: absolute;
