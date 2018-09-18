@@ -127,7 +127,7 @@
 </style>
 <script>
     // silver
-    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!silton-banner"], function(Vue, Vuex, slick, edgeleyBanner, siltonBanner) {
+    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!silton-banner", "vue!tracking-image-hover"], function(Vue, Vuex, slick, edgeleyBanner, siltonBanner, trackingImageHover) {
         return Vue.component("ruby-component", {
             template: template, // the variable template will be injected
             data: function() {
