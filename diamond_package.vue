@@ -110,6 +110,12 @@
                         { "image_url": "https://unsplash.it/1600/1000?image=1081", "name": "Promotions", "description": "Description One" },
                         { "image_url": "https://unsplash.it/1000/1600?image=1014", "name": "Events", "description": "Description Two" },
                         { "image_url": "https://unsplash.it/1600/1280?image=267", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1400/1400?image=266", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1000/1400?image=634", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1600/1280?image=267", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1600/1280?image=267", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1600/1280?image=267", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1600/1280?image=267", "name": "Contest", "description": "Enter to Win!" }
                     ],
                     slickOptions3: {
                         arrows: false,
