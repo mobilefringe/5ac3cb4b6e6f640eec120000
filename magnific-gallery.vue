@@ -61,7 +61,8 @@
 </template>
 
 <style>
-import "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css""
+import "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+
 #feature_container_two {
     font-size: 0;
     width: 100%;
