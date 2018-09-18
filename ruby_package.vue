@@ -143,6 +143,7 @@
     }
     #feature_item_three{
         position: relative;
+        min-height: 250px;
     }
     #feature_item_three .wrapper {
         position: absolute;
