@@ -25,8 +25,8 @@
     position: relative;
     display: inline-block;
     height: 400px;
-    /*width: 300px;*/
-    /*margin: 15px;*/
+    width: 300px;
+    margin: 15px;
   /*
   Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
   */
@@ -34,7 +34,7 @@
 
 #feature_container_one .img-container {
     transition: transform .1s ease;
-    width:300px;
+    /*max-width:300px;*/
 }
 
 #feature_container_one .img-container:hover {
