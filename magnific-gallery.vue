@@ -5,7 +5,7 @@
 			<a v-for="feature in feature_items" class='gallery-link' :href='feature.image_url' >
 				<figure class='gallery-image'>
 					<img :src='feature.image_url'>
-					<figcaption>Photo caption</figcaption>
+					<figcaption>{{feature.name}}</figcaption>
 				</figure>
 			</a>
 			<!--<a class='gallery-link' href='https://unsplash.it/1000/1600?image=1014'>-->
