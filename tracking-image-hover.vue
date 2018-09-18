@@ -34,6 +34,7 @@
 
 #feature_container_one .img-container {
     transition: transform .1s ease;
+    width:300px;
 }
 
 #feature_container_one .img-container:hover {
