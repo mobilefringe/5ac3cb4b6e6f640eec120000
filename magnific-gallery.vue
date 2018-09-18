@@ -85,7 +85,7 @@ html:not(.touch) #feature_container_two .gallery-image figcaption, #feature_cont
   text-align: center;
   box-sizing: border-box;
 }
-html:not(.touch) #feature_container_two .gallery-image figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .mfp-title:before, #feature_container_two html:not(.touch) .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
+html:not(.touch) #feature_container_two .gallery-image figcaption:before, #feature_container_two .touch .gallery-image figcaption:before, #feature_container_two .mfp-with-zoom .mfp-title:before, #feature_container_two .gallery-image figcaption:after, #feature_container_two .touch .gallery-image figcaption:after, #feature_container_two .mfp-with-zoom .mfp-title:after {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
