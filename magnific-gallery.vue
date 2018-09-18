@@ -8,54 +8,6 @@
 					<figcaption>{{feature.name}}</figcaption>
 				</figure>
 			</a>
-			<!--<a class='gallery-link' href='https://unsplash.it/1000/1600?image=1014'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1600' src='https://unsplash.it/1000/1600?image=1014' width='1000'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1600/1280?image=267'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1280' src='https://unsplash.it/1600/1280?image=267' width='1600'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1400/1400?image=266'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1400' src='https://unsplash.it/1400/1400?image=266' width='1400'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1000/1400?image=634'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1400' src='https://unsplash.it/1000/1400?image=634' width='1000'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1600/1000?image=923'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1000' src='https://unsplash.it/1600/1000?image=923' width='1600'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1200/1600?image=682'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1600' src='https://unsplash.it/1200/1600?image=682' width='1200'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1400/1000?image=173'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='1000' src='https://unsplash.it/1400/1000?image=173' width='1400'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
-			<!--<a class='gallery-link' href='https://unsplash.it/1000/980?image=943'>-->
-			<!--	<figure class='gallery-image'>-->
-			<!--		<img height='980' src='https://unsplash.it/1000/980?image=943' width='1000'>-->
-			<!--		<figcaption>Photo caption</figcaption>-->
-			<!--	</figure>-->
-			<!--</a>-->
 		</article>
 	</div>
 </template>
