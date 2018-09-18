@@ -55,6 +55,9 @@
             		    </div>
         		    </div>
         		    
+        		    <div>
+        		        <magnific-gallery></magnific-gallery>
+        		    </div>
                 </div>
             </div>
         </transition>
@@ -91,7 +94,7 @@
 </style>
 <script>
     // gold
-    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner", "vue!magnific-gallery"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner, magnificGaller) {
+    define(["Vue", "vuex", "vue!vue-slick", "vue!edgeley-banner", "vue!chrislea-banner", "vue!weston-banner", "vue!keele-banner", "vue!silmar-banner", "vue!magnific-gallery"], function(Vue, Vuex, slick, edgeleyBanner, chrisleaBanner, westonBanner, keeleBanner, silmarBanner, magnificGallery) {
         return Vue.component("diamond-component", {
             template: template, // the variable template will be injected
             data: function() {
