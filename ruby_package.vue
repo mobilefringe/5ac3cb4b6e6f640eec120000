@@ -74,39 +74,39 @@
         		    <div class="margin_40"></div>
         		    <h1 class="home_page_title caps">Feature Items</h1>
         		   
-        		    <div class="row margin_30 button_examples">
-        		        <div class="col-md-12">
-        		             <h3 class="home_page_title caps sub_title">Animate with Drop Shadow</h3>
-        		        </div>
-        		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
-        		            <a :href="item.url" target="_blank">
-                                <div class="card">
-                        		    <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
-                        		    <span class="card-description">
-                        		        <h3>{{ item.name }}</h3>
-                        			    <p>{{ item.description }}</p>    
-                        		    </span>
-                        	    </div>
-                            </a>
-        		        </div>
-        		    </div>
+        		    <!--<div class="row margin_30 button_examples">-->
+        		    <!--    <div class="col-md-12">-->
+        		    <!--         <h3 class="home_page_title caps sub_title">Animate with Drop Shadow</h3>-->
+        		    <!--    </div>-->
+        		    <!--    <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">-->
+        		    <!--        <a :href="item.url" target="_blank">-->
+              <!--                  <div class="card">-->
+              <!--          		    <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>-->
+              <!--          		    <span class="card-description">-->
+              <!--          		        <h3>{{ item.name }}</h3>-->
+              <!--          			    <p>{{ item.description }}</p>    -->
+              <!--          		    </span>-->
+              <!--          	    </div>-->
+              <!--              </a>-->
+        		    <!--    </div>-->
+        		    <!--</div>-->
         		    
-        		    <div class="row margin_30 button_examples">
-        		        <div class="col-md-12">
-        		            <h3 class="home_page_title caps sub_title">Rotate & Scale Image</h3>
-        		        </div>
-        		        <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">
-        		            <a href="#">
-            		            <figure class="snip1581">
-            		                <img :src="item.image_url" alt="profile-sample2"/>
-                                    <figcaption>
-                                        <h3 class="title1">{{ item.name }}</h3>
-                                        <p class="title2">{{ item.description }}</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
+        		    <!--<div class="row margin_30 button_examples">-->
+        		    <!--    <div class="col-md-12">-->
+        		    <!--        <h3 class="home_page_title caps sub_title">Rotate & Scale Image</h3>-->
+        		    <!--    </div>-->
+        		    <!--    <div v-if="feature_items" v-for="item in feature_items" class="col-md-4 center">-->
+        		    <!--        <a href="#">-->
+            		<!--            <figure class="snip1581">-->
+            		<!--                <img :src="item.image_url" alt="profile-sample2"/>-->
+              <!--                      <figcaption>-->
+              <!--                          <h3 class="title1">{{ item.name }}</h3>-->
+              <!--                          <p class="title2">{{ item.description }}</p>-->
+              <!--                      </figcaption>-->
+              <!--                  </figure>-->
+              <!--              </a>-->
+              <!--          </div>-->
+              <!--      </div>-->
                 </div>
             </div>
         </transition>
