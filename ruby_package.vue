@@ -255,6 +255,8 @@
     	box-sizing: border-box;
     	font-size: 14px;
     	letter-spacing: 1.1px;
+	    text-align: left;
+        padding-left: 10px;
     }
     
     #feature_item_three .wrapper:hover>img {
