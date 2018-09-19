@@ -283,8 +283,8 @@
                     ],
                     feature_items2: [
                         { "image_url": "https://unsplash.it/1000/980?image=943", "name": "Promotions", "description": "Description One" },
-                        { "image_url": "https://unsplash.it/1000/980?image=943", "name": "Events", "description": "Description Two" },
-                        { "image_url": "https://unsplash.it/1000/980?image=943", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1000/980?image=944", "name": "Events", "description": "Description Two" },
+                        { "image_url": "https://unsplash.it/1000/980?image=945", "name": "Contest", "description": "Enter to Win!" }
                     ],
                 }
             },
