@@ -282,9 +282,9 @@
                         { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/3.jpg", "name": "Contest", "description": "Enter to Win!" }
                     ],
                     feature_items2: [
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/1.jpg", "name": "Promotions", "description": "Description One" },
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/2.jpg", "name": "Events", "description": "Description Two" },
-                        { "image_url": "//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/jpeg/1537283943000/3.jpg", "name": "Contest", "description": "Enter to Win!" }
+                        { "image_url": "https://unsplash.it/1000/980?image=943", "name": "Promotions", "description": "Description One" },
+                        { "image_url": "https://unsplash.it/1000/980?image=943", "name": "Events", "description": "Description Two" },
+                        { "image_url": "https://unsplash.it/1000/980?image=943", "name": "Contest", "description": "Enter to Win!" }
                     ],
                 }
             },
