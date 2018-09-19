@@ -102,154 +102,180 @@
     </div>
 </template>
 <style>
-    @import "https://mmvue.codecloudapp.com/loaders.css";
-    @import "https://twinpines.codecloudapp.com/animate.css";
-    
-    .loaders_container {
-        background-color: #4f6726;
-        padding: 50px;
-    }
-    .loader-inner  {
-        margin:auto;
-        text-align: center;
-    }
-    .ball-clip-rotate-multiple.clearfix.loader-inner {
-        position: absolute;
-        left: 50%;
-    }
-    
-   
-    .button_examples .animated-btn.no_border {
-        border: none;
-    }
-    .button_examples .hvr-border-fade,.button_examples .hvr-hollow,.button_examples .hvr-trim,.button_examples .hvr-round-corners,.button_examples .hvr-underline-from-center,.button_examples .hvr-underline-from-left,.button_examples .hvr-underline-reveal,.button_examples .hvr-overline-reveal{
-        background: #e1e1e1;
-    }
-    .button_examples .hvr-hollow:hover,.button_examples .hvr-hollow:focus,.button_examples .hvr-hollow:active {
-        background: none;
-    }
-    .button_examples button {
-        padding: 12px 50px;
-        min-width: 100%;
-        height: 60px;
-        position: relative;
-         overflow: hidden; 
-        outline: none;
-         border: 3px solid #4f6726; 
-        background: #e1e1e1;
-        color: #4f6726;
-        text-transform: uppercase;
-        border: none;
-    }
-    #feature_item_three{
-        position: relative;
-        min-height: 250px;
-    }
-    #feature_item_three .wrapper {
-        position: absolute;
-        left: 50%;
-        top: 5%;
-        margin-left: -175px;
-        width: 350px;
-        height: 250px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    #feature_item_three .wrapper img {
-      width: 100%;
-      height: 250px;
-      opacity: 0.75;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-    }
-    #feature_item_three #title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: 20px;
-        margin-left: -125px;
-    }
-    #feature_item_three #title h3 {
-      font-size: 22px;
-      text-align: center;
-      line-height: 100%;
-      color: #fff;
-      letter-spacing: 1.1px;
-    }
-    #feature_item_three #title h2 {
-      font-size: 18px;
-      padding: 4px;
-      text-align: center;
-      line-height: 100%;
-      background: #fff;
-      color: #1a1a1a;
-      margin-top: -20px;
-      letter-spacing: 1.1px;
-    }
-    #feature_item_three #border-left {
-      width: 3px;
-      height: 0px;
-      background: #fff;
-      z-index: 2;
-      position: absolute;
-      left: 45px;
-      top: 0;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-    }
-    #feature_item_three #border-bottom {
-      width: 0px;
-      height: 3px;
-      background: #fff;
-      z-index: 2;
-      position: absolute;
-      bottom: 45px;
-      left: 0px;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-    }
-    #feature_item_three #content {
-      position: absolute;
-      bottom: 0;
-      left: 45px;
-      overflow: hidden;
-      vertical-align: middle;
-      display: table;
-      text-align: center;
-      height: 50px;
-      color: #fff;
-      opacity: 0;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-    }
-    #feature_item_three #content p {
-      vertical-align: middle;
-      line-height: 100%;
-      display: table-cell;
-      overflow: hidden;
-      width: 305px;
-      padding-left: 2px;
-      padding-right: 2px;
-      box-sizing: border-box;
-      font-size: 14px;
-      letter-spacing: 1.1px;
-    }
-    #feature_item_three .wrapper:hover > img {
-      opacity: 0.25;
-    }
-    #feature_item_three .wrapper:hover > #border-left {
-      height: 400px;
-    }
-    #feature_item_three .wrapper:hover > #border-bottom {
-      width: 400px;
-      -webkit-transition-delay: 0.25s;
-      transition-delay: 0.25s;
-    }
-    #feature_item_three .wrapper:hover > #content {
-      opacity: 1;
-      -webkit-transition-delay: 0.5s;
-      transition-delay: 0.5s;
-    }
+@import "https://mmvue.codecloudapp.com/loaders.css";
+@import "https://twinpines.codecloudapp.com/animate.css";
+.loaders_container {
+	background-color: #4f6726;
+	padding: 50px;
+}
+
+.loader-inner {
+	margin: auto;
+	text-align: center;
+}
+
+.ball-clip-rotate-multiple.clearfix.loader-inner {
+	position: absolute;
+	left: 50%;
+}
+
+.button_examples .animated-btn.no_border {
+	border: none;
+}
+
+.button_examples .hvr-border-fade,
+.button_examples .hvr-hollow,
+.button_examples .hvr-trim,
+.button_examples .hvr-round-corners,
+.button_examples .hvr-underline-from-center,
+.button_examples .hvr-underline-from-left,
+.button_examples .hvr-underline-reveal,
+.button_examples .hvr-overline-reveal {
+	background: #e1e1e1;
+}
+
+.button_examples .hvr-hollow:hover,
+.button_examples .hvr-hollow:focus,
+.button_examples .hvr-hollow:active {
+	background: none;
+}
+
+.button_examples button {
+	padding: 12px 50px;
+	min-width: 100%;
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+	outline: none;
+	border: 3px solid #4f6726;
+	background: #e1e1e1;
+	color: #4f6726;
+	text-transform: uppercase;
+	border: none;
+}
+
+#feature_item_three {
+	position: relative;
+	min-height: 250px;
+}
+
+#feature_item_three .wrapper {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	margin-left: -175px;
+	width: 350px;
+	height: 250px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#feature_item_three .wrapper img {
+	width: 100%;
+	height: 250px;
+	opacity: 0.75;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+#feature_item_three #title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 20px;
+	margin-left: -125px;
+}
+
+#feature_item_three #title h3 {
+	font-size: 22px;
+	text-align: center;
+	line-height: 100%;
+	color: #fff;
+	letter-spacing: 1.1px;
+}
+
+#feature_item_three #title h2 {
+	font-size: 18px;
+	padding: 4px;
+	text-align: center;
+	line-height: 100%;
+	background: #fff;
+	color: #1a1a1a;
+	margin-top: -20px;
+	letter-spacing: 1.1px;
+}
+
+#feature_item_three #border-left {
+	width: 3px;
+	height: 0px;
+	background: #fff;
+	z-index: 2;
+	position: absolute;
+	left: 45px;
+	top: 0;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+#feature_item_three #border-bottom {
+	width: 0px;
+	height: 3px;
+	background: #fff;
+	z-index: 2;
+	position: absolute;
+	bottom: 45px;
+	left: 0px;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+#feature_item_three #content {
+	position: absolute;
+	bottom: 0;
+	left: 45px;
+	overflow: hidden;
+	vertical-align: middle;
+	display: table;
+	text-align: center;
+	height: 50px;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+#feature_item_three #content p {
+	vertical-align: middle;
+	line-height: 100%;
+	display: table-cell;
+	overflow: hidden;
+	width: 305px;
+	padding-left: 2px;
+	padding-right: 2px;
+	box-sizing: border-box;
+	font-size: 14px;
+	letter-spacing: 1.1px;
+}
+
+#feature_item_three .wrapper:hover>img {
+	opacity: 0.25;
+}
+
+#feature_item_three .wrapper:hover>#border-left {
+	height: 400px;
+}
+
+#feature_item_three .wrapper:hover>#border-bottom {
+	width: 400px;
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+#feature_item_three .wrapper:hover>#content {
+	opacity: 1;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
 
 </style>
 <script>
