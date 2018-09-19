@@ -84,7 +84,7 @@
     		               <div class="wrapper" >
                                 <img :src="feature.image_url" />
                                 <div id="title">
-                                    <h3>LOREM</h3>
+                                    <h3>{{feature.name}}</h3>
                                     <h2>IPSUM</h2>
                                 </div>
                                 <div id="border-left"></div>
