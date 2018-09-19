@@ -260,7 +260,6 @@
     }
     
     #feature_item_three .wrapper:hover>img {
-        color:#000;
     	opacity: 0.25;
     }
     
