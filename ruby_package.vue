@@ -82,7 +82,7 @@
         		    <div id="feature_item_three">
         		        <div class="col-sm-4" v-for="feature in feature_items">
     		               <div class="wrapper" >
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample91.jpg" />
+                                <img :src="feature.image_url" />
                                 <div id="title">
                                     <h3>LOREM</h3>
                                     <h2>IPSUM</h2>
