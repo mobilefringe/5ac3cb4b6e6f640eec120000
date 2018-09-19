@@ -166,7 +166,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-top: 3px;
+          margin-top: 20px;
       margin-left: -125px;
     }
     #feature_item_three #title h3 {
