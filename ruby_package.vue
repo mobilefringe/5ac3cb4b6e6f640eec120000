@@ -85,12 +85,12 @@
                                 <img :src="feature.image_url" />
                                 <div id="title">
                                     <h3>{{feature.name}}</h3>
-                                    <h2>IPSUM</h2>
+                                    <!--<h2>IPSUM</h2>-->
                                 </div>
                                 <div id="border-left"></div>
                                 <div id="border-bottom"></div>
                                 <div id="content">
-                                    <p>Excepteur sint occaecat cupidatat non proident , sunt in culpa qui officia.</p>
+                                    <p>{{feature.description}}</p>
                                 </div>
                             </div>
         		        </div>
