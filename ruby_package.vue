@@ -163,11 +163,11 @@
       transition: all 0.25s ease;
     }
     #feature_item_three #title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-          margin-top: 20px;
-      margin-left: -125px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 20px;
+        margin-left: -125px;
     }
     #feature_item_three #title h3 {
       font-size: 22px;
