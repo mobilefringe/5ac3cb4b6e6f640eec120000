@@ -26,10 +26,10 @@
                                     <div class="margin_20 details_share_container">
                                         <span>Share On: </span>
                                         <network network="facebook">
-                                            <i class="fa fa-facebook-square"></i>
+                                            <i class="fab fa-facebook-square"></i>
                                         </network>
                                         <network network="twitter">
-                                            <i class="fa fa-twitter"></i>
+                                            <i class="fab fa-twitter"></i>
                                         </network>
                                     </div>
                                 </social-sharing>
