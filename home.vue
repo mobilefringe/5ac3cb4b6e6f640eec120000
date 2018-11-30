@@ -37,10 +37,10 @@
                         					    <h3>{{ feature.name_2 }}</h3>
                     					    </span>
                         					<span class="info" v-if="locale=='en-ca'">
-                        					    <p>{{ feature.description }}</p>
+                        					    <p>{{ feature.description }} <span class="fas fa-angle-double-right" aria-hidden></span></p>
                     					    </span>
                         					<span class="info" v-else>
-                        					    <p>{{ feature.description_2 }}</p>
+                        					    <p>{{ feature.description_2 }}<span class="fas fa-angle-double-right" aria-hidden></span></p>
                     					    </span>
                         				</div>
                             		</a>
