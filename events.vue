@@ -49,9 +49,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", "vue-lazy-load", "vue-paginate"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VueLazyload, VuePaginate) {
-        Vue.use(Meta);
-        Vue.use(VueLazyload);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-paginate"], function(Vue, Vuex, moment, tz, VueMoment, VuePaginate) {
         Vue.use(VuePaginate);
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
