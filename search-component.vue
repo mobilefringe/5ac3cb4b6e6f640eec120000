@@ -206,6 +206,7 @@
                     }
                 },
                 result() {
+                    console.log(" this.result",  this.result)
                     this.$parent.$emit(this.eventName, this.result)
                 },
                 list() {
