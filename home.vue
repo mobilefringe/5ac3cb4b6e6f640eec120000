@@ -81,15 +81,16 @@
                             <a :href="item.link" target="_blank">
                                 <div class="insta-feed-background" v-bind:style="{ backgroundImage: 'url(' + item.images.standard_resolution.url + ')' }"></div>
                                 <div class="insta_content">
-                                    <p class="insta_caption">{{ item.caption.text }}</p>
-                                    <div>
-                                        <span>
-                                            <i class="fas fa-heart"></i> {{ item.likes.count }}
-                                        </span>
-                                        <span>
-                                            <i class="fas fa-comment"></i> {{ item.comments.count }}
-                                        </span>
-                                    </div>
+                                    <div class="insta_caption">
+                                        <p>{{ item.caption.text }}</p>
+                                        <div>
+                                            <span>
+                                                <i class="fas fa-heart"></i> {{ item.likes.count }}
+                                            </span>
+                                            <span>
+                                                <i class="fas fa-comment"></i> {{ item.comments.count }}
+                                            </span>
+                                        </div>
                                 </div>
                             </a>
                         </div>
