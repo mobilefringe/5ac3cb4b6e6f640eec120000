@@ -22,7 +22,7 @@
 					</div>
 					<div class="col-md-3 hidden_phone">
 					    <div class="header_search_container">
-    					    <search-component v-model="search" :list="processedStores" :suggestion-attribute="suggestionAttribute" :placeholder="$t('header.search')" @select="onOptionSelect">
+    					    <search-component v-model="search" :list="searchList" :keys="keys" :suggestion-attribute="suggestionAttribute" :minMatchCharLength="3" :tokenize="true" @select="onOptionSelect">
                                 <template slot="item" scope="option">
                                     <article class="media">
                                         <p>{{ option.data.name }}</p>
