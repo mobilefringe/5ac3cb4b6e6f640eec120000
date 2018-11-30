@@ -91,6 +91,7 @@
                                                 <i class="fas fa-comment"></i> {{ item.comments.count }}
                                             </span>
                                         </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
