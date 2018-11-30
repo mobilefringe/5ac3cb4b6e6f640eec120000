@@ -206,7 +206,6 @@
                     });
                     
                     var list = _.union( stores, events, promos, jobs );
-                    console.log("list", list)
                     return list
                 },
             },
