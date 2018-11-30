@@ -222,10 +222,11 @@
                     this.windowWidth = window.innerWidth;
                 },
                 onOptionSelect(option) {
+                    console.log(option)
                     this.$nextTick(function() {
                         this.search = ""
                     });
-                    this.$router.push("/stores/" + option.slug);
+                    // this.$router.push("/stores/" + option.slug);
                 }
             },
             beforeDestroy: function() {
