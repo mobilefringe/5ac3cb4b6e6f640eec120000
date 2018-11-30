@@ -36,7 +36,7 @@
                         					<span class="title" v-else>
                         					    <h3>{{ feature.name_2 }}</h3>
                     					    </span>
-                    					    <a class="tile" :href="feature.url">
+                    					    <a :href="feature.url">
                             					<span class="info" v-if="locale=='en-ca'">
                             					    <p>{{ feature.description }} <span class="fas fa-angle-double-right" aria-hidden></span></p>
                         					    </span>
