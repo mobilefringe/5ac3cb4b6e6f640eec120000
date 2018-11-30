@@ -27,7 +27,7 @@
                         <div v-masonry-tile class="item" >
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                         	    <div class="feature_item_container">
-                        	        <a class="tile" :href="feature.url">
+                        	        <span class="tile">
                             			<img :src="feature.image_url" :alt="feature.name + 'Desktop View'">
                         				<div class="details" v-if="feature.name && feature.description">
                         					<span class="title" v-if="locale=='en-ca'">
@@ -36,14 +36,16 @@
                         					<span class="title" v-else>
                         					    <h3>{{ feature.name_2 }}</h3>
                     					    </span>
-                        					<span class="info" v-if="locale=='en-ca'">
-                        					    <p>{{ feature.description }} <span class="fas fa-angle-double-right" aria-hidden></span></p>
-                    					    </span>
-                        					<span class="info" v-else>
-                        					    <p>{{ feature.description_2 }}<span class="fas fa-angle-double-right" aria-hidden></span></p>
-                    					    </span>
+                    					    <a class="tile" :href="feature.url">
+                            					<span class="info" v-if="locale=='en-ca'">
+                            					    <p>{{ feature.description }} <span class="fas fa-angle-double-right" aria-hidden></span></p>
+                        					    </span>
+                            					<span class="info" v-else>
+                            					    <p>{{ feature.description_2 }}<span class="fas fa-angle-double-right" aria-hidden></span></p>
+                        					    </span>
+                        			        </a>
                         				</div>
-                            		</a>
+                            		</span>
                         	    </div>
                             </div>
                         </div>
