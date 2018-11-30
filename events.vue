@@ -15,8 +15,8 @@
         			<div id="promos_container" class="clearfix" v-if="promos.length > 0">
         				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">
         					<div class="promo_container clearfix" v-for="(promo, index) in paginated('promos')">
-        					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
-        					    <div class="promo_img" v-else v-lazy:background-image="promo.event_image2_url_abs"></div>
+        					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
+        					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.event_image2_url_abs + ')' }"></div>
         					    <div class="promo_content">
         					        <p class="promo_title">{{ $t("events_page.events") }}</p>
         					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
