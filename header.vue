@@ -110,5 +110,77 @@
 </template>
 
 <script>
-var _extends=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(t[o]=n[o])}return t};define(["Vue","vuex","vue_router","routes","bootstrap-vue"],function(t,e,n,o,i){return t.use(i),t.component("header-component",{template:template,props:["menu_items","social_media"],data:function(){return{suggestionAttribute:"name",search:"",showMenu:!1,showMobileMenu:!1,noScroll:!1,windowWidth:0}},watch:{$route:function(){this.windowWidth<=768&&(this.showMenu=!1),_.forEach(this.menu_items,function(t){t.show_sub_menu=!1})},showMenu:function(){1==this.showMenu?document.body.classList.add("no_scroll"):0==this.showMenu&&document.body.classList.remove("no_scroll")}},created:function(){this.$nextTick(function(){window.addEventListener("resize",this.getWindowWidth),this.getWindowWidth()})},computed:_extends({},e.mapGetters(["property","timezone","processedStores"]),{locale:{get:function(){return this.$store.state.locale},set:function(t){this.$store.commit("SET_LOCALE",{lang:t})}}}),methods:{changeLocale:function(t){this.locale=t},getWindowWidth:function(){this.windowWidth=window.innerWidth},onOptionSelect:function(t){this.$nextTick(function(){this.search=""}),this.$router.push("/stores/"+t.slug)}},beforeDestroy:function(){window.removeEventListener("resize",this.getWindowWidth)}})});
+    define(["Vue", "vuex", "vue_router", "routes", "bootstrap-vue"], function (Vue, Vuex, VueRouter, appRoutes, BootstrapVue) {
+        Vue.use(BootstrapVue);
+        return Vue.component("header-component", {
+            template: template, // the variable template will be injected,
+            props:['menu_items', 'social_media'],
+            data: function () {
+                return {
+                    suggestionAttribute: 'name',
+                    search: '', 
+                    showMenu: false,
+                    showMobileMenu: false,
+                    noScroll: false,
+                    windowWidth: 0
+                }
+            },
+            watch: {
+                $route: function() {
+                    if (this.windowWidth <= 768) {
+                        this.showMenu = false;
+                    }  
+                    _.forEach(this.menu_items, function(value, key) {
+                        value.show_sub_menu = false;
+                    });
+                },
+                showMenu: function() {
+                    if(this.showMenu == true){
+                        document.body.classList.add("no_scroll");
+                    } else if (this.showMenu == false) {
+                        document.body.classList.remove("no_scroll");
+                    }
+                }
+            },
+            created() {
+                this.$nextTick(function() {
+                    window.addEventListener('resize', this.getWindowWidth);
+                    this.getWindowWidth();
+                });
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedStores'
+                ]),
+                locale: {
+                    get () {
+                        return this.$store.state.locale
+                    },
+                    set (value) {
+                        this.$store.commit('SET_LOCALE', { lang: value })
+                    }
+                }
+            },
+            methods: {
+                changeLocale: function(val) {
+                    // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+                    this.locale = val; 
+                },
+                getWindowWidth(event) {
+                    this.windowWidth = window.innerWidth;
+                },
+                onOptionSelect(option) {
+                    this.$nextTick(function() {
+                        this.search = ""
+                    });
+                    this.$router.push("/stores/" + option.slug);
+                }
+            },
+            beforeDestroy: function() {
+                window.removeEventListener('resize', this.getWindowWidth);
+            }
+        });
+    });
 </script>
