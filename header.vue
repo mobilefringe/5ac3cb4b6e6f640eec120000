@@ -230,7 +230,7 @@
                     this.$nextTick(function() {
                         this.search = ""
                     });
-                    // this.$router.push("/stores/" + option.slug);
+                    this.$router.push(option.push_slug);
                 }
             },
             beforeDestroy: function() {
