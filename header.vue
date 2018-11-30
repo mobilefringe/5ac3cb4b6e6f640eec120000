@@ -174,6 +174,7 @@
                 searchList() {
                     var events = this.processedEvents;
                     _.forEach(events, function (value, key) {
+                        value.push_slug = "/events/" + value.slug
                         if (_.includes(value.eventable_type, 'Property')) {
                             value.is_store = false;
                         } else {
@@ -182,6 +183,7 @@
                     });
                     var promos = this.processedPromos;
                     _.forEach(promos, function (value, key) {
+                        value.push_slug = "/promotions/" + value.slug
                         if (_.includes(value.promotionable_type, 'Property')) {
                             value.is_store = false;
                         } else {
@@ -190,6 +192,7 @@
                     });
                     var jobs = this.processedJobs;
                     _.forEach(jobs, function (value, key) {
+                        value.push_slug = "/jobs/" + value.slug
                         if (_.includes(value.jobable_type, 'Property')) {
                             value.is_store = false;
                         } else {
@@ -198,6 +201,7 @@
                     });
                     var stores = this.processedStores;
                     _.forEach(stores, function (value, key) {
+                        value.push_slug = "/stores/" + value.slug
                         value.is_store = true;    
                     });
                     
