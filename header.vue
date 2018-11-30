@@ -117,12 +117,17 @@
             props:['menu_items', 'social_media'],
             data: function () {
                 return {
-                    suggestionAttribute: 'name',
+                    // suggestionAttribute: 'name',
                     search: '', 
                     showMenu: false,
                     showMobileMenu: false,
                     noScroll: false,
-                    windowWidth: 0
+                    windowWidth: 0,
+                    
+                    search_result: null,
+                    suggestionAttribute: "name",
+                    keys: ["name", "description", "tags", "store.name"],
+                    headerReady: false
                 }
             },
             watch: {
