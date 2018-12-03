@@ -144,7 +144,6 @@
                             insta.caption.text = _.truncate(insta.caption.text, { 'length': 50, 'separator': ' ' });
                         }
                     });
-                    console.log("this.instaFeed", this.instaFeed)
 
                     this.dataLoaded = true;
                 });
