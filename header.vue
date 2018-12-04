@@ -235,14 +235,7 @@
                     this.$nextTick(function() {
                         this.search = "";
                     });
-                },
-                // onOptionSelect(option) {
-                //     console.log(option)
-                //     this.$nextTick(function() {
-                //         this.search = ""
-                //     });
-                //     this.$router.push(option.push_slug);
-                // }
+                }
             },
             beforeDestroy: function() {
                 window.removeEventListener('resize', this.getWindowWidth);
