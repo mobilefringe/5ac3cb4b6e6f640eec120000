@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div v-else class="col-sm-2 search_result_image center-block">
-                                    <img class="result_logo" src="//codecloud.cdn.speedyrails.net/sites/5b8953ca6e6f647e01650000/image/png/1535746524000/centennial_default-compressor.png"/>    
+                                    <img class="result_logo" src="//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1543957750217/default-compressor.png"/>    
                                 </div>
                                 <div class="col-sm-10 search_result_content">
                                     <h3>{{result.name}}</h3>
