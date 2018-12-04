@@ -12,7 +12,11 @@
                 </div>
                 <div class="site_container page_content">
             		<div class="page_container text-left" v-if="searchResults && searchResults.length > 0" id="searchResults">
-                        <p class="search_result_title">Found {{searchResults.length}} results matching "{{searchQuery}}"</p>
+            		    <div class="row">
+            		        <div class="col-md-12">
+            		            <p class="search_result_title">Found {{searchResults.length}} results matching "{{searchQuery}}"</p>
+            		        </div>
+            		    </div>
             			<div v-for="(result,index) in searchResults" :key="index">
                             <div class="row search_result_row">
                                 <div v-if="result.is_store" class="col-sm-2 search_result_image center-block">
