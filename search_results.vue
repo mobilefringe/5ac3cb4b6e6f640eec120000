@@ -3,13 +3,6 @@
 		<loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div v-if="pageBanner" class="inside_header_background" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-                    <div class="main_container">
-                        <div class="page_container">
-                            <h2>Seach Results</h2>
-                        </div>
-                    </div>
-                </div>
                 <div class="site_container page_content">
             		<div class="page_container text-left" v-if="searchResults && searchResults.length > 0" id="searchResults">
             		    <div class="row">
@@ -38,7 +31,7 @@
                                     <img class="result_logo" src="//codecloud.cdn.speedyrails.net/sites/5ac3cb4b6e6f640eec120000/image/png/1543957750217/default-compressor.png"/>    
                                 </div>
                                 <div class="col-sm-10 search_result_content">
-                                    <h3>{{result.name}}</h3>
+                                    <h5>{{result.name}}</h5>
                                     <p>{{truncated(result.description)}}</p>
                                     <router-link v-if="result.store_front_url_abs" class="result_link hvr-icon-forward" :to="{ name: 'storeDetails', params:{ id:result.slug }}">
                                         <i class="fa fa-caret-right hvr-icon"></i> View Store Details
