@@ -226,14 +226,14 @@
                 },
                 onOptionSelect(option) {
                     console.log("option", option);
-                    console.log("this.search_result", this.search_result)
+                    console.log("this.search", this.search)
                     this.$router.push({
                         name: "search-results",
-                        query: { searchQuery: this.search_result },
+                        query: { searchQuery: this.search },
                         params: { results: option }
                     });
                     this.$nextTick(function() {
-                        this.search_result = "";
+                        this.search = "";
                     });
                 },
                 // onOptionSelect(option) {
