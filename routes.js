@@ -223,13 +223,22 @@ define([], function() {
             }]
         },
         {
-            path: '/404',
-            name: '404',
-            component: view('notfoundcomponent')
+            path: '/search-results',
+            component: view('default'),
+            children: [
+                {
+                    path: '',
+                    component: view('search_results'),
+                    meta: {
+                        pageName: 'Search Results',
+                    },
+                    name: 'search-results'
+                }
+            ]
         },
         {
             path: '*',
-            redirect: '/404'
+            redirect: '/'
         }
     ]
 
