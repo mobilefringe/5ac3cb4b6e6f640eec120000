@@ -65,7 +65,9 @@
             									<div class="store_tag_text">{{$t("stores_page.new_store")}}</div>
             								</div>
             								<div class="store_details">
-            								    <div class="store_text">{{ store.name }}</div>    
+            								    <div class="store_text">
+            								        <h3>{{ store.name }}</h3>
+        								        </div>    
             								</div>
                                 		</router-link>
                             	    </div>
