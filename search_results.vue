@@ -110,16 +110,8 @@
                     });
                 },
                 updateResults() {
-                    if (
-                        this.$route.query.searchQuery !== null &&
-                        this.$route.query.searchQuery !== undefined &&
-                        this.$route.query.searchQuery.length > 0
-                    ) {
-                        if (
-                            this.$route.params.results !== null &&
-                            this.$route.params.results !== undefined &&
-                            Array.isArray(this.$route.params.results)
-                        ) {
+                    if (this.$route.query.searchQuery !== null && this.$route.query.searchQuery !== undefined) {
+                        if (this.$route.params.results !== null && this.$route.params.results !== undefined && Array.isArray(this.$route.params.results)) {
                             this.searchResults = this.$route.params.results;
                             this.searchQuery = this.$route.query.searchQuery;
                         }
