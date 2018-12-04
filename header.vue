@@ -225,6 +225,8 @@
                     this.windowWidth = window.innerWidth;
                 },
                 onOptionSelect(option) {
+                    console.log("option", option);
+                    console.log("this.search_result", this.search_result)
                     this.$router.push({
                         name: "search-results",
                         query: { searchQuery: this.search_result },
