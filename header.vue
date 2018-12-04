@@ -225,12 +225,22 @@
                     this.windowWidth = window.innerWidth;
                 },
                 onOptionSelect(option) {
-                    console.log(option)
-                    this.$nextTick(function() {
-                        this.search = ""
+                    this.$router.push({
+                        name: "search-results",
+                        query: { searchQuery: this.search_result },
+                        params: { results: option }
                     });
-                    this.$router.push(option.push_slug);
-                }
+                    this.$nextTick(function() {
+                        this.search_result = "";
+                    });
+                },
+                // onOptionSelect(option) {
+                //     console.log(option)
+                //     this.$nextTick(function() {
+                //         this.search = ""
+                //     });
+                //     this.$router.push(option.push_slug);
+                // }
             },
             beforeDestroy: function() {
                 window.removeEventListener('resize', this.getWindowWidth);
