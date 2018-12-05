@@ -37,9 +37,6 @@
                     <div class="load_more animated_btn swing_in" v-if="promotions && showMore <= promotions.length" @click ="loadMore()">
                         <p>Load More</p>
                     </div>
-                   
-        		
-    
         		</div>
 	        </div>
 	    </transition>
