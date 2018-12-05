@@ -54,8 +54,8 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    showMore: 3,
-                    incrementBy: 3
+                    showMore: 2,
+                    incrementBy: 2
                 }
             },
             created() {
