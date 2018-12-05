@@ -30,7 +30,7 @@
 					    </div>
 					</div>
         			<div class="show_more">
-                        <div class="pointer" v-if="promotions && showMore <= promotions.length" @click ="loadMore()">Load More</div>
+                        <div class="animated_btn swing_in" v-if="promotions && showMore <= promotions.length" @click ="loadMore()">Load More</div>
                     </div>
         			<!--<div class="row" v-else>-->
         			<!--	<div class="col-md-12">-->
