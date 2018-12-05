@@ -2513,12 +2513,7 @@ iframe.station_41 {
     padding-bottom: 5px;
     width: 36px;
 }
-.load_more {
-    font-weight: lighter;
-    font-size: 1.5rem;
-    color: #D8836C;
-    display: inline-block;
-}
+
 .load_more_arrow {
     width: 30px;
 }
