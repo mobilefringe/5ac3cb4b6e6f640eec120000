@@ -14,7 +14,7 @@
         		<div class="site_container page_content">
         			<div id="promos_container" class="clearfix" v-if="promotions.length > 0">
         				<!--<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">-->
-        					<div class="promo_container clearfix" v-for="(promo, index) in promos" v-if="showMore > index">
+        					<div class="promo_container clearfix" v-for="(promo, index) in promotions" v-if="showMore > index">
         					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
         					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.promo_image2_url_abs + ')' }"></div>
         					    <div class="promo_content">
@@ -34,7 +34,7 @@
         				<!--</pagina.te>-->
         			</div>
         			<div class="show_more">
-                        <div class="pointer" v-if="promos && showMore <= promos.length" @click = "loadMoreStores()">Load More</div>
+                        <div class="pointer" v-if="promotions && showMore <= promotions.length" @click = "loadMoreStores()">Load More</div>
                     </div>
         			<!--<div class="row" v-else>-->
         			<!--	<div class="col-md-12">-->
@@ -76,7 +76,6 @@
                         this.pageBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
                     }
 
-                    this.promos = this.promotions;
                     this.dataLoaded = true;
                 });
             },
@@ -90,7 +89,6 @@
                 promotions() {
                     var vm = this;
                     var temp_promo = [];
-                    var temp_job = [];
                     _.forEach(this.processedPromos, function(value, key) {
                         value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
                         value.name_short_2 = _.truncate(value.name_2, { 'length': 30, 'separator': ' ' });
@@ -106,7 +104,7 @@
                     });
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
-                },
+                }
             },
             methods: {
                 loadData: async function() {
@@ -118,7 +116,7 @@
                     }
                 },
                 loadMoreStores() {
-                    if (this.showMore <= this.filteredStores.length) {
+                    if (this.showMore <= this.promotions.length) {
                         var num = this.showMore + this.incrementBy;
                         this.showMore = num;
                     }
