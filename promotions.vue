@@ -12,40 +12,32 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-        			<!--<div id="promos_container" class="clearfix" v-if="promotions.length > 0">-->
-        				<!--<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">-->
-        					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index">
-        					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
-        					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
-        					    <div class="promo_content">
-        					        <p class="promo_title" v-if="item.store">{{ item.store.name }}</p>
-        					        <p class="promo_title" v-else>{{ property.name }}</p>
-        					        <h3 class="" v-if="locale=='en-ca'">{{ item.name_short }}</h3>
-        							<h3 class="" v-else>{{ item.name_short_2 }}</h3>
-        							<p class="promo_dates" v-if="isMultiDay(item)">
-        							    {{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}
-                                    </p>
-                                    <p class="promo_dates" v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
-        							<router-link :to="'/promotions/'+ item.slug" >
-    								   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
-        						    </router-link>
-        					    </div>
-        					</div>
-        				<!--</pagina.te>-->
-        			<!--</div>-->
+					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index">
+					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
+					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
+					    <div class="promo_content">
+					        <p class="promo_title" v-if="item.store">{{ item.store.name }}</p>
+					        <p class="promo_title" v-else>{{ property.name }}</p>
+					        <h3 class="" v-if="locale=='en-ca'">{{ item.name_short }}</h3>
+							<h3 class="" v-else>{{ item.name_short_2 }}</h3>
+							<p class="promo_dates" v-if="isMultiDay(item)">
+							    {{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}
+                            </p>
+                            <p class="promo_dates" v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
+							<router-link :to="'/promotions/'+ item.slug" >
+							   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
+						    </router-link>
+					    </div>
+					</div>
         			<div class="show_more">
-                        <div class="pointer" v-if="promotions && showMore <= promotions.length" @click ="loadMoreStores()">Load More</div>
+                        <div class="pointer" v-if="promotions && showMore <= promotions.length" @click ="loadMore()">Load More</div>
                     </div>
         			<!--<div class="row" v-else>-->
         			<!--	<div class="col-md-12">-->
         			<!--		<p>{{$t("promos_page.no_promo_message")}}</p>-->
         			<!--	</div>-->
         			<!--</div>-->
-        			<div class="row">
-        				<div class="col-md-12">
-        					<paginate-links for="promos" :async="true" :limit="3" :show-step-links="true"></paginate-links>
-        				</div>
-        			</div>
+    
         		</div>
 	        </div>
 	    </transition>
@@ -53,8 +45,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-paginate"], function(Vue, Vuex, moment, tz, VueMoment, VuePaginate) {
-        Vue.use(VuePaginate);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
             props:['locale'],
@@ -62,9 +53,7 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    promos : null,
-                    paginate: ['promos'],
-                    showMore: 3,
+                    showMore: 3
                 }
             },
             created() {
@@ -82,8 +71,8 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'timezone',
                     'findRepoByName',
+                    'timezone',
                     'processedPromos'
                 ]),
                 promotions() {
@@ -109,13 +98,12 @@
             methods: {
                 loadData: async function() {
                     try {
-                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
                         let results = await Promise.all([this.$store.dispatch("getData", "repos"), this.$store.dispatch("getData", "promotions")]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                loadMoreStores() {
+                loadMore() {
                     if (this.showMore <= this.promotions.length) {
                         var num = this.showMore + this.incrementBy;
                         this.showMore = num;
