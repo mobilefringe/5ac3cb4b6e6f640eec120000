@@ -53,7 +53,8 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    showMore: 3
+                    showMore: 3,
+                    incrementBy: 3
                 }
             },
             created() {
