@@ -12,23 +12,25 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index">
-					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
-					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
-					    <div class="promo_content">
-					        <p class="promo_title" v-if="item.store">{{ item.store.name }}</p>
-					        <p class="promo_title" v-else>{{ property.name }}</p>
-					        <h3 class="" v-if="locale=='en-ca'">{{ item.name_short }}</h3>
-							<h3 class="" v-else>{{ item.name_short_2 }}</h3>
-							<p class="promo_dates" v-if="isMultiDay(item)">
-							    {{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}
-                            </p>
-                            <p class="promo_dates" v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
-							<router-link :to="'/promotions/'+ item.slug" >
-							   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
-						    </router-link>
-					    </div>
-					</div>
+        		    <transition-group name="list" tag="div">
+    					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index">
+    					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
+    					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
+    					    <div class="promo_content">
+    					        <p class="promo_title" v-if="item.store">{{ item.store.name }}</p>
+    					        <p class="promo_title" v-else>{{ property.name }}</p>
+    					        <h3 class="" v-if="locale=='en-ca'">{{ item.name_short }}</h3>
+    							<h3 class="" v-else>{{ item.name_short_2 }}</h3>
+    							<p class="promo_dates" v-if="isMultiDay(item)">
+    							    {{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}
+                                </p>
+                                <p class="promo_dates" v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
+    							<router-link :to="'/promotions/'+ item.slug" >
+    							   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
+    						    </router-link>
+    					    </div>
+    					</div>
+    				</transition-group>
 					<div class="row" v-if="!promotions.length">
         				<div class="col-md-12">
         					<p>{{$t("promos_page.no_promo_message")}}</p>
