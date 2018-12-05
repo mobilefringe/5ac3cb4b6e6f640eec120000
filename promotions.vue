@@ -29,16 +29,16 @@
 						    </router-link>
 					    </div>
 					</div>
-        			<div class="show_more">
-                        <div class="load_more animated_btn swing_in" v-if="promotions && showMore <= promotions.length" @click ="loadMore()">
-                            <p>Load More</p>
-                        </div>
+					<div class="row" v-if="promotions.length">
+        				<div class="col-md-12">
+        					<p>{{$t("promos_page.no_promo_message")}}</p>
+        				</div>
+        			</div>
+                    <div class="load_more animated_btn swing_in" v-if="promotions && showMore <= promotions.length" @click ="loadMore()">
+                        <p>Load More</p>
                     </div>
-        			<!--<div class="row" v-else>-->
-        			<!--	<div class="col-md-12">-->
-        			<!--		<p>{{$t("promos_page.no_promo_message")}}</p>-->
-        			<!--	</div>-->
-        			<!--</div>-->
+                   
+        		
     
         		</div>
 	        </div>
