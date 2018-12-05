@@ -34,13 +34,13 @@
         				<!--</pagina.te>-->
         			</div>
         			<div class="show_more">
-                    <div class="pointer" v-if="promos && showMore <= promos.length" @click = "loadMoreStores()">Load More</div>
-                </div>
-        			<div class="row" v-else>
-        				<div class="col-md-12">
-        					<p>{{$t("promos_page.no_promo_message")}}</p>
-        				</div>
-        			</div>
+                        <div class="pointer" v-if="promos && showMore <= promos.length" @click = "loadMoreStores()">Load More</div>
+                    </div>
+        			<!--<div class="row" v-else>-->
+        			<!--	<div class="col-md-12">-->
+        			<!--		<p>{{$t("promos_page.no_promo_message")}}</p>-->
+        			<!--	</div>-->
+        			<!--</div>-->
         			<div class="row">
         				<div class="col-md-12">
         					<paginate-links for="promos" :async="true" :limit="3" :show-step-links="true"></paginate-links>
