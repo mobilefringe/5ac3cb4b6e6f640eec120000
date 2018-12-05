@@ -12,9 +12,9 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-        			<div id="promos_container" class="clearfix" v-if="promotions.length > 0">
+        			<!--<div id="promos_container" class="clearfix" v-if="promotions.length > 0">-->
         				<!--<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">-->
-        					<div class="promo_container clearfix" v-for="(item, index) in promotions" v-if="showMore > index">
+        					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index">
         					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
         					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
         					    <div class="promo_content">
@@ -32,7 +32,7 @@
         					    </div>
         					</div>
         				<!--</pagina.te>-->
-        			</div>
+        			<!--</div>-->
         			<div class="show_more">
                         <div class="pointer" v-if="promotions && showMore <= promotions.length" @click ="loadMoreStores()">Load More</div>
                     </div>
