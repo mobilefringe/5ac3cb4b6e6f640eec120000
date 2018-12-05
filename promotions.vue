@@ -33,6 +33,9 @@
         					</div>
         				<!--</pagina.te>-->
         			</div>
+        			<div class="show_more">
+                    <div class="pointer" v-if="filteredStores && showMore <= filteredStores.length" @click = "loadMoreStores()">{{$t("stores.more_stores")}}</div>
+                </div>
         			<div class="row" v-else>
         				<div class="col-md-12">
         					<p>{{$t("promos_page.no_promo_message")}}</p>
@@ -60,7 +63,8 @@
                     dataLoaded: false,
                     pageBanner: null,
                     promos : null,
-                    paginate: ['promos']
+                    paginate: ['promos'],
+                    showMore: 3,
                 }
             },
             created() {
@@ -111,6 +115,12 @@
                         let results = await Promise.all([this.$store.dispatch("getData", "repos"), this.$store.dispatch("getData", "promotions")]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
+                    }
+                },
+                loadMoreStores() {
+                    if (this.showMore <= this.filteredStores.length) {
+                        var num = this.showMore + this.incrementBy;
+                        this.showMore = num;
                     }
                 },
                 isMultiDay(promo) {
