@@ -15,18 +15,18 @@
         			<div id="promos_container" class="clearfix" v-if="promotions.length > 0">
         				<!--<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">-->
         					<div class="promo_container clearfix" v-for="(promo, index) in promotions" v-if="showMore > index">
-        					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
-        					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.promo_image2_url_abs + ')' }"></div>
+        					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
+        					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
         					    <div class="promo_content">
-        					        <p class="promo_title" v-if="promo.store">{{ promo.store.name }}</p>
+        					        <p class="promo_title" v-if="item.store">{{ item.store.name }}</p>
         					        <p class="promo_title" v-else>{{ property.name }}</p>
-        					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
-        							<h3 class="" v-else>{{ promo.name_short_2 }}</h3>
-        							<p class="promo_dates" v-if="isMultiDay(promo)">
-        							    {{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}
+        					        <h3 class="" v-if="locale=='en-ca'">{{ item.name_short }}</h3>
+        							<h3 class="" v-else>{{ item.name_short_2 }}</h3>
+        							<p class="promo_dates" v-if="isMultiDay(item)">
+        							    {{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}
                                     </p>
-                                    <p class="promo_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
-        							<router-link :to="'/promotions/'+ promo.slug" >
+                                    <p class="promo_dates" v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
+        							<router-link :to="'/promotions/'+ item.slug" >
     								   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
         						    </router-link>
         					    </div>
