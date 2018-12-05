@@ -13,7 +13,7 @@
         		</div>
         		<div class="site_container page_content">
         		    <transition-group name="list" tag="div">
-    					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index">
+    					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index" :key="index">
     					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
     					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
     					    <div class="promo_content">
