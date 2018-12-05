@@ -34,7 +34,7 @@
         				<!--</pagina.te>-->
         			</div>
         			<div class="show_more">
-                    <div class="pointer" v-if="filteredStores && showMore <= filteredStores.length" @click = "loadMoreStores()">{{$t("stores.more_stores")}}</div>
+                    <div class="pointer" v-if="promos && showMore <= promos.length" @click = "loadMoreStores()">Load More</div>
                 </div>
         			<div class="row" v-else>
         				<div class="col-md-12">
