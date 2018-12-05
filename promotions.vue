@@ -29,7 +29,7 @@
 						    </router-link>
 					    </div>
 					</div>
-					<div class="row" v-if="promotions.length">
+					<div class="row" v-if="!promotions.length">
         				<div class="col-md-12">
         					<p>{{$t("promos_page.no_promo_message")}}</p>
         				</div>
