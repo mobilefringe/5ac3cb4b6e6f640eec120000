@@ -110,7 +110,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue_router", "routes", "bootstrap-vue", "vue!search-component.vue", "vue!search-rightcomponent.vue"], function (Vue, Vuex, VueRouter, appRoutes, BootstrapVue, searchComponent) {
+    define(["Vue", "vuex", "vue_router", "routes", "bootstrap-vue", "vue!search-component.vue", "vue!search-right-component.vue"], function (Vue, Vuex, VueRouter, appRoutes, BootstrapVue, searchComponent, searchRightComponent) {
         Vue.use(BootstrapVue);
         return Vue.component("header-component", {
             template: template, // the variable template will be injected,
