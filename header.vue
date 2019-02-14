@@ -97,7 +97,7 @@
 					    <div class="social_icons pull-right">
 					        <span v-for="item in social_media">
                                 <p class="accessibility">search icon</p>
-                                <i :class="item.iconClass" aria-hidden="true"></i>
+                                <i :class="fa fa-search" aria-hidden="true"></i>
                             </span>
                             <span v-for="item in social_media">
                                 <a :href="item.url" target="_blank">
