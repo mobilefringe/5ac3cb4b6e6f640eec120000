@@ -922,6 +922,9 @@ strong, .bold {
             align-items: stretch;
             width: 100%;
         }
+        .mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
     }
   .search-component {
     .input-group-text {
