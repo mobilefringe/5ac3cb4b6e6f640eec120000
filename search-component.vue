@@ -207,6 +207,7 @@
                 },
                 result() {
                     this.$parent.$emit(this.eventName, this.result)
+                    this.$emit('updatedResults', this.result)
                 },
                 list() {
                     this.initFuse()
