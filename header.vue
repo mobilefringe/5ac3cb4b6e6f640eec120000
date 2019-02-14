@@ -103,7 +103,7 @@
                             </span>
                         </div>	
 					</div>
-					search-right-component
+					<search-right-component v-if="showSearchWindow"></search-right-component>
 				</div>
 			</div>
 		</div>
