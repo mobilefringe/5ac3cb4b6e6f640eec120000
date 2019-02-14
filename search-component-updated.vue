@@ -1,7 +1,7 @@
 <template>
   <div class="search-component" v-if="autocomplete">
     <div class="input-group-prepend input-group-text">
-      <span class=" fas fa-search"></span>
+      <span class=" fa fa-search"></span>
     </div>
     <p class="control has-icon has-icon-right">
       <input
