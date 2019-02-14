@@ -108,10 +108,10 @@
                         </div>	
 					</div>
 					 <transition
-        name="custom-classes-transition"
-        enter-active-class="animated fadeIn"
-        leave-active-class="animated fadeOut"
-      >
+                        name="custom-classes-transition"
+                        enter-active-class="animated fadeIn"
+                        leave-active-class="animated fadeOut"
+                      >
 					<search-right-component v-if="showSearchWindow"></search-right-component>
 					</transition>
 				</div>
