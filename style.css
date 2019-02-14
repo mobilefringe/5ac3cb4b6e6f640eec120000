@@ -972,6 +972,11 @@ strong, .bold {
           right: .5rem;
           z-index: 3
         }
+        {
+            height: calc(2.875rem + 2px);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+        }
     }
   .search-component {
     .input-group-text {
