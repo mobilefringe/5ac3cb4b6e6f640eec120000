@@ -96,7 +96,7 @@
 					<div class="col-md-2 hidden_phone">
 					    <div class="social_icons pull-right">
 					        <span v-for="item in social_media">
-                                <p class="accessibility">{{item.name}}</p>
+                                <p class="accessibility">search icon</p>
                                 <i :class="item.iconClass" aria-hidden="true"></i>
                             </span>
                             <span v-for="item in social_media">
