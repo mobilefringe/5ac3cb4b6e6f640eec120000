@@ -910,6 +910,7 @@ strong, .bold {
     right: 0;
     top: 140px;
     width: 320px;
+    border-left: 1px solid #b2b2b2;
     background-color: #fff;
     height: calc(100vh - 140px);
     .search-container{
