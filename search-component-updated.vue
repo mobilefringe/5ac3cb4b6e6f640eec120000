@@ -1,8 +1,8 @@
 <template>
   <div class="search-component" v-if="autocomplete">
-    <div class="input-group-prepend input-group-text">
+    <!--<div class="input-group-prepend input-group-text">-->
       <span class=" fa fa-search"></span>
-    </div>
+    <!--</div>-->
     <p class="control has-icon has-icon-right">
       <input
         type="search"
@@ -31,9 +31,9 @@
     </ul>
   </div>
   <div class="search-component" v-else>
-    <div class="input-group-prepend inline_block">
+    <!--<div class="input-group-prepend inline_block">-->
       <span class="fa fa-search"></span>
-    </div>
+    <!--</div>-->
     <p class="control has-icon has-icon-right inline_block">
       <input
         type="search"
