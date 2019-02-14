@@ -906,6 +906,12 @@ strong, .bold {
 
 /**** Site Search ******/
 #nav-right {
+        position: absolute;
+    right: 0;
+    top: 140px;
+    width: 320px;
+    background-color: #fff;
+    height: calc(100vh - 140px);
   .search-component {
     .input-group-text {
       height: calc(2.875rem + 2px);
