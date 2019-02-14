@@ -125,7 +125,8 @@
                     search: '',
                     suggestionAttribute: "name",
                     keys: ["name", "description", "tags", "store.name"],
-                    headerReady: false
+                    headerReady: false,
+                    showSearchWindow: false,
                 }
             },
             watch: {
