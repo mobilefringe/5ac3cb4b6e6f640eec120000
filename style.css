@@ -915,6 +915,13 @@ strong, .bold {
     height: calc(100vh - 140px);
     .search-container{
         padding: 20px 15px;
+        .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
     }
   .search-component {
     .input-group-text {
