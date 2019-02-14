@@ -32,7 +32,7 @@
   </div>
   <div class="search-component" v-else>
     <div class="input-group-prepend inline_block">
-      <span class=" fas fa-search"></span>
+      <span class=" fa fa-search"></span>
     </div>
     <p class="control has-icon has-icon-right inline_block">
       <input
