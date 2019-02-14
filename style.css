@@ -913,7 +913,7 @@ strong, .bold {
     background-color: #fff;
     height: calc(100vh - 140px);
     .search-container{
-        
+        padding: 20px 15px;
     }
   .search-component {
     .input-group-text {
