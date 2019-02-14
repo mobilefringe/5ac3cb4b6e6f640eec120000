@@ -912,6 +912,9 @@ strong, .bold {
     width: 320px;
     background-color: #fff;
     height: calc(100vh - 140px);
+    .search-container{
+        
+    }
   .search-component {
     .input-group-text {
       height: calc(2.875rem + 2px);
