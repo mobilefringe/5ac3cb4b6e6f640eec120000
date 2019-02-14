@@ -1,7 +1,7 @@
 <template>
   <div class="search-component" v-if="autocomplete">
     <div class="input-group-prepend input-group-text">
-      <span class="ion-ios-search-strong"></span>
+      <span class=" fas fa-search-strong"></span>
     </div>
     <p class="control has-icon has-icon-right">
       <input
@@ -294,5 +294,4 @@ define(["Vue", "Fuse"], function(Vue, Fuse) {
         }
     });
 });
-
 </script>
