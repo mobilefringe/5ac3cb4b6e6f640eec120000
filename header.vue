@@ -95,9 +95,9 @@
     				</div>
 					<div class="col-md-2 hidden_phone">
 					    <div class="social_icons pull-right">
-					        <span v-for="item in social_media">
+					        <span @click="showSearchWindow = !showSearchWindow">
                                 <p class="accessibility">search icon</p>
-                                <i :class="fa fa-search" aria-hidden="true"></i>
+                                <i class="fa fa-search" aria-hidden="true"></i>
                             </span>
                             <span v-for="item in social_media">
                                 <a :href="item.url" target="_blank">
