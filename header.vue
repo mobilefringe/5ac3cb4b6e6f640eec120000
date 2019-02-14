@@ -103,6 +103,7 @@
                             </span>
                         </div>	
 					</div>
+					search-right-component
 				</div>
 			</div>
 		</div>
