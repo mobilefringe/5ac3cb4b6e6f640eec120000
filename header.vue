@@ -243,8 +243,7 @@
                     });
                 },
                 closeSearchMenu(){
-                    console.log("close search menu");
-                    this.showSearchWindow = false
+                    this.showSearchWindow = false;
                 }
             },
             beforeDestroy: function() {
