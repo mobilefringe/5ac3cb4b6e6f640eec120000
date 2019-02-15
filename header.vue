@@ -108,7 +108,7 @@
                         </div>	
 					</div>
 				    <transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" >
-					    <search-right-component v-if="showSearchWindow" @closeSearchContainer="showSearchWindow = false"></search-right-component>
+					    <search-right-component v-if="showSearchWindow" @closeSearchContainer="closeSearchMenu"></search-right-component>
 					</transition>
 				</div>
 			</div>
