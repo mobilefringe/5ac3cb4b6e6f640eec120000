@@ -241,6 +241,10 @@
                     this.$nextTick(function() {
                         this.search = "";
                     });
+                },
+                closeSearchMenu(){
+                    console.log("close search menu");
+                    this.showSearchWindow = false
                 }
             },
             beforeDestroy: function() {
