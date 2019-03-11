@@ -102,6 +102,9 @@
                 },
                 holidayHours () {
                     return this.getPropertyHolidayHours;
+                },
+                extendedHours () {
+                    return this.getPropertyHolidayHours;
                 }
             },
             methods : {
