@@ -69,6 +69,7 @@
         "hours" : "Hours",
         "reg_hours" : "Regular Hours",
         "holiday_hours" : "Holiday Hours",
+        "extended_hours": "Extended Hours",
         "closed" : "Closed"
     },
     "jobs_page": {
