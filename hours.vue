@@ -47,7 +47,7 @@
                             <div class="col-sm-6">
                                 <h5 class="caps">{{$t("hours_page.extended_hours")}}</h5>
                                 <div id="holidays_hours_container" class="hours_container">
-                                    <div class="hours_div text-left"  v-for="hour in holidayHours">
+                                    <div class="hours_div text-left"  v-for="hour in extendedHours">
                                         <span>
                                             <span v-if="locale=='en-ca'">{{hour.holiday_name}} / </span>
                                             <span v-else>{{hour.holiday_name_2}} / </span>
