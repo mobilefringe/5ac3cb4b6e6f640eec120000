@@ -7,7 +7,7 @@
         		    <div class="margin_60 hidden_phone"></div>
                     <div class="contact_container clearfix">
 					    <div class="contact_map">
-					        <iframe title="Map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q=' + getPropertyAddress + '&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear=' + getPropertyAddress + '&amp;z=16&amp;output=embed'"></iframe>
+					        <iframe title="Map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'https://maps.google.nl/maps?q=' + getPropertyAddress + '&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear=' + getPropertyAddress + '&amp;z=16&amp;output=embed'"></iframe>
 					    </div>
 					    <div class="contact_content">
 					        <h3 class="">{{ $t("contact_page.location") }}</h3>
