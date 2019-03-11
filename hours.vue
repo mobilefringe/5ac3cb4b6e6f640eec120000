@@ -105,7 +105,7 @@
                     return this.getPropertyHolidayHours;
                 },
                 extendedHours () {
-                    return this.getPropertyHolidayHours;
+                    return this.getPropertyExtendedHours;
                 }
             },
             methods : {
