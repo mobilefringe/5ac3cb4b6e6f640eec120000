@@ -31,6 +31,10 @@
         "href": "/contact_us"
     },
     {
+        "name": "nav.tourism",
+        "href": "/contact_us"
+    },
+    {
         "name" : "nav.packages",
         "href": "#",
         "sub_menu" : [
