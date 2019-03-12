@@ -59,6 +59,7 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
+                    currentPageContent: null,
                     pageContent: null,
                     pageSubpage1: null,
                     pageSubpage2: null
