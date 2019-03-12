@@ -60,7 +60,8 @@
                     dataLoaded: false,
                     pageBanner: null,
                     pageContent: null,
-                    leasingSubpage: null
+                    pageSubpage1: null,
+                    pageSubpage2: null
                 }
             },
             watch: {
