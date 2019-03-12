@@ -80,7 +80,7 @@
                     } else {
                         this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
                     }
-                    var temp_repo = this.findRepoByName('Travel Partners');
+                    var temp_repo1 = this.findRepoByName('Travel Partners');
                     // this.leasingContent = response[1].data;
                     // this.leasingSubpage = response[1].data.subpages[0];
                     // this.leasingContent.isActive = true;
