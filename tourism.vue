@@ -97,6 +97,7 @@
                         }
                     }
                     this.currentPageContent = this.pageContent;
+                    this.selectPage(this.currentPageContent)
                     this.dataLoaded = true;
                 });
             },
