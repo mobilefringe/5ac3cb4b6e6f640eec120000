@@ -88,10 +88,11 @@
                     // this.areaContent = response[3].data;
                     if(response && response[1]){
                         this.pageContent = response[1].data;
+                        if(response[1].data && response[1].data.subpages)
+                        this.pageSubpage1 = response[1].data.subpages[0];
+                        
+                        this.pageSubpage1 = response[1].data.subpages[1];
                     }
-                    this.pageSubpage1 = response[1].data.subpages[0];
-                    
-                    this.pageSubpage1 = response[1].data.subpages[1];
                     this.dataLoaded = true;
                 });
             },
