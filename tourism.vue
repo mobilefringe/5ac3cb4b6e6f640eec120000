@@ -23,18 +23,18 @@
         				<v-select :options="dropDownSelect" :searchable="false" :on-change="selectPage" class="category-select" placeholder="Select a Page" inputId="pageSelect"></v-select>
         			</div>
         			<div class="row">
-        			    <div :class="{'col-sm-12': !pageSubpage1 && currentPageContent.isActive, 'col-sm-6': pageSubpage1 && currentPageContent.isActive}">
+        			    <div :class="{'col-sm-12': currentPageContent.isActive}">
         			        <div v-if="currentPageContent">
         			            <div v-if="locale=='en-ca'" v-html="currentPageContent.body"></div>
         			            <div v-else v-html="currentPageContent.body_2"></div>
         			        </div>
         			    </div>
-        			   <div class="col-sm-6" v-if="pageSubpage1 && currentPageContent.isActive">
-        			       <div v-if="pageSubpage1">
-        			            <div v-if="locale=='en-ca'" v-html="pageSubpage1.body"></div>
-        			            <div v-else v-html="pageSubpage1.body_2"></div>
-        			        </div>
-        			   </div>
+        			   <!--<div class="col-sm-6" v-if="pageSubpage1 && currentPageContent.isActive">-->
+        			   <!--    <div v-if="pageSubpage1">-->
+        			   <!--         <div v-if="locale=='en-ca'" v-html="pageSubpage1.body"></div>-->
+        			   <!--         <div v-else v-html="pageSubpage1.body_2"></div>-->
+        			   <!--     </div>-->
+        			   <!--</div>-->
         		    </div>
         		    <!--<div class="row mall_info_images">-->
         			   <!-- <div class="col-sm-6">-->
