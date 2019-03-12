@@ -222,6 +222,16 @@ define([], function() {
                 name: 'thankYou'
             }]
         },
+         {
+            path: '/tourism',
+            component: view('default'),
+            redirect: '/404',
+            children: [{
+                path: '',
+                component: view('thank_you'),
+                name: 'thankYou'
+            }]
+        },
         {
             path: '/search-results',
             component: view('default'),
