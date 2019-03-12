@@ -138,7 +138,7 @@
                       selected_item.isActive = true;
                     });
             
-                    this.pageContent = selected_item;
+                    this.currentPageContent = selected_item;
                 },
                 selectPage(item) {
                     var _this = this
