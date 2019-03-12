@@ -149,7 +149,7 @@
                     _.forEach(this.pages, function (value, key) {
                         if (_.includes(value.title, item )) {
                             _this.$nextTick(function () {
-                                this.pageContent = value;    
+                                this.currentPageContent = value;    
                             });
                         }
                     });
