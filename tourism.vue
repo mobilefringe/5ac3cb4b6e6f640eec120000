@@ -1,5 +1,5 @@
 <template>
-    <div> <!-- without an outer container div this component template will not render -->
+    <div class="tourism"> <!-- without an outer container div this component template will not render -->
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
