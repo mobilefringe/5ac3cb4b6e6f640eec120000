@@ -36,7 +36,7 @@
         			   <!--     </div>-->
         			   <!--</div>-->
         		    </div>
-        		    <div class="row mall_info_images" v-if="currentPageContent.title == 'Travel Partners'">
+        		    <div class="mall_info_images" v-if="currentPageContent.title == 'Travel Partners'">
         			    <div class="mall_images" v-for="item in travel_partners" v-if="travel_partners">
         			        <img class="max_width" :src="item.image_url" alt="" />
         			    </div>
