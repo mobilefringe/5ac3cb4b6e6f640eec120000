@@ -86,7 +86,7 @@
                     // this.leasingContent.isActive = true;
                     // this.marketingContent = response[2].data;
                     // this.areaContent = response[3].data;
-                    this.pageContent = this.leasingContent;
+                    this.pageContent = response[1].data;
                     this.dataLoaded = true;
                 });
             },
