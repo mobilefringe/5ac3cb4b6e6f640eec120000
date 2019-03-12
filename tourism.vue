@@ -62,7 +62,8 @@
                     currentPageContent: null,
                     pageContent: null,
                     pageSubpage1: null,
-                    pageSubpage2: null
+                    pageSubpage2: null,
+                    travel_partners: null
                 }
             },
             watch: {
