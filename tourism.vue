@@ -82,7 +82,7 @@
                     }
                     var temp_repo1 = this.findRepoByName('Travel Partners');
                     if (temp_repo1 && temp_repo1.images) {
-                        this.travel_partners = temp_repo1.images;
+                        this.travel_partners = _.sortBy(temp_repo1.images, function(o){return o.id});;
                     }
                     // this.leasingContent = response[1].data;
                     // this.leasingSubpage = response[1].data.subpages[0];
