@@ -33,23 +33,5 @@
     {
         "name": "nav.tourism",
         "href": "/tourism"
-    },
-    {
-        "name" : "nav.packages",
-        "href": "#",
-        "sub_menu" : [
-            {
-                "name": "nav.sapphire",
-                "href": "/sapphire_package"
-            },
-            {
-                "name": "nav.ruby",
-                "href": "/ruby_package"
-            },
-            {
-                "name": "nav.diamond",
-                "href": "/diamond_package"
-            } 
-        ]
     }
 ]
