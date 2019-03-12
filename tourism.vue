@@ -71,7 +71,7 @@
             created(){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Mall Info Banner');
-                    if (temp_repo) {
+                    if (temp_repo && temp_repo.images) {
                         try {
                             this.pageBanner = temp_repo.images[0];
                         } catch(e) {
