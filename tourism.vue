@@ -82,6 +82,7 @@
                     }
                     var temp_repo1 = this.findRepoByName('Travel Partners');
                     if (temp_repo && temp_repo.images) {
+                        this.travel_partners = temp_repo.images;
                     }
                     // this.leasingContent = response[1].data;
                     // this.leasingSubpage = response[1].data.subpages[0];
