@@ -52,7 +52,7 @@
 
 <script>
     define(["Vue", "vuex", "vue-select"], function(Vue, Vuex, VueSelect) {
-        return Vue.component("toruism-component", {
+        return Vue.component("tourism-component", {
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
