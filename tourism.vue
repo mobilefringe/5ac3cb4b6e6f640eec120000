@@ -81,7 +81,7 @@
                         this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
                     }
                     var temp_repo1 = this.findRepoByName('Travel Partners');
-                    if (temp_repo && temp_repo.images) {
+                    if (temp_repo1 && temp_repo1.images) {
                         this.travel_partners = temp_repo.images;
                     }
                     // this.leasingContent = response[1].data;
