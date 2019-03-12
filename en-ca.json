@@ -21,7 +21,8 @@
         "packages" : "Packages",
         "sapphire" : "Sapphire",
         "ruby" : "Ruby",
-        "diamond": "Diamond"
+        "diamond": "Diamond",
+        "tourism": "Tourism"
     },
     "footer": {
         "newsletter" : "Newsletter",
