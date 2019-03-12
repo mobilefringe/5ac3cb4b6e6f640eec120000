@@ -110,7 +110,7 @@
                         if ( _.includes([2], key)) {
                             value.isLast = true;
                         }
-                        console.log("pages_json", pages_json)
+                        console.log("pages_json", value)
                     });
                     return pages_json
                 },
