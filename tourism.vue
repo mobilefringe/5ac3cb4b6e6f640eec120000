@@ -36,7 +36,7 @@
         			   <!--     </div>-->
         			   <!--</div>-->
         		    </div>
-        		    <!--<div class="row mall_info_images">-->
+        		    <!--<div class="row mall_info_images" v-if="travel_partners">-->
         			   <!-- <div class="col-sm-6">-->
         			   <!--     <img class="max_width" src="//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/jpeg/1540398641000/pages1.jpg" alt="" />-->
         			   <!-- </div>-->
