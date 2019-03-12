@@ -87,6 +87,7 @@
                     // this.marketingContent = response[2].data;
                     // this.areaContent = response[3].data;
                     this.pageContent = response[1].data;
+                    this.pageSubpage1 = response[1].data.subpages[0];
                     this.dataLoaded = true;
                 });
             },
