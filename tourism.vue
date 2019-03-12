@@ -96,8 +96,8 @@
                             this.pageSubpage2 = response[1].data.subpages[1];
                         }
                     }
-                    // this.currentPageContent = this.pageContent;
-                    this.selectPage(this.currentPageContent)
+                    this.currentPageContent = this.pageContent;
+                    this.selectContent(this.currentPageContent)
                     this.dataLoaded = true;
                 });
             },
