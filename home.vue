@@ -98,12 +98,15 @@
                             </a>
                         </div>
                     </div>
-                    <div class="margin_20"></div>
+        		</div>
+        		<div class="site_conatiner">
+        		    <div class="margin_20"></div>
                     <div>
         		      <h3 class="home_page_title caps">Featured Stores</h3>
         		    </div>
-                    <logo-scroller></logo-scroller>
+                    
         		</div>
+        		<logo-scroller></logo-scroller>
         	</div>
         </transition>    		
 	</div>
