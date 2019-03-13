@@ -105,7 +105,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!today_hours", "vue!search-component", 'vue!vue-slick', 'js-cookie', 'masonry' , 'vue-masonry-plugin'], function(Vue, Vuex, TodayHoursComponent, SearchComponent, slick, Cookies, masonry, VueMasonryPlugin) {
+    define(['Vue', 'vuex', 'vue!vue-slick', 'js-cookie', 'masonry' , 'vue-masonry-plugin', 'vue!logo-scroller'], function(Vue, Vuex, slick, Cookies, masonry, VueMasonryPlugin, LogoScroller) {
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
