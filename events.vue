@@ -141,7 +141,6 @@
             methods: {
                 loadData: async function() {
                     try {
-                    
                         let results = await Promise.all([
                             this.$store.dispatch("getData", "repos"), 
                             this.$store.dispatch("getData", "events")
