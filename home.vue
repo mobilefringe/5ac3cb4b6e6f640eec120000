@@ -98,9 +98,10 @@
                             </a>
                         </div>
                     </div>
-              <!--      <div>-->
-        		    <!--  <h3 class="home_page_title caps">Featured Stores</h3>-->
-        		    <!--</div>-->
+                    <div class="margin_20"></div>
+                    <div>
+        		      <h3 class="home_page_title caps">Featured Stores</h3>
+        		    </div>
                     <logo-scroller></logo-scroller>
         		</div>
         	</div>
