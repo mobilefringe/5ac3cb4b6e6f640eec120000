@@ -14,7 +14,7 @@
 
 <script>
     define(["Vue", "vuex", "vue!vue-slick"], function(Vue, Vuex, slick) {
-        return Vue.component("banners-component", {
+        return Vue.component("logo-scroller", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
