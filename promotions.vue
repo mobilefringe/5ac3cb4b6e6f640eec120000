@@ -12,8 +12,30 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
+        		    <div class="home_page_title_container">
+        		        <h3 class="home_page_title caps">Featured Prmotions</h3>
+        		    </div>
         		    <transition-group name="list" tag="div">
-    					<div class="promo_container" v-for="(item, index) in promotions" v-if="showMore > index" :key="index">
+    					<div class="promo_container" v-for="(item, index) in featuredPromotions" v-if="showMore > index" :key="index">
+    					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
+    					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
+    					    <div class="promo_content">
+    					        <p class="promo_title" v-if="item.store">{{ item.store.name }}</p>
+    					        <p class="promo_title" v-else>{{ property.name }}</p>
+    					        <h3 class="" v-if="locale=='en-ca'">{{ item.name_short }}</h3>
+    							<h3 class="" v-else>{{ item.name_short_2 }}</h3>
+    							<p class="promo_dates" v-if="isMultiDay(item)">
+    							    {{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}
+                                </p>
+                                <p class="promo_dates" v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
+    							<router-link :to="'/promotions/'+ item.slug" >
+    							   <div class="promo_learn_more animated_btn swing_in">{{ $t("promos_page.read_more") }}</div>
+    						    </router-link>
+    					    </div>
+    					</div>
+    				</transition-group>
+        		    <transition-group name="list" tag="div">
+    					<div class="promo_container" v-for="(item, index) in regularPromotions" v-if="showMore > index" :key="index">
     					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + item.image_url + ')' }"></div>
     					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + item.promo_image2_url_abs + ')' }"></div>
     					    <div class="promo_content">
@@ -77,10 +99,31 @@
                     'timezone',
                     'processedPromos'
                 ]),
-                promotions() {
+                featuredPromotions() {
                     var vm = this;
                     var temp_promo = [];
                     _.forEach(this.processedPromos, function(value, key) {
+                        value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
+                        value.name_short_2 = _.truncate(value.name_2, { 'length': 30, 'separator': ' ' });
+
+                        if (_.includes(value.image_url, 'missing')) {
+                            value.image_url = "http://placehold.it/1560x800/757575";
+                        }
+                        if (_.includes(value.promo_image2_url_abs, 'missing')) {
+                            value.promo_image2_url_abs = "http://placehold.it/1560x800/757575";
+                        }
+                        
+                        temp_promo.push(value);
+                    });
+                    _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
+                    return temp_promo;
+                }
+                regularPromotions() {
+                    var promos = this.processedPromos;
+                    console.log("promos", promos)
+                    var vm = this;
+                    var temp_promo = [];
+                    _.forEach(promos, function(value, key) {
                         value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
                         value.name_short_2 = _.truncate(value.name_2, { 'length': 30, 'separator': ' ' });
 
