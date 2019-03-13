@@ -109,16 +109,18 @@
                     var vm = this;
                     var temp_event = [];
                     _.forEach(events, function(value, key) {
-                        value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
-
-                        if (_.includes(value.image_url, 'missing')) {
-                            value.image_url = "http://placehold.it/1560x800/757575";
+                        if (value.is_featured) {
+                            value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
+    
+                            if (_.includes(value.image_url, 'missing')) {
+                                value.image_url = "http://placehold.it/1560x800/757575";
+                            }
+                            if (_.includes(value.event_image2_url_abs, 'missing')){
+                                value.event_image2_url_abs  = "http://placehold.it/1560x800/757575";
+                            }
+    
+                            temp_event.push(value);
                         }
-                        if (_.includes(value.event_image2_url_abs, 'missing')){
-                            value.event_image2_url_abs  = "http://placehold.it/1560x800/757575";
-                        }
-
-                        temp_event.push(value);
                     });
                     _.sortBy(temp_event, [function(o) { return o.start_date; }]);
                     return temp_event;
@@ -129,16 +131,18 @@
                     var vm = this;
                     var temp_event = [];
                     _.forEach(this.processedEvents, function(value, key) {
-                        value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
-
-                        if (_.includes(value.image_url, 'missing')) {
-                            value.image_url = "http://placehold.it/1560x800/757575";
+                        if (!value.is_featured) {
+                            value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
+    
+                            if (_.includes(value.image_url, 'missing')) {
+                                value.image_url = "http://placehold.it/1560x800/757575";
+                            }
+                            if (_.includes(value.event_image2_url_abs, 'missing')){
+                                value.event_image2_url_abs  = "http://placehold.it/1560x800/757575";
+                            }
+    
+                            temp_event.push(value);
                         }
-                        if (_.includes(value.event_image2_url_abs, 'missing')){
-                            value.event_image2_url_abs  = "http://placehold.it/1560x800/757575";
-                        }
-
-                        temp_event.push(value);
                     });
                     _.sortBy(temp_event, [function(o) { return o.start_date; }]);
                     return temp_event;
