@@ -99,15 +99,15 @@
                         </div>
                     </div>
         		</div>
-        		<div class="site_conatiner">
-        		    <div class="margin_20"></div>
-                    <div class="home_page_title_container">
+        		<!--<div class="site_conatiner">-->
+        		<!--    <div class="margin_20"></div>-->
+          <!--          <div class="home_page_title_container">-->
         		        
-        		        <h3 class="home_page_title caps">Featured Stores</h3>
+        		<!--        <h3 class="home_page_title caps">Featured Stores</h3>-->
         		        
-        		    </div>
+        		<!--    </div>-->
                     
-        		</div>
+        		<!--</div>-->
         		<logo-scroller></logo-scroller>
         	</div>
         </transition>    		
