@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="home_page_title_container">
         		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
         		    </div>
         		    <div class="insta-feed-container">
@@ -101,8 +101,10 @@
         		</div>
         		<div class="site_conatiner">
         		    <div class="margin_20"></div>
-                    <div>
-        		      <h3 class="home_page_title caps">Featured Stores</h3>
+                    <div class="home_page_title_container">
+        		        
+        		        <h3 class="home_page_title caps">Featured Stores</h3>
+        		        
         		    </div>
                     
         		</div>
