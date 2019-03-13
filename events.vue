@@ -12,25 +12,27 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-        		    <div class="home_page_title_container">
-        		        <h3 class="home_page_title caps">Featured Events</h3>
-        		    </div>
-        		    <div class="promo_container clearfix" v-for="(promo, index) in featuredEvents">
-					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
-					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.event_image2_url_abs + ')' }"></div>
-					    <div class="promo_content">
-					        <p class="promo_title">{{ $t("events_page.events") }}</p>
-					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
-							<h3 class="" v-else>{{ promo.name_short_2 }}</h3>
-							<p class="promo_dates" v-if="isMultiDay(promo)">
-							    {{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}
-                            </p>
-                            <p class="promo_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
-							<router-link :to="'/events/'+ promo.slug" >
-								   <div class="promo_learn_more animated_btn swing_in">{{ $t("events_page.read_more") }}</div>
-						    </router-link>
-					    </div>
-					</div>
+        		    <div v-if="featuredEvents.length > 0">
+            		    <div class="home_page_title_container">
+            		        <h3 class="home_page_title caps">Featured Events</h3>
+            		    </div>
+            		    <div class="promo_container clearfix" v-for="(promo, index) in featuredEvents">
+    					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
+    					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.event_image2_url_abs + ')' }"></div>
+    					    <div class="promo_content">
+    					        <p class="promo_title">{{ $t("events_page.events") }}</p>
+    					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
+    							<h3 class="" v-else>{{ promo.name_short_2 }}</h3>
+    							<p class="promo_dates" v-if="isMultiDay(promo)">
+    							    {{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}
+                                </p>
+                                <p class="promo_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
+    							<router-link :to="'/events/'+ promo.slug" >
+    								   <div class="promo_learn_more animated_btn swing_in">{{ $t("events_page.read_more") }}</div>
+    						    </router-link>
+    					    </div>
+    					</div>
+    				</div>
         			<div class="home_page_title_container">
         		        <h3 class="home_page_title caps">All Events</h3>
         		    </div>	
