@@ -34,7 +34,7 @@
         			<div class="home_page_title_container">
         		        <h3 class="home_page_title caps">All Events</h3>
         		    </div>	
-        			<div id="promos_container" class="clearfix" v-if="promos.length > 0">
+        			<div id="promos_container" class="clearfix" v-if="regularEvents.length > 0">
         				<!--<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">-->
         					<div class="promo_container clearfix" v-for="(promo, index) in regularEvents">
         					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
