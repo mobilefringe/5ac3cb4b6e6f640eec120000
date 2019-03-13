@@ -242,7 +242,7 @@
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "popups"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://orchardtown.mallmaverick.com/api/v4/orchardtown/social.json" })]);
+                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "popups"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://northpark.mallmaverick.com/api/v4/northpark/social.json" })]);
                         // https://twinpines.mallmaverick.com/api/v4/twinpines/social.json
                         return results;
                     } catch (e) {
