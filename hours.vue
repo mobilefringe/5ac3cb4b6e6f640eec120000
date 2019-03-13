@@ -35,7 +35,7 @@
                                         <span>
                                             <span v-if="locale=='en-ca'">{{hour.holiday_name}} / </span>
                                             <span v-else>{{hour.holiday_name_2}} / </span>
-                                            {{ hour.holiday_date | moment("MMM D YYYY", timezone) }} /
+                                            {{ hour.holiday_date | moment("MMM D, YYYY", timezone) }} /
                                         </span>
                                         <span v-if="hour.is_closed == true">{{ $t("hours_page.closed") }}</span>
                                         <span v-else>
@@ -50,7 +50,7 @@
                                     <div class="hours_div text-left"  v-for="hour in extendedHours">
                                         <span>
                                             <span v-else>{{hour.holiday_name_2}} / </span>
-                                            {{ hour.holiday_date | moment("MMM D YYYY", timezone) }} /
+                                            {{ hour.holiday_date | moment("MMM D, YYYY", timezone) }} /
                                         </span>
                                         <span v-if="hour.is_closed == true">{{ $t("hours_page.closed") }}</span>
                                         <span v-else>
