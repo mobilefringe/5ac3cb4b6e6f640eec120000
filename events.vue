@@ -12,9 +12,31 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
+        		    <div class="home_page_title_container">
+        		        <h3 class="home_page_title caps">Featured Events</h3>
+        		    </div>
+        		    <div class="promo_container clearfix" v-for="(promo, index) in featuredEvents">
+					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
+					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.event_image2_url_abs + ')' }"></div>
+					    <div class="promo_content">
+					        <p class="promo_title">{{ $t("events_page.events") }}</p>
+					        <h3 class="" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
+							<h3 class="" v-else>{{ promo.name_short_2 }}</h3>
+							<p class="promo_dates" v-if="isMultiDay(promo)">
+							    {{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}
+                            </p>
+                            <p class="promo_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
+							<router-link :to="'/events/'+ promo.slug" >
+								   <div class="promo_learn_more animated_btn swing_in">{{ $t("events_page.read_more") }}</div>
+						    </router-link>
+					    </div>
+					</div>
+        			<div class="home_page_title_container">
+        		        <h3 class="home_page_title caps">All Events</h3>
+        		    </div>	
         			<div id="promos_container" class="clearfix" v-if="promos.length > 0">
-        				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">
-        					<div class="promo_container clearfix" v-for="(promo, index) in paginated('promos')">
+        				<!--<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="3">-->
+        					<div class="promo_container clearfix" v-for="(promo, index) in regularEvents">
         					    <div class="promo_img" v-if="locale=='en-ca'" v-bind:style="{ backgroundImage: 'url(' + promo.image_url + ')' }"></div>
         					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(' + promo.event_image2_url_abs + ')' }"></div>
         					    <div class="promo_content">
@@ -30,7 +52,7 @@
         						    </router-link>
         					    </div>
         					</div>
-        				</paginate>
+        				<!--</paginate>-->
         			</div>
         			<div class="row" v-else>
         				<div class="col-md-12">
@@ -82,10 +104,30 @@
                     'findRepoByName',
                     'processedEvents'
                 ]),
-                events() {
+                featuredEvents() {
+                    var events = this.processedEvents
                     var vm = this;
                     var temp_event = [];
-                    var temp_job = [];
+                    _.forEach(events, function(value, key) {
+                        value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
+
+                        if (_.includes(value.image_url, 'missing')) {
+                            value.image_url = "http://placehold.it/1560x800/757575";
+                        }
+                        if (_.includes(value.event_image2_url_abs, 'missing')){
+                            value.event_image2_url_abs  = "http://placehold.it/1560x800/757575";
+                        }
+
+                        temp_event.push(value);
+                    });
+                    _.sortBy(temp_event, [function(o) { return o.start_date; }]);
+                    return temp_event;
+                },
+                regularEvents() {
+                    var events = this.processedEvents;
+                    console.log("events", events)
+                    var vm = this;
+                    var temp_event = [];
                     _.forEach(this.processedEvents, function(value, key) {
                         value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
 
