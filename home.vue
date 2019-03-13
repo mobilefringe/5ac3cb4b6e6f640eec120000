@@ -98,6 +98,7 @@
                             </a>
                         </div>
                     </div>
+                    <logo-scroller></logo-scroller>
         		</div>
         	</div>
         </transition>    		
