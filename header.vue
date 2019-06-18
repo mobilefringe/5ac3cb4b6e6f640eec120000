@@ -38,7 +38,8 @@
 						<nav id="primary_nav" class="hidden_phone">
 							<ul>
 							    <li class="menu_item" v-for="item in menu_items" :id="item.id">
-							        <router-link :to="item.href">{{$t(item.name)}}</router-link>
+							        <span v-if="item.sub_menu">{{$t(item.name)}}</span>
+							        <router-link v-else :to="item.href">{{$t(item.name)}}</router-link>
 							        <ul v-if="item.sub_menu">
 							            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
 							                <router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
