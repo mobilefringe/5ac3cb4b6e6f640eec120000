@@ -84,12 +84,12 @@
                                 <div class="insta-feed-background" v-bind:style="{ backgroundImage: 'url(' + item.images.standard_resolution.url + ')' }"></div>
                                 <div class="insta_content">
                                     <div class="insta_caption">
-                                        <p v-if="item.caption.text">{{ item.caption.text }}</p>
+                                        <p>{{ item.caption.text }}</p>
                                         <div>
-                                            <span v-if="item.likes.count">
+                                            <span>
                                                 <i class="fas fa-heart"></i> {{ item.likes.count }}
                                             </span>
-                                            <span v-if="item.comments.count">
+                                            <span>
                                                 <i class="fas fa-comment"></i> {{ item.comments.count }}
                                             </span>
                                         </div>
@@ -245,12 +245,9 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([
-                            this.$store.dispatch("getData", "banners"), 
-                            this.$store.dispatch("getData", "feature_items"), 
-                            this.$store.dispatch("getData", "popups"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://twinpines2.mallmaverick.com/api/v4/twinpines2/social.json" })
-                        ]);
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "popups"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://northpark.mallmaverick.com/api/v4/northpark/social.json" })]);
+                        // https://twinpines.mallmaverick.com/api/v4/twinpines/social.json
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
