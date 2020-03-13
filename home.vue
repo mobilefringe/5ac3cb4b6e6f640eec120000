@@ -249,7 +249,7 @@
                             this.$store.dispatch("getData", "banners"), 
                             this.$store.dispatch("getData", "feature_items"), 
                             this.$store.dispatch("getData", "popups"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://northpark.mallmaverick.com/api/v4/northpark/social.json" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://twinpines2.mallmaverick.com/api/v4/twinpines2/social.json" })
                         ]);
                         return results;
                     } catch (e) {
