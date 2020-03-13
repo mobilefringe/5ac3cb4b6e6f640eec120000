@@ -86,10 +86,10 @@
                                     <div class="insta_caption">
                                         <p v-if="item.caption.text">{{ item.caption.text }}</p>
                                         <div>
-                                            <span>
+                                            <span v-if="item.likes.count">
                                                 <i class="fas fa-heart"></i> {{ item.likes.count }}
                                             </span>
-                                            <span>
+                                            <span v-if="item.comments.count">
                                                 <i class="fas fa-comment"></i> {{ item.comments.count }}
                                             </span>
                                         </div>
