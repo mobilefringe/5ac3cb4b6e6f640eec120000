@@ -84,7 +84,7 @@
                                 <div class="insta-feed-background" v-bind:style="{ backgroundImage: 'url(' + item.images.standard_resolution.url + ')' }"></div>
                                 <div class="insta_content">
                                     <div class="insta_caption">
-                                        <p>{{ item.caption.text }}</p>
+                                        <p v-if="item.caption.text">{{ item.caption.text }}</p>
                                         <div>
                                             <span>
                                                 <i class="fas fa-heart"></i> {{ item.likes.count }}
