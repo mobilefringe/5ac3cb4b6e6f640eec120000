@@ -143,12 +143,12 @@
                     var socialFeed = response[3].data;
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [8]);
-                    this.instaFeed.map(insta => {
-                        console.log("cap", insta.caption)
-                        if (insta.caption != null && insta.caption.text.length > 0){
-                            insta.caption.text = _.truncate(insta.caption.text, { 'length': 50, 'separator': ' ' });
-                        }
-                    });
+                    // this.instaFeed.map(insta => {
+                    //     console.log("cap", insta.caption)
+                    //     if (insta.caption != null && insta.caption.text.length > 0){
+                    //         insta.caption.text = _.truncate(insta.caption.text, { 'length': 50, 'separator': ' ' });
+                    //     }
+                    // });
 
                     this.dataLoaded = true;
                 });
