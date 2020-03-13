@@ -145,7 +145,7 @@
                     this.instaFeed = _.slice(social_feed, [0], [8]);
                     this.instaFeed.map(insta => {
                         console.log("cap", insta.caption)
-                        if (insta.caption != null && insta.caption.text){
+                        if (insta.caption != null && insta.caption.text != null){
                             insta.caption.text = _.truncate(insta.caption.text, { 'length': 50, 'separator': ' ' });
                         }
                     });
