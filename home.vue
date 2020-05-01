@@ -249,7 +249,7 @@
                             this.$store.dispatch("getData", "banners"), 
                             this.$store.dispatch("getData", "feature_items"), 
                             this.$store.dispatch("getData", "popups"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "http://twinpine.lvh.me:3000/api/v4/twinpine/social.json?bust=true" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://twinpines2.mallmaverick.com/api/v4/twinpines2/social.json" })
                         ]);
                         return results;
                     } catch (e) {
